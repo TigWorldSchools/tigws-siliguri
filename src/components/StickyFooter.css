@@ -1,0 +1,276 @@
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #C3AB6B, #C3AB6B);
+  padding: 8px 15px;
+  box-shadow: 0 -4px 20px rgba(212, 175, 55, 0.4);
+  z-index: 999;
+  animation: slideUp 0.5s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  background: rgba(0, 24, 69, 0.8);
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.close-btn:hover {
+  background: rgb(0, 24, 69);
+  transform: scale(1.1);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sticky-footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.sticky-footer-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 24, 69);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.arrow-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-footer-arrow {
+  font-size: 2.5rem;
+  color: rgb(0, 24, 69);
+  font-weight: bold;
+  animation: arrowBounce 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.shooting-arrow {
+  position: absolute;
+  font-size: 2.5rem;
+  color: #d4af37;
+  font-weight: bold;
+  animation: arrowShoot 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.sticky-footer-contacts {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sticky-footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.pulse-phone {
+  animation: pulseSecondary 2.5s ease-in-out infinite;
+}
+
+.pulse-email {
+  animation: pulseSecondary 2.5s ease-in-out infinite;
+}
+
+
+
+.sticky-footer-contact-item:hover {
+  transform: scale(1.05);
+  background: rgb(0, 24, 69);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-footer-contact-item:hover .sticky-footer-icon {
+  color: white;
+}
+
+.sticky-footer-contact-item:hover .sticky-footer-contact-text {
+  color: white;
+}
+
+.sticky-footer-icon {
+  color: #d4af37;
+  font-size: 1.2rem;
+}
+
+.sticky-footer-contact-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(0, 24, 69);
+}
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(10px) scale(1.1);
+  }
+}
+
+@keyframes arrowShoot {
+  0% {
+    transform: translateX(0) scale(0.8);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(50px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(300px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsePrimary {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(212, 175, 55, 0.7);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 10px rgba(212, 175, 55, 0);
+  }
+}
+
+@keyframes pulseSecondary {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 24, 69, 0.7);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 8px rgba(0, 24, 69, 0);
+  }
+}
+
+.arrow-animation {
+  font-size: 1.4rem;
+  color: rgb(0, 24, 69);
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideArrow {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(15px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(40px);
+    opacity: 0.7;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .sticky-footer {
+    padding: 8px 10px;
+  }
+
+  .sticky-footer-content {
+    flex-direction: row;
+    gap: 8px;
+    text-align: left;
+    padding-left: 10px;
+    justify-content: space-between; /* ensure contacts move right on mobile too */
+    align-items: center;
+  }
+
+  .sticky-footer-text {
+    display: none;
+  }
+  
+  .arrow-animation {
+    display: none;
+  }
+
+  .sticky-footer-arrow,
+  .shooting-arrow {
+    font-size: 2.5rem;
+  }
+  
+  @keyframes arrowShoot {
+    0% {
+      transform: translateX(0) scale(0.8);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(30px) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(150px) scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  .sticky-footer-contacts {
+    flex-direction: row;
+    gap: 8px;
+    flex-shrink: 0;
+    margin-right: -10px; /* added for mobile */
+  }
+
+  .sticky-footer-contact-item {
+    padding: 6px 12px;
+  }
+
+  .sticky-footer-icon {
+    font-size: 0.9rem;
+  }
+
+  .sticky-footer-contact-text {
+    font-size: 0.8rem;
+  }
+  
+  .close-btn {
+    top: 3px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    font-size: 0.6rem;
+    background: rgba(0, 24, 69, 0.9);
+    border: 1px solid white;
+  }
+}

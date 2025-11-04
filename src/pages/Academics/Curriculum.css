@@ -1,0 +1,56 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Hidden states for animations */
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: all 1.2s ease-out;
+}
+
+.fade-left {
+  transform: translateX(-60px);
+}
+
+.fade-right {
+  transform: translateX(60px);
+}
+
+/* When in view */
+.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Section styling */
+.curriculum-section {
+  background-color: rgb(0, 24, 69);
+  color: #ffffff;
+}
+
+.curriculum-title {
+  color: #c3ab6b;
+   font-size: 2.5rem !important;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 18px 0 !important;
+}
+.curriculum-text {
+  font-size: 1.2rem !important;
+  line-height: 1.8 !important;
+  color: #ffffff !important;
+  font-style: normal !important;
+}
+
+/* Optional hover zoom */
+.curriculum-image img {
+  transition: transform 0.6s ease;
+}
+
+.curriculum-image img:hover {
+  transform: scale(1.05);
+}

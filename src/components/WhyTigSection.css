@@ -1,0 +1,187 @@
+.why-tig-section {
+  padding: 100px 20px;
+  min-height: 900px;
+  background: linear-gradient(135deg, #001845 0%, #002855 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-tig-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(195, 171, 107, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.why-tig-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.why-tig-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #C3AB6B;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.why-tig-subtitle {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+
+.why-tig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.flip-card {
+  perspective: 1000px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  border: 3px solid #C3AB6B;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front {
+  position: relative;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 24, 69, 0.95), transparent);
+  padding: 30px 20px;
+}
+
+.flip-card-overlay h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.flip-card-back {
+  background: rgb(0, 24, 69);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.flip-card-back h3 {
+  color: #C3AB6B;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.flip-card-back p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .why-tig-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .why-tig-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-tig-section {
+    padding: 70px 20px;
+    min-height: auto;
+  }
+  
+  .why-tig-title {
+    font-size: 2rem;
+  }
+  
+  .why-tig-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .why-tig-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .flip-card {
+    height: 300px;
+  }
+  
+  .flip-card-overlay h3 {
+    font-size: 1.2rem;
+  }
+  
+  .flip-card-back {
+    padding: 30px 25px;
+  }
+  
+  .flip-card-back h3 {
+    font-size: 1.3rem;
+  }
+  
+  .flip-card-back p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,95 @@
+#extracurricular {
+  background-color: rgb(0, 24, 69);
+}
+
+.campus__life--single--title {
+  color: #fff;
+}
+
+.rts-left-section {
+  position: relative;
+}
+
+.rts-left-section::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 70%;
+  width: 1px;
+  background: #fff;
+  bottom: -5%;
+}
+
+.rts-left-section .left-section-content {
+  margin-left: 25px;
+}
+
+#extracurricular img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.campus-video {
+  margin-top: 50px;
+}
+
+#extracurricular p {
+  color: #fff;
+}
+
+.extra-curricular-title {
+  color: #c3ab6b;
+  font-size: 2.5rem !important;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+    margin: 0 0 18px 0 !important;
+}
+.extra-curricular-text{
+  font-size: 1.2rem !important;
+    line-height: 1.8 !important;
+    color: #ffffff !important;
+    font-style: normal !important;
+}
+
+/* Typing cursor blink */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ===== Scroll Animations ===== */
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transition: all 1.2s ease-out;
+}
+
+.fade-left {
+  transform: translateX(-60px);
+}
+
+.fade-right {
+  transform: translateX(60px);
+}
+
+.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Smooth image hover */
+.campus-video img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.campus-video img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}

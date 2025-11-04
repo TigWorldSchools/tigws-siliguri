@@ -1,0 +1,94 @@
+.life-section {
+  background: #fff;
+  color: #0d1b2a;
+  font-family: "Poppins", sans-serif;
+}
+.life-card {
+  background-color: #f1f3f6;
+  transition: 0.3s ease;
+  min-height: 250px;
+}
+.life-card:hover {
+  background-color: #e8ecf2;
+  transform: translateY(-5px);
+}
+.circle {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: #fff;
+  border: 3px solid #dee2e6;
+  color: #0a1930;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.icon {
+  font-size: 2rem;
+}
+.rt-serial {
+  font-size: 26px;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  color: #000;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  display: grid;
+  place-items: center;
+  background: #d5d5d5;
+  transition: all 0.4s ease;
+}
+.rts-research-section .research__items .research-procedure > * {
+  position: relative;
+  z-index: 1;
+}
+.research-procedure {
+  padding: 40px 30px 40px 40px;
+  position: relative;
+  background: #d5d5d5;
+  height: 100%;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+}
+#lifeattigws .icon img {
+  height: 50px;
+}
+.research__items .research-procedure:hover .icon img { 
+  height: 50px;
+}
+.research-procedure p,
+.research-procedure h5 {
+  color: #000;
+}
+.research-procedure:hover {
+  background: #c3ab6b;
+  color: #0000;
+  transition: all 0.4s ease;
+}
+.research-procedure:hover .rt-serial {
+  background: #c3ab6b;
+  color: #ffffff;
+  border-color: #ffffff;
+  transition: all 0.4s ease;
+}
+.life-section {
+  background-color: rgb(0, 24, 69);
+}
+.title-description{
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .research-procedure {
+    padding: 40px 20px 40px 20px;
+  }
+}

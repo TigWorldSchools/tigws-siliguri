@@ -1,0 +1,119 @@
+.floating-cta {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: #C3AB6B;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 998;
+  box-shadow: 0 4px 20px rgba(195, 171, 107, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  min-width: 60px;
+  height: 60px;
+  border: 3px solid rgb(0, 24, 69);
+}
+
+.floating-cta:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 6px 25px rgba(195, 171, 107, 0.6);
+}
+
+.floating-cta.expanded {
+  border-radius: 30px;
+  padding-right: 20px;
+}
+
+.cta-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 24, 69);
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-text {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.cta-text span {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(0, 24, 69);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cta-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: rgba(195, 171, 107, 0.3);
+  animation: ctaPulse 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes ctaPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.floating-cta:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    right: 15px;
+    min-width: 50px;
+    height: 50px;
+  }
+  
+  .cta-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  
+  .cta-text span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-cta {
+    right: 10px;
+    min-width: 45px;
+    height: 45px;
+  }
+  
+  .cta-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  
+  .cta-text span {
+    font-size: 0.85rem;
+  }
+}

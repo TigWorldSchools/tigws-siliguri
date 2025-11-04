@@ -1,0 +1,292 @@
+.founder-section {
+  padding: 80px 20px;
+  background: rgb(0, 24, 69);
+  position: relative;
+}
+
+.founder-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.founder-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #C3AB6B;  /* Changed from white to golden */
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: default;
+  padding-bottom: 15px;  /* Added padding below */
+  /* make title visible immediately on desktop (was opacity:0 + transform) */
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.founder-title:hover {
+  /* Remove hover effect */
+}
+
+.founder-title.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+  padding-bottom: -50px;
+}
+
+
+
+.founder-content {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr; /* more robust than percentage */
+  gap: 30px;
+  align-items: start;               /* align to top */
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ensure left column starts at top and has no accidental centering */
+.founder-left-section {
+  background: transparent;     /* keep section background consistent with parent */
+  color: white;
+  padding: 40px 50px;          /* match image-container top padding so content aligns with image start */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 0;              /* remove previous negative offset */
+  cursor: default;
+  text-align: left;
+  opacity: 1;
+  transform: none;
+  transition: none;
+  padding-top: 0px; /* moved text down a bit */
+  align-self: start;
+}
+
+.founder-left-section.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+  padding-top: -20px;
+}
+
+.founder-perspective-title {
+  font-size: 2.5rem;         /* match AboutSection title */
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  color: #C3AB6B;
+  line-height: 1.2;
+  text-transform: none;
+  text-align: left;
+  padding: 0;
+  transition: none;
+}
+.founder-quotes {
+  font-size: 1.2rem;         /* match AboutSection body */
+  line-height: 1.8;
+  color: #ffffff;
+  margin: 0 0 30px 0;        /* match AboutSection spacing */
+  text-align: left;
+  padding-right: 0;
+  font-style: italic;
+
+}
+.founder-perspective-text {
+  font-size: 1.2rem;         /* match AboutSection body */
+  line-height: 1.8;
+  color: #ffffff;
+  margin: 0 0 30px 0;        /* match AboutSection spacing */
+  text-align: left;
+  padding-right: 0;
+}
+
+.founder-center-section {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.4s;
+  background: rgb(0, 24, 69);  /* Set to blue background */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-center-section.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.founder-image-container {
+  margin: 0;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;     /* keep same blue page background */
+  padding: 40px;               /* spacing like about section image column */
+}
+
+.founder-image {
+  width: 100%;
+  max-width: 900px; /* increased width */
+  height: auto;
+  box-shadow: none;            /* flat appearance */
+  border-radius: 6px;          /* subtle rounding if about uses it */
+  transition: none;
+  cursor: default;
+  object-fit: cover;
+}
+
+/* details align left like about section */
+.founder-details {
+  text-align: left;
+  margin-top: -25px;
+}
+
+.founder-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #C3AB6B;
+  margin-bottom: 6px;
+  text-transform: none;
+}
+
+.founder-designation {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* remove entrance animations for center/right sections to mirror about styling */
+.founder-title,
+.founder-center-section,
+.founder-right-section,
+.founder-left-section {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* enforcement: stronger specificity to override other rules and browser cache */
+.founder-section .founder-title {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  color: #C3AB6B !important;
+  text-align: center !important;
+}
+
+.founder-section .founder-left-section {
+  padding: 60px 50px !important;
+  text-align: left !important;
+  background: transparent !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.founder-section .founder-perspective-title {
+  font-size: 2.5rem !important;
+  margin: 0 0 18px 0 !important;
+  line-height: 1.2 !important;
+  color: #C3AB6B !important;
+}
+
+.founder-section .founder-perspective-text,
+.founder-section .founder-perspective-text::before {
+  font-size: 1.2rem !important;
+  line-height: 1.8 !important;
+  color: #ffffff !important;
+  font-style: normal !important;
+}
+
+/* responsive enforcement */
+@media (max-width: 768px) {
+  .founder-section .founder-content {
+    grid-template-columns: 1fr !important;
+  }
+  .founder-section .founder-image {
+    max-width: 320px !important;
+  }
+
+  .founder-section .founder-left-section {
+    text-align: left !important;
+    padding: 20px !important;
+  }
+
+  .founder-section .founder-center-section {
+    text-align: left !important;
+  }
+  
+  .founder-section .founder-details {
+    text-align: left !important;
+    margin-top: 20px !important;
+  }
+  
+  .founder-section .founder-image-container {
+    display: block !important;
+    text-align: left !important;
+    padding: 20px 0 !important;
+    width: 100% !important;
+  }
+  
+  .founder-section .founder-image {
+    margin: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+
+  .founder-section .founder-perspective-title {
+    font-size: 1.8rem !important;
+    text-align: left !important;
+  }
+  .founder-section .founder-perspective-text,
+  .founder-section .founder-perspective-text::before {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+  }
+  
+  .founder-section .founder-quotes {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder-section .founder-perspective-title {
+    font-size: 1.5rem !important;
+  }
+  .founder-section .founder-perspective-text,
+  .founder-section .founder-perspective-text::before {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+  }
+}
+
+/* make image larger and ensure it aligns with left content */
+.founder-section .founder-image {
+  max-width: 1100px !important; /* increased enforcement for large desktops */
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* Desktop enforcement — stronger specificity for large viewports */
+@media (min-width: 992px) {
+  .founder-section .founder-content {
+    grid-template-columns: 1.6fr 1fr !important;
+    align-items: start !important;
+  }
+
+  .founder-section .founder-left-section {
+    padding-top: 80px !important;
+    text-align: left !important;
+  }
+
+  .founder-section .founder-image {
+    max-width: 1100px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}

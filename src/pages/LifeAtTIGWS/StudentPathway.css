@@ -1,0 +1,101 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.student-pathway {
+  margin: 0 auto;
+  position: relative;
+}
+.student-pathway::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 2px;
+  height: 88%;
+  background-color: #d9d9d9;
+}
+.student-pathway::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 2px;
+  height: var(--active-line-height, 0);
+  background-color: #C3AB6B;
+  transition: height 0.3s ease;
+  z-index: 1;
+}
+.step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  padding-left: 60px;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.step-number {
+  position: absolute;
+  left: 3px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #2b3a8a;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.step-content {
+  background: #fff;
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.step.active .step-content {
+  background-color: #f0f6ff;
+  background: #C3AB6B;
+}
+.step.active .step-number {
+  background-color: #C3AB6B;
+  color: #fff;
+}
+.step-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+}
+.step-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+@media (max-width: 600px) {
+  .student-pathway::before,
+  .student-pathway::after {
+    left: 9px;
+  }
+  .student-pathway::before{
+height: 84%;
+  }
+  .step {
+    padding-left: 45px;
+  }
+  .step-number {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    left: -3px;
+  }
+  .step-content h3 {
+    font-size: 15px;
+  }
+  
+}
