@@ -19,11 +19,12 @@ const Home = () => {
 
   return (
     <>
-      <section className="hero-section">
-        <video className="hero-video" autoPlay muted loop>
-          <source src="video/TIGWS_Siliguri.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <section className="hero-section" style={{
+        backgroundImage: 'url(img/banner_images/page_banner.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        position: 'relative'
+      }}>
         <div className="hero-content">
           <h1 className="hero-title">Welcome to<br />Techno India Group World School</h1>
           <button className="hero-cta" onClick={handleCtaClick}>
