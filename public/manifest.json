@@ -1,0 +1,31 @@
+{
+  "short_name": "TIGWS Siliguri",
+  "name": "Techno India Group World School Siliguri",
+  "description": "Eastern India's premier all-girls residential school offering CBSE & Australian WACE curriculum",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/logo/TIGWS_kolkata_white.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/logo/TIGWS_kolkata_white.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#001845",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["education", "school"],
+  "lang": "en-IN",
+  "scope": "/",
+  "prefer_related_applications": false
+}

@@ -1,0 +1,42 @@
+/* About Us Page Styles */
+.card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15) !important;
+}
+
+.card {
+  transition: all 0.3s ease !important;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .card-body p {
+    font-size: 1rem !important;
+    text-align: left !important;
+  }
+  
+  .card-body i {
+    font-size: 2rem !important;
+  }
+  
+  .position-absolute .header-apply-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-body {
+    padding: 1rem !important;
+  }
+  
+  .card-body p {
+    font-size: 0.95rem !important;
+  }
+  
+  .card-body i {
+    font-size: 1.8rem !important;
+  }
+}
