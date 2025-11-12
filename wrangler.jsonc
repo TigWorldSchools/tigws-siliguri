@@ -1,7 +1,13 @@
 {
-  "name": "tigws",
+  "name": "tigws_new",
   "compatibility_date": "2025-11-04",
   "assets": {
     "directory": "./build"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "/*",
+      "custom_domain": true
+    }
+  ]
 }
