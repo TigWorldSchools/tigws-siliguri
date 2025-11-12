@@ -3,50 +3,50 @@ import HeaderNav from './components/HeaderNav.jsx';
 
 const Header = ({ onOpenModal }) => {
   const menuItems = [
-    { label: 'Home', url: '/' },
+    { label: 'Home', url: '/siliguri' },
     { 
       label: 'About Us', 
-      url: '/about',
+      url: '/siliguri/about',
       dropdown: [
-        { label: 'About Us', url: '/about' },
-        { label: 'Why TIGWS', url: '/about#why-tigws' },
-        { label: 'Legacy of TIG', url: '/about#legacy' },
-        { label: 'Other Campuses', url: '/about#other-campuses' },
-        { label: (<><span>Mandatory</span><br /><span>Disclosure</span></>), url: '/mandatory-disclosure' }
+        { label: 'About Us', url: '/siliguri/about' },
+        { label: 'Why TIGWS', url: '/siliguri/about#why-tigws' },
+        { label: 'Legacy of TIG', url: '/siliguri/about#legacy' },
+        { label: 'Other Campuses', url: '/siliguri/about#other-campuses' },
+        { label: (<><span>Mandatory</span><br /><span>Disclosure</span></>), url: '/siliguri/mandatory-disclosure' }
       ]
     },
     { 
       label: 'Academics', 
-      url: '/curriculum',
+      url: '/siliguri/curriculum',
       dropdown: [
-        { label: 'Curriculum', url: '/curriculum' },
-        { label: 'List Of Books', url: '/books' }
+        { label: 'Curriculum', url: '/siliguri/curriculum' },
+        { label: 'List Of Books', url: '/siliguri/books' }
       ]
     },
     { 
       label: 'Admissions', 
-      url: '/admission-criteria',
+      url: '/siliguri/admission-criteria',
       dropdown: [
-        { label: 'Criteria', url: '/admission-criteria' },
-        { label: 'Student Capacity', url: '/student-capacity' },
-        { label: 'Application Form', url: '/application-form' }
+        { label: 'Criteria', url: '/siliguri/admission-criteria' },
+        { label: 'Student Capacity', url: '/siliguri/student-capacity' },
+        { label: 'Application Form', url: '/siliguri/application-form' }
       ]
     },
-    { label: 'Life at TIGWS', url: '/life-at-tigws' ,
+    { label: 'Life at TIGWS', url: '/siliguri/life-at-tigws' ,
       dropdown: [
-      {label: 'Life At TIGWS', url:'/life-at-tigws'},
-      {label:'Student Pathway',url:'/student-pathway'},
-      {label:'Extra Curricular',url:'/extra-curricular'},
-      {label:'Gallery',url:'/gallery'},
-      {label:'Student Testimonials',url:'/student-testimonials'}
+      {label: 'Life At TIGWS', url:'/siliguri/life-at-tigws'},
+      {label:'Student Pathway',url:'/siliguri/student-pathway'},
+      {label:'Extra Curricular',url:'/siliguri/extra-curricular'},
+      {label:'Gallery',url:'/siliguri/gallery'},
+      {label:'Student Testimonials',url:'/siliguri/student-testimonials'}
     ]
     },
 
-    { label: 'Contact Us', url: '/career' ,
+    { label: 'Contact Us', url: '/siliguri/career' ,
       dropdown:[
-        {label:'Career',url:'/career'},
-        {label:'Collaborate with Us',url:'/collaborate'},
-        {label:'Social Media',url:'/social-media'}
+        {label:'Career',url:'/siliguri/career'},
+        {label:'Collaborate with Us',url:'/siliguri/collaborate'},
+        {label:'Social Media',url:'/siliguri/social-media'}
       ]
     }
   ];

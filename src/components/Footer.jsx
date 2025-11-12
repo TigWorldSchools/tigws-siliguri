@@ -20,10 +20,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: 'fab fa-facebook-f', url: '#' },
-    { icon: 'fab fa-instagram', url: '#' },
-    { icon: 'fab fa-linkedin-in', url: '#' },
-    { icon: 'fab fa-youtube', url: '#' }
+    { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61579539989989' },
+    { icon: 'fab fa-instagram', url: 'https://www.instagram.com/tig_world_school/?hl=en' }
   ];
 
   return (

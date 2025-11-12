@@ -1,0 +1,118 @@
+/* Override styles for MainMissionSection */
+.main-mission .mission-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  gap: 15px;
+}
+
+.main-mission .mission-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border: 3px solid #C3AB6B;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-mission .mission-image:first-child {
+  height: 280px;
+}
+
+.main-mission .mission-image:last-child {
+  height: 367px;
+}
+
+.main-mission .mission-card {
+  background: white;
+  border: 2px solid #C3AB6B;
+  border-radius: 5px;
+  padding: 25px 30px;
+  position: relative;
+  width: 88%;
+  box-shadow: none;
+  height: auto;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main-mission .card-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-mission .card-title {
+  color: #C3AB6B;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  position: relative;
+  top: 0;
+  text-align: left;
+}
+
+.main-mission .card-text {
+  color: rgb(0, 24, 69);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-right: 25px;
+  margin-top: 0;
+  flex-grow: 1;
+}
+
+.main-mission .card-arrow {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #C3AB6B;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Override parent container height */
+.main-mission .mission-right {
+  height: auto !important;
+  gap: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .main-mission .mission-card {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    padding: 20px 25px;
+  }
+
+  .main-mission .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .main-mission .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-mission .mission-card {
+    padding: 16px 20px;
+  }
+
+  .main-mission .card-text {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+
+  .main-mission .card-title {
+    font-size: 1.15rem;
+  }
+}

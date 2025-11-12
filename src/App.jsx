@@ -1,8 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './layouts/Layout.jsx';
+import MainLayout from './layouts/MainLayout.jsx';
 
-// Pages
+// Main Homepage
+import NewHome from './pages/NewHome.jsx';
+
+// Siliguri Campus Pages
 import Home from './pages/Home.jsx';
 import About from './pages/AboutUs/About.jsx';
 import WhyTIGWS from './pages/AboutUs/WhyTIGWS.jsx';
@@ -26,30 +30,111 @@ import SocialMedia from './pages/ContactUs/SocialMedia.jsx';
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/why-tigws" element={<WhyTIGWS />} />
-          <Route path="/legacy" element={<Legacy />} />
-          <Route path="/other-campuses" element={<OtherCampuses />} />
-          <Route path="/curriculum" element={<Curriculum />} />
-          <Route path="/books" element={<ListOfBooks />} />
-          <Route path="/admission-criteria" element={<Criteria />} />
-          <Route path="/student-capacity" element={<StudentCapacity />} />
-          <Route path="/application-form" element={<ApplicationFormPage />} />
-          <Route path="/life-at-tigws" element={<LifeAtTIGWS />} />
-          <Route path="/student-pathway" element={<StudentPathway />} />
-          <Route path="/extra-curricular" element={<ExtraCurricular />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/student-testimonials" element={<StudentTestimonials />} />
-          <Route path="/mandatory-disclosure" element={<MandatoryDisclosure />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/collaborate" element={<Collaborate />} />
-          <Route path="/social-media" element={<SocialMedia />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        {/* Main Homepage */}
+        <Route path="/" element={
+          <MainLayout>
+            <NewHome />
+          </MainLayout>
+        } />
+        
+        {/* Siliguri Campus Routes */}
+        <Route path="/siliguri" element={
+          <Layout>
+            <Home />
+          </Layout>
+        } />
+        <Route path="/siliguri/about" element={
+          <Layout>
+            <About />
+          </Layout>
+        } />
+        <Route path="/siliguri/why-tigws" element={
+          <Layout>
+            <WhyTIGWS />
+          </Layout>
+        } />
+        <Route path="/siliguri/legacy" element={
+          <Layout>
+            <Legacy />
+          </Layout>
+        } />
+        <Route path="/siliguri/other-campuses" element={
+          <Layout>
+            <OtherCampuses />
+          </Layout>
+        } />
+        <Route path="/siliguri/curriculum" element={
+          <Layout>
+            <Curriculum />
+          </Layout>
+        } />
+        <Route path="/siliguri/books" element={
+          <Layout>
+            <ListOfBooks />
+          </Layout>
+        } />
+        <Route path="/siliguri/admission-criteria" element={
+          <Layout>
+            <Criteria />
+          </Layout>
+        } />
+        <Route path="/siliguri/student-capacity" element={
+          <Layout>
+            <StudentCapacity />
+          </Layout>
+        } />
+        <Route path="/siliguri/application-form" element={
+          <Layout>
+            <ApplicationFormPage />
+          </Layout>
+        } />
+        <Route path="/siliguri/life-at-tigws" element={
+          <Layout>
+            <LifeAtTIGWS />
+          </Layout>
+        } />
+        <Route path="/siliguri/student-pathway" element={
+          <Layout>
+            <StudentPathway />
+          </Layout>
+        } />
+        <Route path="/siliguri/extra-curricular" element={
+          <Layout>
+            <ExtraCurricular />
+          </Layout>
+        } />
+        <Route path="/siliguri/gallery" element={
+          <Layout>
+            <Gallery />
+          </Layout>
+        } />
+        <Route path="/siliguri/student-testimonials" element={
+          <Layout>
+            <StudentTestimonials />
+          </Layout>
+        } />
+        <Route path="/siliguri/mandatory-disclosure" element={
+          <Layout>
+            <MandatoryDisclosure />
+          </Layout>
+        } />
+        <Route path="/siliguri/career" element={
+          <Layout>
+            <Career />
+          </Layout>
+        } />
+        <Route path="/siliguri/collaborate" element={
+          <Layout>
+            <Collaborate />
+          </Layout>
+        } />
+        <Route path="/siliguri/social-media" element={
+          <Layout>
+            <SocialMedia />
+          </Layout>
+        } />
+      </Routes>
     </BrowserRouter>
   );
 }

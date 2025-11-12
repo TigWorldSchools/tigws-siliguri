@@ -1,0 +1,196 @@
+/* Mobile Optimization (320px - 768px) */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-section .hero-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2rem !important;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-cta {
+    font-size: 0.9rem !important;
+    padding: 12px 20px !important;
+  }
+
+  /* About Section */
+  .about-content {
+    flex-direction: column !important;
+  }
+  
+  .about-left-section, .about-right-section {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+  
+  .about-title {
+    font-size: 1.8rem !important;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Mission Section */
+  .main-mission .mission-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .main-mission .mission-left {
+    order: 2;
+  }
+  
+  .main-mission .mission-right {
+    order: 1;
+    width: 100%;
+  }
+  
+  .main-mission .mission-card {
+    width: 100% !important;
+    margin-bottom: 1rem;
+    padding: 20px;
+  }
+  
+  .main-mission .mission-image {
+    height: 200px !important;
+  }
+
+  /* Campuses Section */
+  .campuses-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  
+  .campus-image {
+    height: 220px !important;
+  }
+  
+  .campus-content {
+    padding: 1.2rem;
+  }
+  
+  .campus-name {
+    font-size: 1.2rem !important;
+  }
+
+  /* Sticky Footer */
+  .sticky-footer {
+    padding: 10px 15px;
+  }
+  
+  .sticky-footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .sticky-footer-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* MacBook Air Optimization (1366px - 1440px) */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  /* Hero Section */
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .hero-cta {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+  }
+
+  /* About Section */
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-title {
+    font-size: 2.8rem;
+  }
+
+  /* Mission Section */
+  .main-mission .mission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main-mission .mission-card {
+    padding: 30px 35px;
+  }
+  
+  .main-mission .card-title {
+    font-size: 1.4rem;
+  }
+
+  /* Campuses Section */
+  .campuses-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .campus-card {
+    max-width: 380px;
+  }
+}
+
+/* Tablet Optimization (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Hero Section */
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  /* Mission Section */
+  .main-mission .mission-container {
+    gap: 2rem;
+  }
+  
+  .main-mission .mission-image {
+    height: 240px;
+  }
+
+  /* Campuses Section */
+  .campuses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .campus-image {
+    height: 250px;
+  }
+}
+
+/* Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem !important;
+  }
+  
+  .about-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .main-mission .card-title {
+    font-size: 1.1rem !important;
+  }
+  
+  .main-mission .card-text {
+    font-size: 0.9rem !important;
+  }
+  
+  .campus-name {
+    font-size: 1.1rem !important;
+  }
+  
+  .campus-description {
+    font-size: 0.9rem !important;
+  }
+}

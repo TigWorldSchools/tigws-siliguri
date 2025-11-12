@@ -1,0 +1,24 @@
+/* Remove greyish background from main homepage header logo */
+.main-layout .header__logo {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.main-layout .header__logo img {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.main-layout .header__logo--link {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.main-layout .header__logo button {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
