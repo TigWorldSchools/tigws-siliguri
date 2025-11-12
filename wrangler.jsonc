@@ -2,6 +2,8 @@
   "name": "tigws-new",
   "compatibility_date": "2025-11-04",
   "assets": {
-    "directory": "./build"
+    "directory": "./build",
+    "html_handling": "force-https",
+    "not_found_handling": "single-page-application"
   }
 }
