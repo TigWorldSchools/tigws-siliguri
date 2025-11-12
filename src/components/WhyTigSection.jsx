@@ -14,32 +14,32 @@ const WhyTigSection = () => {
 
   const features = [
     {
-      image: "img/academics/point4.jpg",
+      image: "/img/academics/point4.jpg",
       title: "Technology & Excellence",
       description: "Modern digital classrooms, advanced labs, and expert educators blend innovation with inspiration."
     },
     {
-      image: "img/academics/point5.jpg",
+      image: "/img/academics/point5.jpg",
       title: "Personalized Learning",
       description: "Small class sizes and strong mentorship ensure focused academic support and emotional well-being."
     },
     {
-      image: "img/academics/point6.jpg",
+      image: "/img/academics/point6.jpg",
       title: "Future-Ready Pathways",
       description: "Skill-based learning and global exposure prepare students for top universities and careers worldwide."
     },
     {
-      image: "img/academics/point1.jpg",
+      image: "/img/academics/point1.jpg",
       title: "Safe & Inclusive Campus",
       description: "24x7 care, secure facilities, and anti-bullying policies create a respectful environment for all."
     },
     {
-      image: "img/academics/point2.jpg",
+      image: "/img/academics/point2.jpg",
       title: "Global Curriculum",
       description: "Dual CBSE and Australian WACE Programme builds academic rigor and international readiness."
     },
     {
-      image: "img/academics/point3.jpg",
+      image: "/img/academics/point3.jpg",
       title: "Holistic Growth",
       description: "Sports, arts, and community initiatives develop discipline, teamwork, and leadership skills."
     }

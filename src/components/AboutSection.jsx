@@ -64,7 +64,7 @@ const AboutSection = () => {
           <div ref={imageRef} className="about-right-section">
             <div className="about-image-container">
               <img 
-                src="img/about/first_pic.jpg" 
+                src="/img/about/first_pic.jpg" 
                 alt="TIGWS Siliguri campus building showcasing modern architecture and green surroundings" 
                 className="about-image parallax-image"
                 loading="lazy"

@@ -11,25 +11,25 @@ const cardData = [
     icon: 'fas fa-school',
     title: 'World-Class Infrastructure',
     description: 'Our state-of-the-art campus features modern classrooms, advanced laboratories, well-equipped libraries, and comprehensive sports facilities.',
-    image: 'img/about/world_class_infrastructure.jpg'
+    image: '/img/about/world_class_infrastructure.jpg'
   },
   {
     icon: 'fas fa-trophy',
     title: 'Academic Excellence',
     description: 'Our students consistently achieve outstanding results in national and international examinations, reflecting our commitment to academic excellence and holistic development.',
-    image: 'img/about/academic_excellence.jpg'
+    image: '/img/about/academic_excellence.jpg'
   },
   {
     icon: 'fas fa-heart',
     title: 'Holistic Development',
     description: 'We focus on nurturing every aspect of a student\'s personality - intellectual, emotional, physical, and social development through comprehensive programs and activities.',
-    image: 'img/about/holistic_development.jpg'
+    image: '/img/about/holistic_development.jpg'
   },
   {
     icon: 'fas fa-globe',
     title: 'Global Standards',
     description: 'Our curriculum follows international standards while maintaining strong roots in Indian values and culture, preparing students for global opportunities.',
-    image: 'img/about/global_standards.jpg'
+    image: '/img/about/global_standards.jpg'
   }
 ];
 
@@ -136,7 +136,7 @@ const About = () => {
       <section 
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
-          backgroundImage: 'url(img/banner_images/page_banner.jpg)',
+          backgroundImage: 'url(/img/banner_images/page_banner.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -378,7 +378,7 @@ const About = () => {
             <div className="col-lg-6 col-12">
               <div className="card h-100" style={{ backgroundColor: 'white', border: 'none', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 25px rgba(0,0,0,0.15)' }}>
                 <img 
-                  src="img/gallery/image_5.jpg"
+                  src="/img/gallery/image_5.jpg"
                   alt="Shaping Futures"
                   className="img-fluid"
                   style={{ width: '100%', height: '538px', objectFit: 'cover', minHeight: '400px' ,maxHeight: '538spx'}}
@@ -424,7 +424,7 @@ const About = () => {
                   }}
                 >
                   <img 
-                    src="img/campuses/tigws-malda.jpg" 
+                    src="/img/campuses/tigws-malda.jpg" 
                     alt="Campus Image"
                     className="img-fluid"
                     style={{ transition: 'transform 0.6s ease' }}
@@ -516,7 +516,7 @@ const About = () => {
                   }}
                 >
                   <img 
-                    src="img/campuses/tigws-malda.jpg" 
+                    src="/img/campuses/tigws-malda.jpg" 
                     alt="Campus Image"
                     className="img-fluid"
                     style={{ transition: 'transform 0.6s ease' }}

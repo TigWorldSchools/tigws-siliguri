@@ -91,7 +91,7 @@ const Gallery = () => {
         className="gallery-pg-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(img/banner_images/page_banner.jpg)",
+            "url(/img/banner_images/page_banner.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

@@ -29,7 +29,7 @@ const Criteria = () => {
       <section
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
-          backgroundImage: "url(img/banner_images/page_banner.jpg)",
+          backgroundImage: "url(/img/banner_images/page_banner.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "400px",
@@ -78,7 +78,7 @@ const Criteria = () => {
             </div>
             <div className="col-lg-6 col-12 order-lg-2 order-2 text-center mb-4">
               <img 
-                src="img/gallery/image_3.jpg" 
+                src="/img/gallery/image_3.jpg" 
                 alt="Coming Soon" 
                 className="img-fluid"
                 style={{ maxWidth: "400px", borderRadius: "15px" }}

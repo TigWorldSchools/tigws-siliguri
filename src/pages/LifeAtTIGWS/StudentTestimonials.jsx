@@ -63,7 +63,7 @@ const StudentTestimonials = () => {
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(img/banner_images/page_banner.jpg)",
+            "url(/img/banner_images/page_banner.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -131,7 +131,7 @@ const StudentTestimonials = () => {
                           <span>{t.designation}</span>
                         </div>
                         <div className="quote">
-                          <img src="img/principal/quote.png" alt="quote" />
+                          <img src="/img/principal/quote.png" alt="quote" />
                         </div>
                       </div>
                     </SwiperSlide>

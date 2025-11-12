@@ -195,7 +195,7 @@ const MandatorySection = () => {
       <section
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
-          backgroundImage: "url(img/banner_images/page_banner.jpg)",
+          backgroundImage: "url(/img/banner_images/page_banner.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

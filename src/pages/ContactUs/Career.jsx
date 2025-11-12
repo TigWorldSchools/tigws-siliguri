@@ -45,7 +45,7 @@ const Career = () => {
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(img/banner_images/career_banner.jpg)",
+            "url(/img/banner_images/career_banner.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -99,28 +99,28 @@ const Career = () => {
           <Row className="align-items-center gy-5 text-center">
             <Col xs={12} sm={6} md={3}>
               <img
-                src="img/career/image_1.jpg"
+                src="/img/career/image_1.jpg"
                 alt="Meeting notes"
                 className="img-fluid"
               />
             </Col>
             <Col xs={12} sm={6} md={3} className="offset-up">
               <img
-                src="img/career/image_2.jpg"
+                src="/img/career/image_2.jpg"
                 alt="Team discussion"
                 className="img-fluid"
               />
             </Col>
             <Col xs={12} sm={6} md={3}>
               <img
-                src="img/career/image_3.jpg"
+                src="/img/career/image_3.jpg"
                 alt="Presentation"
                 className="img-fluid"
               />
             </Col>
             <Col xs={12} sm={6} md={3} className="offset-up">
               <img
-                src="img/career/image_4.jpg"
+                src="/img/career/image_4.jpg"
                 alt="Success ladder"
                 className="img-fluid"
               />

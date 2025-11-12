@@ -13,7 +13,7 @@ const MissionSection = memo(() => {
       <div className="mission-container">
         <div className="mission-left">
           <img
-            src="img/about/mission_vision.jpg"
+            src="/img/about/mission_vision.jpg"
             alt="TIGWS Admission"
             className="mission-image"
           />

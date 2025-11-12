@@ -4,6 +4,21 @@
   "assets": {
     "directory": "./build",
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "single-page-application"
+    "not_found_handling": "single-page-application",
+    "serve_directly": [
+      "*.js",
+      "*.css",
+      "*.png",
+      "*.jpg",
+      "*.jpeg",
+      "*.gif",
+      "*.svg",
+      "*.ico",
+      "*.mp4",
+      "*.pdf",
+      "*.txt",
+      "*.xml",
+      "*.json"
+    ]
   }
 }

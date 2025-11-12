@@ -53,7 +53,7 @@ const Header = ({ onOpenModal }) => {
 
   return (
     <HeaderNav 
-      logoUrl="img/logo/tigws_siliguri_logo.png"
+      logoUrl="/img/logo/tigws_siliguri_logo.png"
       linkUrl="https://tigws-demo.tigps.in/"
       altText="TIGWS"
       menuItems={menuItems}
