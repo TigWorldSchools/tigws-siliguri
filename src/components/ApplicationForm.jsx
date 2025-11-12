@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ApplicationForm.css';
 import SuccessPopup from './SuccessPopup';
+import { submitToGoogleSheets, createMailtoLink } from '../utils/googleSheets';
 
 const ApplicationForm = () => {
   const [formData, setFormData] = useState({
@@ -61,20 +62,50 @@ const ApplicationForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setShowSuccessPopup(true);
-    setFormData({
-      parentName: '',
-      studentName: '',
-      phone: '',
-      email: '',
-      grade: '',
-      city: ''
-    });
-    setCompletedFields({});
+    try {
+      // Submit to Google Sheets
+      const result = await submitToGoogleSheets(formData);
+      
+      setShowSuccessPopup(true);
+      setFormData({
+        parentName: '',
+        studentName: '',
+        phone: '',
+        email: '',
+        grade: '',
+        city: ''
+      });
+      setCompletedFields({});
+      
+      // Log submission method for debugging
+      console.log('Form submitted via:', result.method);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      
+      // Offer mailto fallback
+      const userWantsEmail = window.confirm(
+        'There was an error submitting your form online. Would you like to send it via email instead?'
+      );
+      
+      if (userWantsEmail) {
+        const mailtoLink = createMailtoLink(formData);
+        window.location.href = mailtoLink;
+        
+        // Still show success popup since user chose email option
+        setShowSuccessPopup(true);
+        setFormData({
+          parentName: '',
+          studentName: '',
+          phone: '',
+          email: '',
+          grade: '',
+          city: ''
+        });
+        setCompletedFields({});
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleCloseSuccessPopup = () => {

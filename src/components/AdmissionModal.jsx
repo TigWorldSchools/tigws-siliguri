@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './AdmissionModal.css';
+import { submitToGoogleSheets, createMailtoLink } from '../utils/googleSheets';
 
 const AdmissionModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -66,28 +67,67 @@ const AdmissionModal = ({ isOpen, onClose }) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    
-    // Show success message
-    setShowSuccess(true);
-    
-    // Reset form after delay
-    setTimeout(() => {
-      setFormData({
-        parentName: '',
-        studentName: '',
-        phone: '',
-        email: '',
-        grade: '',
-        city: ''
+    try {
+      // Submit to Google Sheets with modal source
+      const result = await submitToGoogleSheets({
+        ...formData,
+        source: 'TIGWS Modal Enquiry'
       });
-      setCompletedFields({});
-      setShowSuccess(false);
-      onClose();
-    }, 3000);
+      
+      // Show success message
+      setShowSuccess(true);
+      
+      // Reset form after delay
+      setTimeout(() => {
+        setFormData({
+          parentName: '',
+          studentName: '',
+          phone: '',
+          email: '',
+          grade: '',
+          city: ''
+        });
+        setCompletedFields({});
+        setShowSuccess(false);
+        onClose();
+      }, 3000);
+      
+      // Log submission method for debugging
+      console.log('Modal form submitted via:', result.method);
+    } catch (error) {
+      console.error('Modal form submission error:', error);
+      
+      // Offer mailto fallback
+      const userWantsEmail = window.confirm(
+        'There was an error submitting your enquiry online. Would you like to send it via email instead?'
+      );
+      
+      if (userWantsEmail) {
+        const mailtoLink = createMailtoLink({
+          ...formData,
+          source: 'TIGWS Modal Enquiry'
+        });
+        window.location.href = mailtoLink;
+        
+        // Still show success popup since user chose email option
+        setShowSuccess(true);
+        setTimeout(() => {
+          setFormData({
+            parentName: '',
+            studentName: '',
+            phone: '',
+            email: '',
+            grade: '',
+            city: ''
+          });
+          setCompletedFields({});
+          setShowSuccess(false);
+          onClose();
+        }, 3000);
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   console.log('Modal render - isOpen:', isOpen);
