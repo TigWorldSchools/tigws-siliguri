@@ -29,10 +29,9 @@
     // Save the requested path so we can restore it after injecting index.html
     var originalPath = location.pathname + location.search + location.hash;
 
-    // If the user actually requested index.html directly, go to root instead (avoids loop)
-    if (originalPath === '/index.html' || originalPath === '/') {
-      // show friendly message and stop
-      document.getElementById('status').querySelector('h1').textContent = 'Page not found';
+    // If the user actually requested index.html directly, avoid infinite loop
+    if (originalPath === '/index.html') {
+      location.replace('/');
       return;
     }
 
