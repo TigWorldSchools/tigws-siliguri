@@ -119,6 +119,21 @@
   display: none;
 }
 
+/* MacBook Air and laptop screens */
+@media (max-width: 1366px) and (min-width: 993px) {
+  .mission-left {
+    height: 647px;
+  }
+  
+  .mission-right {
+    height: 647px;
+  }
+  
+  .mission-card {
+    height: calc(33.33% - 5px);
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .mission-container {
