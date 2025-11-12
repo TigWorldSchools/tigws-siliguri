@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MainHeader from '../components/MainHeader.jsx';
 import MainFooter from '../components/MainFooter.jsx';
+import AdmissionModal from '../components/AdmissionModal.jsx';
 
 const MainLayout = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,6 +21,10 @@ const MainLayout = ({ children }) => {
         {children}
       </main>
       <MainFooter />
+      <AdmissionModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal} 
+      />
     </div>
   );
 };
