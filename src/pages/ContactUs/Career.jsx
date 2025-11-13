@@ -131,7 +131,7 @@ const Career = () => {
 
       {/* ===== Career Form Section ===== */}
       <div className="career-form text-center py-5">
-        <h2>Discover opportunity with us</h2>
+        <h2>Discover Opportunities With Us</h2>
 
         {/* Step 1 */}
         {step === 1 && (

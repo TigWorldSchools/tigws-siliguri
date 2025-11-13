@@ -42,7 +42,7 @@ const FounderSection = () => {
             <p className="founder-perspective-text">
               I envision a future where our students not only excel academically but also grow into 
               compassionate, visionary, and resilient individuals who will make a positive impact on 
-              their communities and beyond. Together, we embark on a journey of transformation– nurturing 
+              their communities and beyond. Together, we embark on a journey of transformation – nurturing 
               brilliance, and fostering a world of strong and empowered women who will shape the future not 
               only in India, but throughout the world!
             </p>
@@ -59,7 +59,7 @@ const FounderSection = () => {
             <div className="founder-details">
               <h4 className="founder-name">Sri Satyam Roychowdhury</h4>
               <p className="founder-designation">Founder & Managing Director Techno India Group</p>
-              <p className="founder-designation">Chancellor Sister Nivedita University</p>
+              <p className="founder-designation">Chancellor <br />Sister Nivedita University</p>
             </div>
           </div>
         </div>

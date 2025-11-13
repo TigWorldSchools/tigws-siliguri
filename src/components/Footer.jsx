@@ -13,10 +13,11 @@ const Footer = () => {
     window.footerInView = footerInView;
   }, [footerInView]);
   const quickLinks = [
-    { label: 'Admission', url: '/admission-criteria' },
-    { label: 'Life at TIGWS', url: '/life-at-tigws' },
-    { label: 'Academics', url: '/curriculum' },
-    { label: 'Careers', url: '/career' }
+    { label: 'Admission', url: '/siliguri/admission-criteria' },
+    { label: 'Life at TIGWS', url: '/siliguri/life-at-tigws' },
+    { label: 'Academics', url: '/siliguri/curriculum' },
+    { label: 'Campuses', url: '/siliguri/about#other-campuses' },
+    { label: 'Careers', url: '/siliguri/career' }
   ];
 
   const socialLinks = [
