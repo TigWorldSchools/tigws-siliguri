@@ -10,6 +10,11 @@ const Career = () => {
   const fullText = "Join Our Team";
 
   useEffect(() => {
+    // Force scroll to top when Career page loads
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  useEffect(() => {
     const chars = fullText.split("");
     let index = 0;
     const typingInterval = setInterval(() => {
