@@ -47,7 +47,7 @@ const StickyFooter = () => {
             <i className="fas fa-times"></i>
           </button>
           <div className="sticky-footer-content">
-            <span className="sticky-footer-text">Let's secure your child's future with us</span>
+            <span className="sticky-footer-text">Let's secure your child's future</span>
             <div className="arrow-animation">➤</div>
             <div className="sticky-footer-contacts">
               <a href="tel:9733018000" className="sticky-footer-contact-item pulse-phone">

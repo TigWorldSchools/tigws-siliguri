@@ -15,7 +15,7 @@ const MainFooter = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <div className="sticky-footer-content">
-          <span className="sticky-footer-text">Let's secure your child's future with us</span>
+          <span className="sticky-footer-text">Let's secure your child's future</span>
           <div className="arrow-animation">➤</div>
           <div className="sticky-footer-contacts">
             <a href="mailto:info@tigworldschool.in" className="sticky-footer-contact-item pulse-email">

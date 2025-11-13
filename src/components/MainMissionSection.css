@@ -83,19 +83,41 @@
   gap: 15px;
 }
 
-/* MacBook Air and laptop screens */
-@media (max-width: 1366px) and (min-width: 993px) {
+/* MacBook Air specific resolution */
+@media (max-width: 1440px) and (min-width: 993px) {
   .main-mission .mission-left {
-    height: 647px;
+    height: 645px;
+    justify-content: space-between;
+  }
+  
+  .main-mission .mission-image:first-child {
+    height: 210px;
+  }
+  
+  .main-mission .mission-image:last-child {
+    height: 427px;
   }
   
   .main-mission .mission-right {
-    height: 647px !important;
+    height: 645px !important;
+    justify-content: space-between;
   }
   
   .main-mission .mission-card {
-    height: calc(33.33% - 5px);
-    min-height: 200px;
+    height: 210px;
+    min-height: 210px;
+    justify-content: center;
+  }
+  
+  .main-mission .mission-card:nth-child(2),
+  .main-mission .mission-card:nth-child(3) {
+    height: 205px;
+    min-height: 205px;
+  }
+  
+  .main-mission .card-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 }
 
