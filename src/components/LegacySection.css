@@ -10,6 +10,7 @@
 }
 
 .legacy-title {
+    font-family: 'Lora', serif !important;
     color: #C3AB6B;
     font-size: 2.5rem;
     font-weight: 700;
@@ -148,6 +149,7 @@
 }
 
 .timeline-year {
+  font-family: 'Lora', serif !important;
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
@@ -155,6 +157,7 @@
 }
 
 .timeline-description {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 0.9rem;
   line-height: 1.5;
   color: white;

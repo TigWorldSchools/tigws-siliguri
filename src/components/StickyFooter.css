@@ -54,6 +54,7 @@
 }
 
 .sticky-footer-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1rem;
   font-weight: 500;
   color: rgb(0, 24, 69);
@@ -132,6 +133,7 @@
 }
 
 .sticky-footer-contact-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1rem;
   font-weight: 600;
   color: rgb(0, 24, 69);

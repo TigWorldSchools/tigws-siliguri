@@ -9,6 +9,7 @@
   margin: 0 auto;
 }
 .founder-title {
+  font-family: 'Lora', serif !important;
   font-size: 2.5rem;
   font-weight: 700;
   color: #C3AB6B;  /* Changed from white to golden */
@@ -68,6 +69,7 @@
 }
 
 .founder-perspective-title {
+  font-family: 'Lora', serif !important;
   font-size: 2.5rem;         /* match AboutSection title */
   font-weight: 700;
   margin: 0 0 18px 0;
@@ -79,6 +81,7 @@
   transition: none;
 }
 .founder-quotes {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1.2rem;         /* match AboutSection body */
   line-height: 1.8;
   color: #ffffff;
@@ -89,6 +92,7 @@
 
 }
 .founder-perspective-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1.2rem;         /* match AboutSection body */
   line-height: 1.8;
   color: #ffffff;

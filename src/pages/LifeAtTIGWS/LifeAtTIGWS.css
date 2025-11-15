@@ -1,7 +1,7 @@
 .life-section {
   background: #fff;
   color: #0d1b2a;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif !important;
 }
 .life-card {
   background-color: #f1f3f6;

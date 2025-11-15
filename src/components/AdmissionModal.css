@@ -37,6 +37,7 @@
 }
 
 .modal-title {
+  font-family: 'Lora', serif !important;
   font-size: 1.8rem;
   font-weight: 700;
   color: rgb(0, 24, 69);
@@ -109,6 +110,7 @@
 
 .expanding-input,
 .expanding-textarea {
+  font-family: 'Roboto', sans-serif !important;
   width: 100%;
   padding: 16px;
   border: 2px solid rgb(0, 24, 69);
@@ -117,7 +119,6 @@
   background: #f8f9fa;
   transition: all 0.3s ease;
   outline: none;
-  font-family: inherit;
 }
 
 .expanding-input:focus,
@@ -156,6 +157,7 @@
 }
 
 .submit-btn {
+  font-family: sans-serif !important;
   background: #C3AB6B;
   color: rgb(0, 24, 69);
   border: 2px solid rgb(0, 24, 69);

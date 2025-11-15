@@ -10,6 +10,7 @@
 }
 
 .application-title {
+  font-family: 'Lora', serif !important;
   font-size: 2.5rem;
   font-weight: 700;
   color: #C3AB6B;
@@ -95,6 +96,7 @@
 }
 
 .form-title {
+  font-family: 'Lora', serif !important;
   font-size: 2rem;
   font-weight: 600;
   color: #d4af37;
@@ -145,6 +147,7 @@
 
 .expanding-input,
 .expanding-textarea {
+  font-family: 'Roboto', sans-serif !important;
   width: 100%;
   min-width: 200px;
   padding: 16px;
@@ -154,7 +157,6 @@
   background: #f8f9fa;
   transition: all 0.3s ease;
   outline: none;
-  font-family: inherit;
 }
 
 .form-row .expanding-input {
@@ -238,6 +240,7 @@
 }
 
 .hero-cta {
+  font-family: sans-serif !important;
   background: white;
   color: rgb(0, 24, 69);
   border: 2px solid transparent;

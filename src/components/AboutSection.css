@@ -14,6 +14,7 @@
 }
 
 .about-section .about-title {
+  font-family: 'Lora', serif !important;
   font-size: 2.5rem;
   font-weight: 700;
   color: #C3AB6B;
@@ -80,6 +81,7 @@
 }
 
 .about-section .about-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1.2rem;
   line-height: 1.8;
   color: white;
@@ -93,6 +95,7 @@
 
 
 .about-cta {
+  font-family: sans-serif !important;
   background: white;
   color: rgb(0, 24, 69);
   border: 2px solid transparent;

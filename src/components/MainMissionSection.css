@@ -47,6 +47,7 @@
 }
 
 .main-mission .card-title {
+  font-family: 'Lora', serif !important;
   color: #C3AB6B;
   font-size: 1.3rem;
   margin-top: 0;
@@ -58,6 +59,7 @@
 }
 
 .main-mission .card-text {
+  font-family: 'Roboto', sans-serif !important;
   color: rgb(0, 24, 69);
   font-size: 0.95rem;
   line-height: 1.5;
