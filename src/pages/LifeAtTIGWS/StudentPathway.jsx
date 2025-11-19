@@ -173,19 +173,8 @@ const StudentPathway = () => {
         </div>
       </section>    
       <section className="life-section py-5" id="lifeattigws">
-        <div className="container">
-          <div className="row">
-            <div className="rts-research-section__content text-left">
-              <p className="title-description">
-                Embarking on the frontiers of knowledge, Medicine Research is a
-                dynamic and groundbreaking endeavor dedicated to unraveling the
-                mysteries of health and disease. At the innovation and
-                compassionate care, researchers in medicine tirelessly explore,
-                question, and innovate to shape the future of healthcare.
-              </p>
-            </div>
-          </div>         
-          <div className="student-pathway mt-5" id="studentPathway" ref={pathwayRef}>
+        <div className="container">         
+          <div className="student-pathway" id="studentPathway" ref={pathwayRef}>
             {stepsData.map((step, index) => (
               <div
                 className={`step ${index === 0 ? "active" : ""}`}

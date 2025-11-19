@@ -154,20 +154,20 @@ const Curriculum = () => {
                   WACE Curriculum
                 </h3>
                 <p className="curriculum-text">
-                  We are proud to offer a NEP-aligned CBSE curriculum alongside the Australian
+                  We are proud to offer a NEP aligned CBSE curriculum alongside the Australian
                   WACE Programme, forging a global academic bridge between Eastern roots and
-                  Western aspirations — empowering students to dream bigger and reach farther.
+                  Western aspirations, empowering students to dream bigger and reach farther.
 
                 </p>
                 <p className="curriculum-text">
                   Our limited screen time policy helps instill digital discipline, focus, and
-                  creativity — ensuring girls grow up healthy, balanced, and confident.
-                  We don't just educate — we inspire girls to lead, innovate, and make a difference
+                  creativity, ensuring girls grow up healthy, balanced, and confident.
+                  We don't just educate, we inspire girls to lead, innovate, and make a difference
                   in the world.
 
                 </p>
                 <p className="curriculum-text">
-                  We celebrate diversity, encourage cross-cultural dialogue, and prepare students to
+                  We celebrate diversity, encourage cross cultural dialogue, and prepare students to
                   become ethical leaders in a changing world.
                 </p>
               </div>
