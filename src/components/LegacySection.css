@@ -272,7 +272,7 @@
   .timeline-line {
     left: 15px !important;
     top: 20px !important;
-    height: calc(99% - 140px) !important;
+    height: calc(98% - 140px) !important;
   }
   
   .timeline-dot {
