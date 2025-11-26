@@ -5,6 +5,40 @@
   box-sizing: border-box;
 }
 
+/* Typography System */
+/* Headings and Titles - Lora Serif */
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.about-title,
+.section-title,
+.card-title,
+.mission-title,
+.campus-name {
+  font-family: 'Lora', serif !important;
+}
+
+/* Body Text - Roboto */
+body,
+p,
+.about-text,
+.card-text,
+.mission-text,
+.campus-description,
+.sticky-footer-text,
+.sticky-footer-contact-text {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* CTA Text - Sans Serif */
+.hero-cta,
+.about-cta,
+.btn-apply-now,
+.header-apply-btn,
+button,
+.cta-button {
+  font-family: sans-serif !important;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -263,7 +297,7 @@ img, video {
 .navigation__menu--item__link {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   font-size: 14px;
   font-weight: 600;
   height: 50px;
@@ -875,6 +909,7 @@ img, video {
 }
 
 .btn-apply-now {
+  font-family: sans-serif !important;
   background: #ffd700;
   color: #1a237e;
   border: none;
@@ -965,6 +1000,7 @@ img, video {
 }
 
 .hero-title {
+  font-family: 'Lora', serif !important;
   font-size: 3.2rem;
   font-weight: 600;
   margin-bottom: 30px;
@@ -973,6 +1009,7 @@ img, video {
 }
 
 .hero-cta {
+  font-family: sans-serif !important;
   background: white;
   color: rgb(0, 24, 69);
   border: 2px solid transparent;

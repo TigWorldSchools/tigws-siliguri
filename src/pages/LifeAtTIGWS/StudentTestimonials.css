@@ -19,6 +19,7 @@
 }
 
 .testimonials .left h2 {
+  font-family: 'Lora', serif !important;
   font-size: 2.5rem;
   font-weight: 700;
   color: #C3AB6B;
@@ -26,6 +27,7 @@
 }
 
 .testimonials .left p {
+  font-family: 'Roboto', sans-serif !important;
   color: #ffffff;
   margin-bottom: 40px;
   max-width: 420px;
@@ -78,6 +80,7 @@
 }
 
 .testimonials .testimonial-card .text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1rem;
   color: #222;
   line-height: 1.6;

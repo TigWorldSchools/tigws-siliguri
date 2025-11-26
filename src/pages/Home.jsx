@@ -53,7 +53,7 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
           <div className="hero-content">
-            <h1 className="hero-title">Welcome to<br />Techno India Group World School</h1>
+            <h1 className="hero-title">Empowering Young Women with<br/> Global Perspectives</h1>
             <button className="hero-cta" onClick={handleCtaClick} aria-label="Open admission enquiry form for 2026-2027">
               Admission Enquiry 2026-2027
               <i className="fas fa-arrow-right hero-arrow" aria-hidden="true"></i>

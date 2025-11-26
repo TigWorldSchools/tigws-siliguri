@@ -123,7 +123,7 @@ const Curriculum = () => {
                 <h3 className="curriculum-title" style={{ color: "#C3AB6B" }}>
                   CBSE Curriculum
                 </h3>
-                <p  className="curriculum-text">
+                <p className="curriculum-text">
                   Techno India Group World School offers an environment that is
                   conducive to academic excellence. The curriculum encourages
                   deeper understanding of the subjects they learn. The school
@@ -154,14 +154,21 @@ const Curriculum = () => {
                   WACE Curriculum
                 </h3>
                 <p className="curriculum-text">
-                  We are proud to offer a NEP-aligned CBSE curriculum alongside
-                  the Australian WACE Programme, forging a global academic bridge
-                  between Eastern roots and Western aspirations.
+                  We are proud to offer a NEP aligned CBSE curriculum alongside the Australian
+                  WACE Programme, forging a global academic bridge between Eastern roots and
+                  Western aspirations, empowering students to dream bigger and reach farther.
+
                 </p>
                 <p className="curriculum-text">
-                  Our limited screen time policy instills digital discipline,
-                  focus, and creativity — ensuring girls grow up healthy,
-                  balanced, and confident.
+                  Our limited screen time policy helps instill digital discipline, focus, and
+                  creativity, ensuring girls grow up healthy, balanced, and confident.
+                  We don't just educate, we inspire girls to lead, innovate, and make a difference
+                  in the world.
+
+                </p>
+                <p className="curriculum-text">
+                  We celebrate diversity, encourage cross cultural dialogue, and prepare students to
+                  become ethical leaders in a changing world.
                 </p>
               </div>
             </Col>

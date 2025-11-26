@@ -110,6 +110,14 @@ section.campuses-section .about-container .about-title {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
+  cursor: default !important;
+}
+
+section.campuses-section .about-container .about-title:hover {
+  transform: none !important;
+  cursor: default !important;
 }
 
 .campuses-section .about-title {
@@ -174,6 +182,7 @@ section.campuses-section .about-container .about-title {
 }
 
 .campus-name {
+  font-family: 'Lora', serif !important;
   font-size: 1.3rem;
   font-weight: 700;
   color: rgb(0, 24, 69);
@@ -181,6 +190,7 @@ section.campuses-section .about-container .about-title {
 }
 
 .campus-description {
+  font-family: 'Roboto', sans-serif !important;
   color: #666;
   line-height: 1.6;
   margin-bottom: 1.5rem;

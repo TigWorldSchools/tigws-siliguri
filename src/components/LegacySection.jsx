@@ -29,7 +29,7 @@ const LegacySection = () => {
     },
     {
       year: "2015",
-      description: "onwards Diversified into healthcare, media, innovation, and entrepreneurship initiatives.",
+      description: "Diversified into healthcare, media, innovation, and entrepreneurship initiatives.",
       position: "top"
     },
     {

@@ -103,10 +103,10 @@ const MandatorySection = () => {
       link: "/pdf/siliguri-mpd/FEE_STRUCTURE.pdf",
     },
     { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "#" },
-    { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE(SMC)", link: "#" },
+    { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "#" },
     {
       id: 4,
-      info: "LIST OF PARENTS TEACHERS ASSOCIATION(PTA) MEMBERS",
+      info: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
       link: "#",
     },
     {

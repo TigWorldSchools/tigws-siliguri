@@ -32,6 +32,7 @@
 }
 
 .curriculum-title {
+  font-family: 'Lora', serif !important;
   color: #c3ab6b;
    font-size: 2.5rem !important;
   font-weight: 700;
@@ -40,6 +41,7 @@
   margin: 0 0 18px 0 !important;
 }
 .curriculum-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1.2rem !important;
   line-height: 1.8 !important;
   color: #ffffff !important;

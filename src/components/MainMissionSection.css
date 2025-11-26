@@ -47,6 +47,7 @@
 }
 
 .main-mission .card-title {
+  font-family: 'Lora', serif !important;
   color: #C3AB6B;
   font-size: 1.3rem;
   margin-top: 0;
@@ -58,6 +59,7 @@
 }
 
 .main-mission .card-text {
+  font-family: 'Roboto', sans-serif !important;
   color: rgb(0, 24, 69);
   font-size: 0.95rem;
   line-height: 1.5;
@@ -81,6 +83,44 @@
 .main-mission .mission-right {
   height: auto !important;
   gap: 15px;
+}
+
+/* MacBook Air specific resolution */
+@media (max-width: 1440px) and (min-width: 993px) {
+  .main-mission .mission-left {
+    height: 645px;
+    justify-content: space-between;
+  }
+  
+  .main-mission .mission-image:first-child {
+    height: 210px;
+  }
+  
+  .main-mission .mission-image:last-child {
+    height: 427px;
+  }
+  
+  .main-mission .mission-right {
+    height: 645px !important;
+    justify-content: space-between;
+  }
+  
+  .main-mission .mission-card {
+    height: 210px;
+    min-height: 210px;
+    justify-content: center;
+  }
+  
+  .main-mission .mission-card:nth-child(2),
+  .main-mission .mission-card:nth-child(3) {
+    height: 205px;
+    min-height: 205px;
+  }
+  
+  .main-mission .card-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
 }
 
 /* Responsive adjustments */

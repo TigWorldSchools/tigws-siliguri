@@ -75,7 +75,7 @@ const MainHeader = ({ onOpenModal }) => {
       <div className="header__wrapper">
         <div className="header__logo">
           <div onClick={() => scrollToSection('hero')} className="header__logo--link" style={{ cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}>
-            <img src="/img/logo/tigws_siliguri_logo.png" alt="TIGWS" />
+            <img src="/img/logo/tigws_logo.png" alt="TIGWS" />
           </div>
         </div>
         

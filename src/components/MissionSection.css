@@ -28,6 +28,7 @@
 }
 
 .about-cta {
+  font-family: sans-serif !important;
   background: white;
   color: rgb(0, 24, 69);
   border: 2px solid transparent;
@@ -97,6 +98,7 @@
 }
 
 .card-title {
+  font-family: 'Lora', serif !important;
   color: #C3AB6B;
   font-size: 1.3rem;
   margin-top: 0;
@@ -108,6 +110,7 @@
 }
 
 .card-text {
+  font-family: 'Roboto', sans-serif !important;
   color: rgb(0, 24, 69);
   font-size: 1rem;
   line-height: 1.6;
@@ -117,6 +120,21 @@
 
 .card-arrow {
   display: none;
+}
+
+/* MacBook Air and laptop screens */
+@media (max-width: 1366px) and (min-width: 993px) {
+  .mission-left {
+    height: 647px;
+  }
+  
+  .mission-right {
+    height: 647px;
+  }
+  
+  .mission-card {
+    height: calc(33.33% - 5px);
+  }
 }
 
 /* Responsive Design */

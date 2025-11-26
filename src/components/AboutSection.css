@@ -14,6 +14,7 @@
 }
 
 .about-section .about-title {
+  font-family: 'Lora', serif !important;
   font-size: 2.5rem;
   font-weight: 700;
   color: #C3AB6B;
@@ -28,6 +29,17 @@
 
 .about-section .about-title:hover {
   transform: translateY(-10px) scale(1.05);
+}
+
+/* Remove hover effect for campuses section title */
+.campuses-section .about-title,
+.campuses-section .about-title:hover,
+.campuses-section .about-title.animate-in,
+.campuses-section .about-title.animate-in:hover {
+  transform: none !important;
+  transition: none !important;
+  cursor: default !important;
+  pointer-events: auto !important;
 }
 
 
@@ -80,6 +92,7 @@
 }
 
 .about-section .about-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1.2rem;
   line-height: 1.8;
   color: white;
@@ -93,6 +106,7 @@
 
 
 .about-cta {
+  font-family: sans-serif !important;
   background: white;
   color: rgb(0, 24, 69);
   border: 2px solid transparent;

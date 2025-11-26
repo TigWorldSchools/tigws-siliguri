@@ -10,6 +10,7 @@
 }
 
 .legacy-title {
+    font-family: 'Lora', serif !important;
     color: #C3AB6B;
     font-size: 2.5rem;
     font-weight: 700;
@@ -133,12 +134,13 @@
   background: rgb(0, 24, 69);
   padding: 20px;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 256px;
   max-width: 250px;
   text-align: center;
   border: 2px solid #C3AB6B;
   transition: all 0.3s ease;
   cursor: pointer;
+  height: 168px;
 }
 
 
@@ -148,6 +150,7 @@
 }
 
 .timeline-year {
+  font-family: 'Lora', serif !important;
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
@@ -155,6 +158,7 @@
 }
 
 .timeline-description {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 0.9rem;
   line-height: 1.5;
   color: white;
@@ -164,7 +168,7 @@
   transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .timeline-container {
     display: block !important;
     height: auto !important;
@@ -297,4 +301,12 @@
   .timeline-description {
     font-size: 1.1rem !important;
   }
+}
+
+@media (max-width: 1500px) {
+.legacy-section {
+  padding: 80px 13vw;
+
+}
+
 }

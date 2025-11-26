@@ -48,6 +48,7 @@
 }
 
 .cta-text span {
+  font-family: sans-serif !important;
   font-size: 1rem;
   font-weight: 700;
   color: rgb(0, 24, 69);

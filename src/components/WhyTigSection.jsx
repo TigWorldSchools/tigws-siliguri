@@ -15,33 +15,33 @@ const WhyTigSection = () => {
   const features = [
     {
       image: "/img/academics/point4.jpg",
-      title: "Technology & Excellence",
-      description: "Modern digital classrooms, advanced labs, and expert educators blend innovation with inspiration."
+      title: "Empowered by Technology & Faculty Excellence",
+      description: "With modern digital classrooms, advanced laboratories, and expert educators, our campus blends innovation with inspiration. We also offer financial aid and scholarships to ensure opportunity for all deserving learners."
     },
     {
       image: "/img/academics/point5.jpg",
-      title: "Personalized Learning",
-      description: "Small class sizes and strong mentorship ensure focused academic support and emotional well-being."
+      title: "Personalized Learning & Mentorship",
+      description: "Every girl’s journey is unique. Our personalized guidance, small class sizes, and strong teacher-student ratio ensure focused academic support, career counseling, and emotional well-being at every step."
     },
     {
       image: "/img/academics/point6.jpg",
-      title: "Future-Ready Pathways",
-      description: "Skill-based learning and global exposure prepare students for top universities and careers worldwide."
+      title: "Future-Ready College & Career Pathways",
+      description: "Through skill-based learning, leadership programs, and global exposure, students gain the confidence, creativity, and competence to thrive in top universities and future careers worldwide."
     },
     {
       image: "/img/academics/point1.jpg",
-      title: "Safe & Inclusive Campus",
-      description: "24x7 care, secure facilities, and anti-bullying policies create a respectful environment for all."
+      title: "Safe, Supportive & Inclusive Campus",
+      description: "Safety of the girls is our top priority. We ensure 24x7 residential care, secure campus facilities, and an empathetic mentoring system. We nurture a respectful, inclusive environment where girls feel secure to explore and excel. We implement anti-bullying policies."
     },
     {
       image: "/img/academics/point2.jpg",
-      title: "Global Curriculum",
-      description: "Dual CBSE and Australian WACE Programme builds academic rigor and international readiness."
+      title: "Global Curriculum Advantage",
+      description: "Experience a powerful dual-curriculum system — CBSE and the Australian WACE Programme, that builds academic rigor, critical thinking, and international readiness for careers in medicine, engineering, business, design, and beyond."
     },
     {
       image: "/img/academics/point3.jpg",
-      title: "Holistic Growth",
-      description: "Sports, arts, and community initiatives develop discipline, teamwork, and leadership skills."
+      title: "Holistic Growth Beyond Academics",
+      description: "From sports and performing arts to cultural clubs and community initiatives, we celebrate every talent, helping students develop discipline, teamwork, empathy, and leadership through real-world experiences."
     }
   ];
 

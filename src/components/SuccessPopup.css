@@ -77,6 +77,7 @@
 }
 
 .success-title {
+  font-family: 'Lora', serif !important;
   font-size: 1.8rem;
   font-weight: 700;
   color: rgb(0, 24, 69);
@@ -85,6 +86,7 @@
 }
 
 .success-message {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1.1rem;
   color: #666;
   line-height: 1.6;
@@ -93,6 +95,7 @@
 }
 
 .success-close-btn {
+  font-family: sans-serif !important;
   background: linear-gradient(135deg, #d4af37, #f4d03f);
   color: white;
   border: none;

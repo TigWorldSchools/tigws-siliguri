@@ -10,6 +10,11 @@ const Career = () => {
   const fullText = "Join Our Team";
 
   useEffect(() => {
+    // Force scroll to top when Career page loads
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  useEffect(() => {
     const chars = fullText.split("");
     let index = 0;
     const typingInterval = setInterval(() => {
@@ -131,7 +136,7 @@ const Career = () => {
 
       {/* ===== Career Form Section ===== */}
       <div className="career-form text-center py-5">
-        <h2>Discover opportunity with us</h2>
+        <h2>Discover Opportunities With Us</h2>
 
         {/* Step 1 */}
         {step === 1 && (

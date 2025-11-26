@@ -54,6 +54,7 @@
 }
 
 .sticky-footer-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1rem;
   font-weight: 500;
   color: rgb(0, 24, 69);
@@ -132,6 +133,7 @@
 }
 
 .sticky-footer-contact-text {
+  font-family: 'Roboto', sans-serif !important;
   font-size: 1rem;
   font-weight: 600;
   color: rgb(0, 24, 69);
@@ -202,6 +204,54 @@
 }
 
 
+
+/* MacBook Air and laptop screens */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .sticky-footer-content {
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .sticky-footer-text {
+    font-size: 0.8rem;
+  }
+  
+  .arrow-animation {
+    font-size: 1.1rem;
+  }
+  
+  .sticky-footer-contact-item {
+    padding: 5px 10px;
+  }
+  
+  .sticky-footer-contact-text {
+    font-size: 0.8rem;
+  }
+  
+  .sticky-footer-icon {
+    font-size: 1rem;
+  }
+}
+
+/* Smaller laptop adjustments */
+@media (max-width: 1366px) and (min-width: 1200px) {
+  .sticky-footer-content {
+    gap: 20px;
+  }
+  
+  .sticky-footer-text {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  
+  .sticky-footer-contact-item {
+    padding: 6px 12px;
+  }
+  
+  .sticky-footer-contact-text {
+    font-size: 0.9rem;
+  }
+}
 
 @media (max-width: 768px) {
   .sticky-footer {

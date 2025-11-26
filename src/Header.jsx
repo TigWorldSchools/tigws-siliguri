@@ -8,7 +8,7 @@ const Header = ({ onOpenModal }) => {
       label: 'About Us', 
       url: '/siliguri/about',
       dropdown: [
-        { label: 'About Us', url: '/siliguri/about' },
+        { label: 'About TIGWS', url: '/siliguri/about' },
         { label: 'Why TIGWS', url: '/siliguri/about#why-tigws' },
         { label: 'Legacy of TIG', url: '/siliguri/about#legacy' },
         { label: 'Other Campuses', url: '/siliguri/about#other-campuses' },
