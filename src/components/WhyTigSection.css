@@ -1,7 +1,7 @@
 .why-tig-section {
   padding: 100px 20px;
   min-height: 900px;
-  background: linear-gradient(135deg, #001845 0%, #002855 100%);
+  background: rgb(0, 24, 69);
   position: relative;
   overflow: hidden;
 }

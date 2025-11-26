@@ -31,6 +31,17 @@
   transform: translateY(-10px) scale(1.05);
 }
 
+/* Remove hover effect for campuses section title */
+.campuses-section .about-title,
+.campuses-section .about-title:hover,
+.campuses-section .about-title.animate-in,
+.campuses-section .about-title.animate-in:hover {
+  transform: none !important;
+  transition: none !important;
+  cursor: default !important;
+  pointer-events: auto !important;
+}
+
 
 
 .about-section .about-title.animate-in {

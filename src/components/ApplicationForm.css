@@ -32,15 +32,8 @@
   transform: translateY(0);
 }
 
-
-
 .progress-bar {
-  width: 100%;
-  height: 4px;
-  background: #e0e0e0;
-  border-radius: 2px;
-  margin-bottom: 60px;
-  overflow: hidden;
+  display: none;
 }
 
 .progress-fill {
@@ -133,8 +126,11 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   pointer-events: none;
-  background: white;
-  padding: 0 4px;
+  background: transparent;
+  padding: 0;
+  z-index: 15;
+  display: block;
+  visibility: visible;
 }
 
 .floating-label.active {
@@ -143,6 +139,25 @@
   font-size: 0.8rem;
   color: #d4af37;
   font-weight: 500;
+  background: white;
+  padding: 0 4px;
+  z-index: 25;
+  display: block;
+  visibility: visible;
+}
+
+.expanding-input:focus:valid + .floating-label.active,
+.expanding-textarea:focus:valid + .floating-label.active,
+.expanding-input.completed + .floating-label.active,
+.expanding-textarea.completed + .floating-label.active {
+  background: #28a745;
+  color: white;
+}
+
+.expanding-input:focus:invalid + .floating-label.active,
+.expanding-textarea:focus:invalid + .floating-label.active {
+  background: #dc3545;
+  color: white;
 }
 
 .expanding-input,
@@ -157,6 +172,42 @@
   background: #f8f9fa;
   transition: all 0.3s ease;
   outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+/* Dropdown specific styles */
+select.expanding-input {
+  background: white;
+  appearance: menulist;
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  z-index: 10;
+  cursor: pointer;
+  color: transparent;
+}
+
+select.expanding-input:focus {
+  z-index: 100;
+  background: white;
+  border-color: #28a745;
+  color: rgb(0, 24, 69);
+}
+
+select.expanding-input:valid {
+  color: rgb(0, 24, 69);
+}
+
+select.expanding-input option {
+  padding: 8px 12px;
+  background: white;
+  color: rgb(0, 24, 69);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+select.expanding-input option:first-child {
+  display: none;
 }
 
 .form-row .expanding-input {
@@ -165,9 +216,19 @@
 
 .expanding-input:focus,
 .expanding-textarea:focus {
-  border-color: #d4af37;
+  border-color: #28a745;
   background: white;
   transform: scale(1.02);
+}
+
+.expanding-input:focus:valid,
+.expanding-textarea:focus:valid {
+  border-color: #28a745;
+}
+
+.expanding-input:focus:invalid,
+.expanding-textarea:focus:invalid {
+  border-color: #dc3545;
 }
 
 .expanding-input.completed {
@@ -354,6 +415,85 @@
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* MacBook Air specific adjustments */
+@media (max-width: 1440px) and (min-width: 1200px) {
+  .application-form-section {
+    max-width: 600px;
+    height: auto;
+    min-height: 500px;
+    overflow: visible;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-row .form-field {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .form-row .expanding-input {
+    width: 100%;
+    min-width: 100%;
+    min-height: 45px;
+    padding: 14px 16px;
+  }
+  
+  .ultimate-form {
+    gap: 10px;
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+    overflow: visible;
+  }
+  
+  select.expanding-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #f8f9fa;
+    color: rgb(0, 24, 69);
+  }
+}
+
+/* MacBook Air 13" specific (1366x768) */
+@media (max-width: 1366px) and (max-height: 768px) {
+  .application-form-section {
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+  }
+  
+  .ultimate-form {
+    height: auto;
+    min-height: auto;
+    gap: 8px;
+    overflow: visible;
+  }
+  
+  .form-field {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2px;
+  }
+  
+  .expanding-input {
+    min-height: 54px !important;
+    padding: 16px 16px;
+  }
+  
+  select.expanding-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #f8f9fa;
+    color: rgb(0, 24, 69);
+  }
 }
 
 @media (max-width: 768px) {
