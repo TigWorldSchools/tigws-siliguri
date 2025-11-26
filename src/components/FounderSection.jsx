@@ -57,8 +57,8 @@ const FounderSection = () => {
               />
             </div>
             <div className="founder-details">
-              <h4 className="founder-name">Sri Satyam Roychowdhury</h4>
-              <p className="founder-designation">Founder & Managing Director Techno India Group</p>
+              <h4 className="founder-name">SRI SATYAM ROYCHOWDHURY</h4>
+              <p className="founder-designation">Founder & Managing Director <br />Techno India Group</p>
               <p className="founder-designation">Chancellor <br />Sister Nivedita University</p>
             </div>
           </div>

@@ -439,98 +439,6 @@ const About = () => {
                       }}
                     >
                       <div className="text-center text-white p-4">
-                        <h3 className="mb-3" style={{ fontSize: '2rem', fontWeight: '700', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-                          TIGWS Kolkata
-                        </h3>
-                        <p style={{ fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '20px' }}>
-                          Our upcoming flagship campus in the cultural capital of India
-                        </p>
-                        <button
-                          className="hover-cta-btn"
-                          style={{
-                            background: 'white',
-                            color: 'rgb(0, 24, 69)',
-                            border: '2px solid transparent',
-                            padding: '12px 25px',
-                            fontSize: '14px',
-                            fontWeight: '700',
-                            borderRadius: '8px',
-                            cursor: 'pointer',
-                            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                            textShadow: 'none',
-                            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
-                            position: 'relative',
-                            overflow: 'hidden',
-                            textTransform: 'uppercase',
-                            animation: 'floatingCta 3s ease-in-out infinite',
-                            textDecoration: 'none',
-                            display: 'inline-block'
-                          }}
-                          onMouseEnter={(e) => {
-                            e.target.style.background = 'linear-gradient(135deg, rgb(163, 145, 97), rgb(183, 165, 117))';
-                            e.target.style.color = 'white';
-                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
-                            e.target.style.boxShadow = '0 8px 25px rgba(163, 145, 97, 0.4)';
-                            e.target.style.textShadow = '0 2px 8px rgba(0, 0, 0, 0.3)';
-                            e.target.style.borderColor = 'rgba(163, 145, 97, 0.8)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.target.style.background = 'white';
-                            e.target.style.color = 'rgb(0, 24, 69)';
-                            e.target.style.transform = 'scale(1) translateY(0)';
-                            e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
-                            e.target.style.textShadow = 'none';
-                            e.target.style.borderColor = 'transparent';
-                          }}
-                          onMouseDown={(e) => {
-                            e.target.style.transform = 'scale(0.98)';
-                          }}
-                          onMouseUp={(e) => {
-                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
-                          }}
-                        >
-                          Coming Soon
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-5 col-md-6 col-12">
-                  <div
-                    className="position-relative overflow-hidden"
-                    style={{ borderRadius: '15px', cursor: 'pointer' }}
-                    onMouseEnter={(e) => {
-                      const overlay = e.currentTarget.querySelector('.hover-overlay');
-                      const img = e.currentTarget.querySelector('img');
-                      overlay.style.opacity = '1';
-                      overlay.style.transform = 'translateY(0%)';
-                      img.style.transform = 'scale(1.1)';
-                    }}
-                    onMouseLeave={(e) => {
-                      const overlay = e.currentTarget.querySelector('.hover-overlay');
-                      const img = e.currentTarget.querySelector('img');
-                      overlay.style.opacity = '0';
-                      overlay.style.transform = 'translateY(100%)';
-                      img.style.transform = 'scale(1)';
-                    }}
-                  >
-                    <img
-                      src="/img/campuses/tigws-malda.jpg"
-                      alt="Campus Image"
-                      className="img-fluid"
-                      style={{ transition: 'transform 0.6s ease' }}
-                    />
-                    <div
-                      className="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                      style={{
-                        background: 'linear-gradient(135deg, rgba(195,171,107,0.9), rgba(0,24,69,0.9))',
-                        opacity: 0,
-                        transform: 'translateY(100%)',
-                        transition: 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-                      }}
-                    >
-                      <div className="text-center text-white p-4">
                         <h3 className="mb-3" style={{ fontSize: '1.8rem', fontWeight: '700', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
                           TIGWS Malda
                         </h3>
@@ -587,6 +495,97 @@ const About = () => {
                           }}
                         >
                           Visit Campus
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-5 col-md-6 col-12">
+                  <div
+                    className="position-relative overflow-hidden"
+                    style={{ borderRadius: '15px', cursor: 'pointer' }}
+                    onMouseEnter={(e) => {
+                      const overlay = e.currentTarget.querySelector('.hover-overlay');
+                      const img = e.currentTarget.querySelector('img');
+                      overlay.style.opacity = '1';
+                      overlay.style.transform = 'translateY(0%)';
+                      img.style.transform = 'scale(1.1)';
+                    }}
+                    onMouseLeave={(e) => {
+                      const overlay = e.currentTarget.querySelector('.hover-overlay');
+                      const img = e.currentTarget.querySelector('img');
+                      overlay.style.opacity = '0';
+                      overlay.style.transform = 'translateY(100%)';
+                      img.style.transform = 'scale(1)';
+                    }}
+                  >
+                    <img
+                      src="/img/campuses/tigws-malda.jpg"
+                      alt="Campus Image"
+                      className="img-fluid"
+                      style={{ transition: 'transform 0.6s ease' }}
+                    />
+                    <div
+                      className="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                      style={{
+                        background: 'linear-gradient(135deg, rgba(195,171,107,0.9), rgba(0,24,69,0.9))',
+                        opacity: 0,
+                        transform: 'translateY(100%)',
+                        transition: 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+                      }}
+                    >
+                      <div className="text-center text-white p-4">
+                        <h3 className="mb-3" style={{ fontSize: '2rem', fontWeight: '700', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+                          TIGWS Kolkata
+                        </h3>
+                        <p style={{ fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '20px' }}>
+                          Our upcoming flagship campus in the cultural capital of India
+                        </p>
+                        <button
+                          className="hover-cta-btn"
+                          style={{
+                            background: 'white',
+                            color: 'rgb(0, 24, 69)',
+                            border: '2px solid transparent',
+                            padding: '12px 25px',
+                            fontSize: '14px',
+                            fontWeight: '700',
+                            borderRadius: '8px',
+                            cursor: 'pointer',
+                            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                            textShadow: 'none',
+                            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+                            position: 'relative',
+                            overflow: 'hidden',
+                            textTransform: 'uppercase',
+                            animation: 'floatingCta 3s ease-in-out infinite',
+                            textDecoration: 'none',
+                            display: 'inline-block'
+                          }}
+                          onMouseEnter={(e) => {
+                            e.target.style.background = 'linear-gradient(135deg, rgb(163, 145, 97), rgb(183, 165, 117))';
+                            e.target.style.color = 'white';
+                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
+                            e.target.style.boxShadow = '0 8px 25px rgba(163, 145, 97, 0.4)';
+                            e.target.style.textShadow = '0 2px 8px rgba(0, 0, 0, 0.3)';
+                            e.target.style.borderColor = 'rgba(163, 145, 97, 0.8)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.target.style.background = 'white';
+                            e.target.style.color = 'rgb(0, 24, 69)';
+                            e.target.style.transform = 'scale(1) translateY(0)';
+                            e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+                            e.target.style.textShadow = 'none';
+                            e.target.style.borderColor = 'transparent';
+                          }}
+                          onMouseDown={(e) => {
+                            e.target.style.transform = 'scale(0.98)';
+                          }}
+                          onMouseUp={(e) => {
+                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
+                          }}
+                        >
+                          Coming Soon
                         </button>
                       </div>
                     </div>

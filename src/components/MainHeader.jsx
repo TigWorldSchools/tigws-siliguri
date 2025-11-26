@@ -56,8 +56,8 @@ const MainHeader = ({ onOpenModal }) => {
       label: 'Campuses', 
       action: () => scrollToSection('campuses'),
       dropdown: [
-        { label: 'TIGWS Malda', url: '#' },
         { label: 'TIGWS Siliguri', url: '/siliguri' },
+        { label: 'TIGWS Malda', url: '#' },
         { label: 'TIGWS Kolkata', url: '#' }
       ]
     },

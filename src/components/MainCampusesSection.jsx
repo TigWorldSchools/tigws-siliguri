@@ -3,19 +3,19 @@ import './AboutSection.css';
 import './MainFooter.css';
 
 const MainCampusesSection = () => {
-  const campuses = [
-    {
-      name: 'TIGWS Malda',
-      description: 'Our established campus in Malda offers world-class education with modern facilities.',
-      image: '/img/campuses/tigws-malda.jpg',
-      url: '#',
-      cta: 'Explore Campus'
-    },
+  const campuses = [ 
     {
       name: 'TIGWS Siliguri',
       description: 'Eastern India\'s premier all-girls residential school launching soon in Siliguri.',
       image: '/img/about/first_pic.jpg',
       url: '/siliguri',
+      cta: 'Explore Campus'
+    },
+    {
+      name: 'TIGWS Malda',
+      description: 'Our established campus in Malda offers world-class education with modern facilities.',
+      image: '/img/campuses/tigws-malda.jpg',
+      url: '#',
       cta: 'Explore Campus'
     },
     {
