@@ -24,7 +24,7 @@ const MissionSection = memo(() => {
             <div className="card-content">
               <h3 className="card-title">Our Mission</h3>
               <p className="card-text">
-                To empower every girl to become a confident, independent, and empathetic global citizen by fostering academic excellence, emotional intelligence, and social responsibility...
+                To empower every girl to become a confident, independent, and empathetic global citizen by fostering academic excellence, emotional intelligence, and social responsibility.
               </p>
               <button className="card-arrow">
                 <i className="fas fa-arrow-right"></i>
@@ -36,7 +36,7 @@ const MissionSection = memo(() => {
             <div className="card-content">
               <h3 className="card-title">Our Vision</h3>
               <p className="card-text">
-                To create a world-class learning environment where Eastern roots meet Western innovation, preparing girls to excel on global platforms while staying deeply connected to their cultural identity...
+                To create a world-class learning environment where Eastern roots meet Western innovation, preparing girls to excel on global platforms while staying deeply connected to their cultural identity.
               </p>
               <button className="card-arrow">
                 <i className="fas fa-arrow-right"></i>

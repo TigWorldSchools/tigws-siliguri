@@ -28,7 +28,7 @@ const lifeItems = [
     icon: '/img/icons/sport.png',
     title: 'Sports & Fitness',
     description:
-      'At Techno India Group World School, we believe that true education flourishes when physical vitality and mental well-being move in harmony. Our expansive campus, with its lush playgrounds and world-class sports facilities, inspires energy, teamwork, and confidence in every learner. Through diverse athletic pursuits—from swimming and tennis to rock climbing and adventure sports—students discover their strength, build resilience, and embrace the joy of movement.',
+      'At Techno India Group World School, we believe that true education flourishes when physical vitality and mental well-being move in harmony. Our expansive campus, with its lush playgrounds and world-class sports facilities, inspires energy, teamwork, and confidence in every learner. Through diverse athletic pursuits, from swimming and tennis to rock climbing and adventure sports, students discover their strength, build resilience, and embrace the joy of movement.',
   },
   {
     id: '05',
@@ -139,21 +139,7 @@ const LifeAtTIGWS  = () => {
       
       <section className="life-section py-5" id="lifeattigws">
         <div className="container">
-          <div className="">
-            <div className="rts-research-section__content text-left">
-              <div className="research-image mb-4">                
-              </div>            
-              <p className="title-description">
-                Embarking on the frontiers of knowledge, Medicine Research is a
-                dynamic and groundbreaking endeavor dedicated to unraveling the
-                mysteries of health and disease. At the intersection of
-                innovation and compassionate care, researchers in medicine
-                tirelessly explore, question, and innovate to shape the future
-                of healthcare.
-              </p>
-            </div>
-          </div>        
-           <div className="research__items mt-5">
+          <div className="research__items">
             <div className="row justify-content-sm-center justify-content-md-start g-5">
               {lifeItems.map((item) => (
                 <div key={item.id} className="col-lg-4 col-md-6 col-sm-11">
