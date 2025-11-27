@@ -55,7 +55,7 @@
   }
   
   .main-mission .mission-image {
-    height: 200px !important;
+    height: auto !important;
   }
 
   /* Campuses Section */
@@ -154,7 +154,7 @@
   }
   
   .main-mission .mission-image {
-    height: 240px;
+    height: auto;
   }
 
   /* Campuses Section */
