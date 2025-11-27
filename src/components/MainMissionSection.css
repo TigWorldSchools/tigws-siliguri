@@ -82,7 +82,7 @@
 }
 
 /* MacBook Air specific resolution */
-@media (max-width: 1440px) and (min-width: 993px) {
+@media (max-width: 1600px) and (min-width: 993px) {
   .main-mission .mission-left {
     height: auto;
     justify-content: space-between;
