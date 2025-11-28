@@ -67,6 +67,15 @@ const AdmissionModal = ({ isOpen, onClose }) => {
     e.preventDefault();
     setIsSubmitting(true);
     
+    // Track admission enquiry event
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('event', 'admission_enquiry_submit', {
+        event_category: 'form_submission',
+        event_label: 'modal_form',
+        value: 1
+      });
+    }
+    
     try {
       // Submit to Google Sheets with modal source
       const result = await submitToGoogleSheets({
