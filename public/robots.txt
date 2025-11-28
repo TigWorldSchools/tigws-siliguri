@@ -1,18 +1,14 @@
 User-agent: *
 Allow: /
 
-# Disallow admin or private areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.pdf$
 
-# Allow specific PDFs that should be indexed
 Allow: /pdf/siliguri-mpd/FEE_STRUCTURE.pdf
 Allow: /pdf/book-list.pdf
 Allow: /pdf/student-capacity.pdf
 
-# Sitemap location
 Sitemap: https://tigws-siliguri.com/sitemap.xml
 
-# Crawl delay (optional)
 Crawl-delay: 1
