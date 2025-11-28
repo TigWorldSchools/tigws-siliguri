@@ -7,111 +7,117 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/about</loc>
+    <loc>https://tigws-siliguri.com/siliguri</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tigws-siliguri.com/siliguri/about</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/about/legacy</loc>
+    <loc>https://tigws-siliguri.com/siliguri/why-tigws</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/about/why-tigws</loc>
+    <loc>https://tigws-siliguri.com/siliguri/legacy</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/about/other-campuses</loc>
+    <loc>https://tigws-siliguri.com/siliguri/other-campuses</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/academics/curriculum</loc>
+    <loc>https://tigws-siliguri.com/siliguri/curriculum</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/academics/list-of-books</loc>
+    <loc>https://tigws-siliguri.com/siliguri/books</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/admissions/criteria</loc>
+    <loc>https://tigws-siliguri.com/siliguri/admission-criteria</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/admissions/student-capacity</loc>
+    <loc>https://tigws-siliguri.com/siliguri/student-capacity</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/admissions/application-form</loc>
+    <loc>https://tigws-siliguri.com/siliguri/application-form</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/life-at-tigws</loc>
+    <loc>https://tigws-siliguri.com/siliguri/life-at-tigws</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/life-at-tigws/extra-curricular</loc>
+    <loc>https://tigws-siliguri.com/siliguri/student-pathway</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/life-at-tigws/gallery</loc>
+    <loc>https://tigws-siliguri.com/siliguri/extra-curricular</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tigws-siliguri.com/siliguri/gallery</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/life-at-tigws/student-pathway</loc>
+    <loc>https://tigws-siliguri.com/siliguri/student-testimonials</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tigws-siliguri.com/life-at-tigws/student-testimonials</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tigws-siliguri.com/contact/career</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tigws-siliguri.com/contact/collaborate</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tigws-siliguri.com/contact/social-media</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://tigws-siliguri.com/mandatory-disclosure</loc>
+    <loc>https://tigws-siliguri.com/siliguri/mandatory-disclosure</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tigws-siliguri.com/siliguri/career</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tigws-siliguri.com/siliguri/collaborate</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tigws-siliguri.com/siliguri/social-media</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>
