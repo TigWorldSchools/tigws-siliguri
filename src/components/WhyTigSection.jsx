@@ -2,8 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './WhyTigSection.css';
+import { getCampusConfig } from '../utils/campusConfig.js';
 
-const WhyTigSection = () => {
+const WhyTigSection = ({ campus = 'siliguri' }) => {
+  const campusData = getCampusConfig(campus);
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [flipped, setFlipped] = useState({});
   const [userInteracting, setUserInteracting] = useState({});
@@ -152,8 +154,8 @@ const WhyTigSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="why-tig-title">Why Choose TIG World School</h2>
-          <p className="why-tig-subtitle">Excellence in Education, Empowerment for Life</p>
+          <h2 className="why-tig-title">Why Choose {campusData.name}</h2>
+          <p className="why-tig-subtitle">{campusData.hero.tagline || 'Excellence in Education, Empowerment for Life'}</p>
         </motion.div>
 
         <div ref={ref} className="why-tig-grid">

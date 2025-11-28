@@ -134,6 +134,73 @@ function App() {
             <SocialMedia />
           </Layout>
         } />
+        
+        {/* Malda Campus Routes */}
+        <Route path="/malda" element={
+          <Layout>
+            <Home campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/about" element={
+          <Layout>
+            <About campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/curriculum" element={
+          <Layout>
+            <Curriculum campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/books" element={
+          <Layout>
+            <ListOfBooks campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/admission-criteria" element={
+          <Layout>
+            <Criteria campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/student-capacity" element={
+          <Layout>
+            <StudentCapacity campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/application-form" element={
+          <Layout>
+            <ApplicationFormPage campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/life-at-tigws" element={
+          <Layout>
+            <LifeAtTIGWS campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/extra-curricular" element={
+          <Layout>
+            <ExtraCurricular campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/gallery" element={
+          <Layout>
+            <Gallery campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/student-testimonials" element={
+          <Layout>
+            <StudentTestimonials campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/career" element={
+          <Layout>
+            <Career campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/collaborate" element={
+          <Layout>
+            <Collaborate campus="malda" />
+          </Layout>
+        } />
       </Routes>
     </BrowserRouter>
   );

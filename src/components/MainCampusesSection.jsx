@@ -13,9 +13,9 @@ const MainCampusesSection = () => {
     },
     {
       name: 'TIGWS Malda',
-      description: 'Our established campus in Malda offers world-class education with modern facilities.',
+      description: 'Co-educational day school in Malda offering CBSE curriculum with holistic development and expert sports training.',
       image: '/img/campuses/tigws-malda.jpg',
-      url: '#',
+      url: '/malda',
       cta: 'Explore Campus'
     },
     {

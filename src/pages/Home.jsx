@@ -7,8 +7,11 @@ import FounderSection from '../components/FounderSection.jsx';
 import WhyTigSection from '../components/WhyTigSection.jsx';
 import ApplicationForm from '../components/ApplicationForm.jsx';
 import AdmissionModal from '../components/AdmissionModal';
+import { getCampusConfig, getCampusSEO } from '../utils/campusConfig.js';
 
-const Home = () => {
+const Home = ({ campus = 'siliguri' }) => {
+  const campusData = getCampusConfig(campus);
+  const seoData = getCampusSEO(campus, 'home');
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const handleCtaClick = () => {
@@ -21,10 +24,10 @@ const Home = () => {
   return (
     <>
       <SEOHead 
-        title="TIGWS Siliguri - Premier All-Girls Residential School | Techno India Group World School"
-        description="Techno India Group World School Siliguri - Eastern India's premier all-girls residential school offering CBSE & Australian WACE curriculum. Admissions open for 2026-27. Excellence in education, empowerment for life."
-        keywords="TIGWS Siliguri, girls school, residential school, CBSE, WACE, Techno India Group, North Bengal, Siliguri education, all girls school, boarding school, international curriculum, admissions 2026-27"
-        url="/"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        url={`/${campus}`}
         image="/img/about/first_pic.jpg"
       />
       
@@ -53,7 +56,7 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
           <div className="hero-content">
-            <h1 className="hero-title">Empowering Young Women with<br/> Global Perspectives</h1>
+            <h1 className="hero-title">{campusData.hero.title}<br/>{campusData.hero.subtitle}</h1>
             <button className="hero-cta" onClick={handleCtaClick} aria-label="Open admission enquiry form for 2026-2027">
               Admission Enquiry 2026-2027
               <i className="fas fa-arrow-right hero-arrow" aria-hidden="true"></i>
@@ -61,12 +64,12 @@ const Home = () => {
           </div>
         </section>
 
-        <AboutSection />
-        <MissionSection />
-        <LegacySection />
-        <FounderSection />
-        <WhyTigSection />
-        <ApplicationForm />
+        <AboutSection campus={campus} />
+        <MissionSection campus={campus} />
+        <LegacySection campus={campus} />
+        <FounderSection campus={campus} />
+        <WhyTigSection campus={campus} />
+        <ApplicationForm campus={campus} />
       </main>
       
       <AdmissionModal 
