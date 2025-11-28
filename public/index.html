@@ -16,19 +16,19 @@
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tigws-siliguri.pages.dev/" />
+  <meta property="og:url" content="https://www.tigworldschools.com/" />
   <meta property="og:title" content="TIGWS Siliguri - Premier All-Girls Residential School" />
   <meta property="og:description" content="Eastern India's premier all-girls residential school offering world-class education with CBSE & Australian WACE curriculum in Siliguri, North Bengal." />
-  <meta property="og:image" content="https://tigws-siliguri.pages.dev/img/about/first_pic.jpg" />
+  <meta property="og:image" content="https://www.tigworldschools.com/img/about/first_pic.jpg" />
   <meta property="og:site_name" content="Techno India Group World School Siliguri" />
   <meta property="og:locale" content="en_IN" />
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://tigws-siliguri.pages.dev/" />
+  <meta property="twitter:url" content="https://www.tigworldschools.com/" />
   <meta property="twitter:title" content="TIGWS Siliguri - Premier All-Girls Residential School" />
   <meta property="twitter:description" content="Eastern India's premier all-girls residential school offering world-class education with CBSE & Australian WACE curriculum." />
-  <meta property="twitter:image" content="https://tigws-siliguri.pages.dev/img/about/first_pic.jpg" />
+  <meta property="twitter:image" content="https://www.tigworldschools.com/img/about/first_pic.jpg" />
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -37,7 +37,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://tigws-siliguri.pages.dev/" />
+  <link rel="canonical" href="https://www.tigworldschools.com/" />
   
   <!-- PWA Manifest -->
   <link rel="manifest" href="/manifest.json" />
@@ -64,37 +64,98 @@
   <link rel="preload" href="/img/banner_images/page_banner.jpg" as="image" type="image/jpeg" />
   <link rel="preload" href="/img/about/first_pic.jpg" as="image" type="image/jpeg" />
   
-  <!-- Structured Data -->
+  <!-- Enhanced Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "Techno India Group World School Siliguri",
-    "alternateName": "TIGWS Siliguri",
-    "url": "https://tigws-siliguri.pages.dev",
-    "logo": "https://tigws-siliguri.pages.dev/img/logo/TIGWS_kolkata_white.png",
-    "description": "Eastern India's premier all-girls residential school offering CBSE and Australian WACE curriculum in Siliguri, North Bengal.",
+    "alternateName": ["TIGWS Siliguri", "TIGWS"],
+    "url": "https://www.tigworldschools.com",
+    "logo": "https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png",
+    "image": "https://www.tigworldschools.com/img/about/first_pic.jpg",
+    "description": "Premier all-girls residential school in Siliguri, North Bengal offering CBSE and Australian WACE curriculum with world-class facilities and holistic education.",
+    "foundingDate": "2024",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "TIGWS Campus",
       "addressLocality": "Siliguri",
       "addressRegion": "West Bengal",
+      "postalCode": "734001",
       "addressCountry": "IN"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Admissions",
-      "availableLanguage": ["English", "Hindi", "Bengali"]
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "26.7271",
+      "longitude": "88.3953"
     },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "Admissions",
+        "telephone": "+91-XXXXXXXXXX",
+        "email": "admissions@tigws-siliguri.com",
+        "availableLanguage": ["English", "Hindi", "Bengali"],
+        "areaServed": ["West Bengal", "North Bengal", "Siliguri", "Darjeeling", "Jalpaiguri"]
+      }
+    ],
     "sameAs": [
       "https://www.facebook.com/tigwssiliguri",
-      "https://www.instagram.com/tigwssiliguri"
+      "https://www.instagram.com/tigwssiliguri",
+      "https://www.youtube.com/tigwssiliguri",
+      "https://www.linkedin.com/school/tigws-siliguri"
     ],
     "educationalCredentialAwarded": ["CBSE Certificate", "WACE Certificate"],
     "audience": {
       "@type": "EducationalAudience",
       "educationalRole": "student",
-      "audienceType": "Girls"
-    }
+      "audienceType": "Girls",
+      "educationalUse": "Primary and Secondary Education"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Educational Programs",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "CBSE Curriculum",
+            "description": "Comprehensive CBSE education from primary to secondary levels"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Course",
+            "name": "WACE Curriculum",
+            "description": "Australian WACE curriculum for international education standards"
+          }
+        }
+      ]
+    },
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Residential Facilities",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Sports Complex",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Science Laboratories",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Library",
+        "value": true
+      }
+    ]
   }
   </script>
 </head>
@@ -102,13 +163,28 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   
-  <!-- Google Analytics (replace with actual tracking ID) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'GA_TRACKING_ID');
-  </script> -->
+    gtag('config', 'G-XXXXXXXXXX', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  </script>
+  
+  <!-- Microsoft Clarity (Optional) -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+  </script>
 </body>
 </html>

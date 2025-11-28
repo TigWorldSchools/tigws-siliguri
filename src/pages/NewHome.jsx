@@ -20,9 +20,9 @@ const NewHome = () => {
   return (
     <>
       <SEOHead 
-        title="Techno India Group World School - Global Education Excellence"
-        description="Techno India Group World School stands as a beacon of global education, blending academic excellence with innovation across multiple campuses including Siliguri, Malda, and Kolkata."
-        keywords="TIGWS, Techno India Group World School, global education, international curriculum, campuses, Siliguri, Malda, Kolkata"
+        title="Best Girls School in Siliguri | TIGWS - Techno India Group World School"
+        description="Top-rated all-girls residential school in Siliguri, North Bengal. CBSE & WACE curriculum, world-class facilities, holistic education. Admissions open 2026-27. Call now!"
+        keywords="best girls school Siliguri, residential school North Bengal, CBSE school Siliguri, WACE curriculum, all girls boarding school, Techno India Group, TIGWS Siliguri, top school West Bengal"
         url="/"
         image="/img/about/first_pic.jpg"
       />

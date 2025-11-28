@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"; // Add useState and useEffect
-
+import React, { useState, useEffect } from "react";
+import SEOHead from '../../components/SEOHead.jsx';
 import ApplicationForm from '../../components/ApplicationForm.jsx';
 
 
@@ -29,6 +29,13 @@ import ApplicationForm from '../../components/ApplicationForm.jsx';
 
   return (
     <>
+      <SEOHead 
+        title="Admission Application Form | TIGWS Siliguri - Apply Online Now"
+        description="Apply for admission to TIGWS Siliguri online. Secure your daughter's future at North Bengal's premier all-girls residential school. CBSE & WACE curriculum available."
+        keywords="TIGWS admission form, Siliguri school admission, girls school application, CBSE admission, residential school form, North Bengal school admission"
+        url="/siliguri/application-form"
+        image="/img/admission/admission_pic.jpg"
+      />
       {/* Page Banner Section */}
       <section
         className="page-hero d-flex align-items-center justify-content-center"

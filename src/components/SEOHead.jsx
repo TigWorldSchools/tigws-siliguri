@@ -39,12 +39,12 @@ const SEOHead = ({
 
     const ogImage = document.querySelector('meta[property="og:image"]');
     if (ogImage && image) {
-      ogImage.setAttribute('content', `https://tigws-siliguri.pages.dev${image}`);
+      ogImage.setAttribute('content', `https://www.tigworldschools.com${image}`);
     }
 
     const ogUrl = document.querySelector('meta[property="og:url"]');
     if (ogUrl && url) {
-      ogUrl.setAttribute('content', `https://tigws-siliguri.pages.dev${url}`);
+      ogUrl.setAttribute('content', `https://www.tigworldschools.com${url}`);
     }
 
     const ogType = document.querySelector('meta[property="og:type"]');
@@ -65,7 +65,7 @@ const SEOHead = ({
 
     const twitterImage = document.querySelector('meta[property="twitter:image"]');
     if (twitterImage && image) {
-      twitterImage.setAttribute('content', `https://tigws-siliguri.pages.dev${image}`);
+      twitterImage.setAttribute('content', `https://www.tigworldschools.com${image}`);
     }
 
     // Update canonical URL
@@ -76,7 +76,7 @@ const SEOHead = ({
         canonical.setAttribute('rel', 'canonical');
         document.head.appendChild(canonical);
       }
-      canonical.setAttribute('href', `https://tigws-siliguri.pages.dev${url}`);
+      canonical.setAttribute('href', `https://www.tigworldschools.com${url}`);
     }
   }, [title, description, keywords, image, url, type]);
 

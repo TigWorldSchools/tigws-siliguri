@@ -1,14 +1,22 @@
 User-agent: *
 Allow: /
 
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.pdf$
+# Sitemap
+Sitemap: https://www.tigworldschools.com/sitemap.xml
 
-Allow: /pdf/siliguri-mpd/FEE_STRUCTURE.pdf
-Allow: /pdf/book-list.pdf
-Allow: /pdf/student-capacity.pdf
-
-Sitemap: https://tigws-siliguri.com/sitemap.xml
-
+# Crawl-delay for better server performance
 Crawl-delay: 1
+
+# Allow all search engines to index
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
