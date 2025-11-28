@@ -19,8 +19,11 @@
   <meta property="og:url" content="https://www.tigworldschools.com/" />
   <meta property="og:title" content="TIGWS Siliguri - Premier All-Girls Residential School" />
   <meta property="og:description" content="Eastern India's premier all-girls residential school offering world-class education with CBSE & Australian WACE curriculum in Siliguri, North Bengal." />
-  <meta property="og:image" content="https://www.tigworldschools.com/img/about/first_pic.jpg" />
-  <meta property="og:site_name" content="Techno India Group World School Siliguri" />
+  <meta property="og:image" content="https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="60" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:site_name" content="Techno India Group World School" />
   <meta property="og:locale" content="en_IN" />
   
   <!-- Twitter -->
@@ -28,7 +31,7 @@
   <meta property="twitter:url" content="https://www.tigworldschools.com/" />
   <meta property="twitter:title" content="TIGWS Siliguri - Premier All-Girls Residential School" />
   <meta property="twitter:description" content="Eastern India's premier all-girls residential school offering world-class education with CBSE & Australian WACE curriculum." />
-  <meta property="twitter:image" content="https://www.tigworldschools.com/img/about/first_pic.jpg" />
+  <meta property="twitter:image" content="https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png" />
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -82,7 +85,12 @@
     "name": "Techno India Group World School Siliguri",
     "alternateName": ["TIGWS Siliguri", "TIGWS"],
     "url": "https://www.tigworldschools.com",
-    "logo": "https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png",
+      "width": 600,
+      "height": 60
+    },
     "image": "https://www.tigworldschools.com/img/about/first_pic.jpg",
     "description": "Premier all-girls residential school in Siliguri, North Bengal offering CBSE and Australian WACE curriculum with world-class facilities and holistic education.",
     "foundingDate": "2024",
@@ -131,7 +139,12 @@
           "itemOffered": {
             "@type": "Course",
             "name": "CBSE Curriculum",
-            "description": "Comprehensive CBSE education from primary to secondary levels"
+            "description": "Comprehensive CBSE education from primary to secondary levels",
+            "provider": {
+              "@type": "EducationalOrganization",
+              "name": "Techno India Group World School",
+              "url": "https://www.tigworldschools.com"
+            }
           }
         },
         {
@@ -139,7 +152,12 @@
           "itemOffered": {
             "@type": "Course",
             "name": "WACE Curriculum",
-            "description": "Australian WACE curriculum for international education standards"
+            "description": "Australian WACE curriculum for international education standards",
+            "provider": {
+              "@type": "EducationalOrganization",
+              "name": "Techno India Group World School",
+              "url": "https://www.tigworldschools.com"
+            }
           }
         }
       ]
@@ -165,6 +183,30 @@
         "name": "Library",
         "value": true
       }
+    ]
+  }
+  </script>
+  
+  <!-- Organization Logo Schema for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Techno India Group World School",
+    "alternateName": "TIGWS",
+    "url": "https://www.tigworldschools.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png",
+      "width": 600,
+      "height": 60,
+      "caption": "TIGWS Logo"
+    },
+    "sameAs": [
+      "https://www.facebook.com/tigworldschools",
+      "https://www.instagram.com/tigworldschools",
+      "https://www.youtube.com/tigworldschools",
+      "https://www.linkedin.com/school/tigws"
     ]
   }
   </script>
