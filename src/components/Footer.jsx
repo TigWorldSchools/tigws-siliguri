@@ -22,7 +22,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61579539989989' },
-    { icon: 'fab fa-instagram', url: 'https://www.instagram.com/tig_world_school/?hl=en' }
+    { icon: 'fab fa-instagram', url: 'https://www.instagram.com/technoindiagroup_world_school' }
   ];
 
   return (
