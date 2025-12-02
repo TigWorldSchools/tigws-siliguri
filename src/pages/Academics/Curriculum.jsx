@@ -1,8 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Curriculum.css";
+import { useLocation } from "react-router-dom";
+import { getCampusConfig, getCampusSEO } from '../../utils/campusConfig.js';
 
 const Curriculum = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+  
+  const campusData = getCampusConfig(campus);
+  const seoData = getCampusSEO(campus, 'curriculum');
+
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
@@ -108,71 +116,59 @@ const Curriculum = () => {
       <section className="curriculum-section py-5">
         <Container>
           {/* CBSE Curriculum */}
-          <Row className="align-items-center mb-5">
-            <Col lg={6} md={12} className="mb-3 mb-lg-0">
-              <div ref={cbseImageRef} className="curriculum-image fade-left">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/academics/cbse_curriculum.jpg`}
-                  alt="CBSE Curriculum"
-                  className="img-fluid rounded shadow"
-                />
-              </div>
-            </Col>
-            <Col lg={6} md={12}>
-              <div ref={cbseTextRef} className="curriculum-content fade-right">
-                <h3 className="curriculum-title" style={{ color: "#C3AB6B" }}>
-                  CBSE Curriculum
-                </h3>
-                <p className="curriculum-text">
-                  Techno India Group World School offers an environment that is
-                  conducive to academic excellence. The curriculum encourages
-                  deeper understanding of the subjects they learn. The school
-                  follows the NCERT curriculum and is in the process to be affiliated to CBSE.
-                </p>
-                <p className="curriculum-text">
-                  The school imparts soft skills like continual learning
-                  aptitude, positive attitude, and innovative thinking.
-                </p>
-              </div>
-            </Col>
-          </Row>
+          {campusData.academicCBSECurriculum?.description !== "" && (
+            <Row className="align-items-center mb-5">
+              <Col lg={6} md={12} className="mb-3 mb-lg-0">
+                <div ref={cbseImageRef} className="curriculum-image fade-left">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/academics/cbse_curriculum.jpg`}
+                    alt="CBSE Curriculum"
+                    className="img-fluid rounded shadow"
+                  />
+                </div>
+              </Col>
+              <Col lg={6} md={12}>
+                <div ref={cbseTextRef} className="curriculum-content fade-right">
+                  <h3 className="curriculum-title" style={{ color: "#C3AB6B" }}>
+                    CBSE Curriculum
+                  </h3>
+                  <p className="curriculum-text">
+                    {campusData.academicCBSECurriculum.description.split("<br />").map((line, i) => (
+                        <p key={i}>{line}</p>
+                      ))}
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          )}
 
           {/* WACE Curriculum */}
-          <Row className="align-items-center flex-lg-row-reverse">
-            <Col lg={6} md={12} className="mb-3 mb-lg-0">
-              <div ref={waceImageRef} className="curriculum-image fade-right">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/academics/wace_curriculum.jpg`}
-                  alt="WACE Curriculum"
-                  className="img-fluid rounded shadow"
-                />
-              </div>
-            </Col>
-            <Col lg={6} md={12}>
-              <div ref={waceTextRef} className="curriculum-content fade-left">
-                <h3 className="curriculum-title">
-                  WACE Curriculum
-                </h3>
-                <p className="curriculum-text">
-                  We are proud to offer a NEP aligned CBSE curriculum alongside the Australian
-                  WACE Programme, forging a global academic bridge between Eastern roots and
-                  Western aspirations, empowering students to dream bigger and reach farther.
+          {campusData.academicWACECurriculum?.description !== "" && (
+            <Row className="align-items-center flex-lg-row-reverse">
+              <Col lg={6} md={12} className="mb-3 mb-lg-0">
+                <div ref={waceImageRef} className="curriculum-image fade-right">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/academics/wace_curriculum.jpg`}
+                    alt="WACE Curriculum"
+                    className="img-fluid rounded shadow"
+                  />
+                </div>
+              </Col>
+              <Col lg={6} md={12}>
+                <div ref={waceTextRef} className="curriculum-content fade-left">
+                  <h3 className="curriculum-title">
+                    WACE Curriculum
+                  </h3>
+                  <p className="curriculum-text">
+                    {campusData.academicWACECurriculum.description.split("<br />").map((line, i) => (
+                        <p key={i}>{line}</p>
+                      ))}
 
-                </p>
-                <p className="curriculum-text">
-                  Our limited screen time policy helps instill digital discipline, focus, and
-                  creativity, ensuring girls grow up healthy, balanced, and confident.
-                  We don't just educate, we inspire girls to lead, innovate, and make a difference
-                  in the world.
-
-                </p>
-                <p className="curriculum-text">
-                  We celebrate diversity, encourage cross cultural dialogue, and prepare students to
-                  become ethical leaders in a changing world.
-                </p>
-              </div>
-            </Col>
-          </Row>
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          )}
         </Container>
       </section>
     </>

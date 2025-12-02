@@ -1,60 +1,67 @@
 import React from 'react';
 import HeaderNav from './components/HeaderNav.jsx';
+import { Link, useLocation } from 'react-router-dom';
+import { getCampusConfig } from './utils/campusConfig.js';
 
 const Header = ({ onOpenModal }) => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+
+  const campusData = getCampusConfig(campus);
+
   const menuItems = [
-    { label: 'Home', url: '/siliguri' },
+    { label: 'Home', url: `/${campus}` },
     { 
       label: 'About Us', 
-      url: '/siliguri/about',
+      url: `/${campus}/about`,
       dropdown: [
-        { label: 'About TIGWS', url: '/siliguri/about' },
-        { label: 'Why TIGWS', url: '/siliguri/about#why-tigws' },
-        { label: 'Legacy of TIG', url: '/siliguri/about#legacy' },
-        { label: 'Other Campuses', url: '/siliguri/about#other-campuses' },
-        { label: (<><span>Mandatory</span><br /><span>Disclosure</span></>), url: '/siliguri/mandatory-disclosure' }
+        { label: 'About TIGWS', url: `/${campus}/about` },
+        { label: 'Why TIGWS', url: `/${campus}/about#why-tigws` },
+        { label: 'Legacy of TIG', url: `/${campus}/about#legacy` },
+        { label: 'Other Campuses', url: `/${campus}/about#other-campuses` },
+        { label: (<><span>Mandatory</span><br /><span>Disclosure</span></>), url: `/${campus}/mandatory-disclosure` }
       ]
     },
     { 
       label: 'Academics', 
-      url: '/siliguri/curriculum',
+      url: `/${campus}/curriculum`,
       dropdown: [
-        { label: 'Curriculum', url: '/siliguri/curriculum' },
-        { label: 'List Of Books', url: '/siliguri/books' }
+        { label: 'Curriculum', url: `/${campus}/curriculum` },
+        { label: 'List Of Books', url: `/${campus}/books` }
       ]
     },
     { 
       label: 'Admissions', 
-      url: '/siliguri/admission-criteria',
+      url: `/${campus}/admission-criteria`,
       dropdown: [
-        { label: 'Criteria', url: '/siliguri/admission-criteria' },
-        { label: 'Student Capacity', url: '/siliguri/student-capacity' },
-        { label: 'Application Form', url: '/siliguri/application-form' }
+        { label: 'Criteria', url: `/${campus}/admission-criteria` },
+        { label: 'Student Capacity', url: `/${campus}/student-capacity` },
+        { label: 'Application Form', url: `/${campus}/application-form` }
       ]
     },
-    { label: 'Life at TIGWS', url: '/siliguri/life-at-tigws' ,
+    { label: 'Life at TIGWS', url:`/${campus}/life-at-tigws` ,
       dropdown: [
-      {label: 'Life At TIGWS', url:'/siliguri/life-at-tigws'},
-      {label:'Student Pathway',url:'/siliguri/student-pathway'},
-      {label:'Extra Curricular',url:'/siliguri/extra-curricular'},
-      {label:'Gallery',url:'/siliguri/gallery'},
-      {label:'Student Testimonials',url:'/siliguri/student-testimonials'}
+      {label: 'Life At TIGWS', url:`/${campus}/life-at-tigws`},
+      {label:'Student Pathway', url:`/${campus}/student-pathway`},
+      {label:'Extra Curricular', url:`/${campus}/extra-curricular`},
+      {label:'Gallery', url:`/${campus}/gallery`},
+      {label:'Student Testimonials', url:`/${campus}/student-testimonials`}
     ]
     },
 
-    { label: 'Contact Us', url: '/siliguri/career' ,
+    { label: 'Contact Us', url: `/${campus}/career` ,
       dropdown:[
-        {label:'Career',url:'/siliguri/career'},
-        {label:'Collaborate with Us',url:'/siliguri/collaborate'},
-        {label:'Social Media',url:'/siliguri/social-media'}
+        {label:'Career', url: `/${campus}/career`},
+        {label:'Collaborate with Us', url:`/${campus}/collaborate`},
+        {label:'Social Media', url:`/${campus}/social-media`}
       ]
     }
   ];
 
   return (
     <HeaderNav 
-      logoUrl="/img/logo/tigws_siliguri_logo.png"
-      linkUrl="https://tigws-demo.tigps.in/"
+      logoUrl={`${campusData.logo}`}
+      linkUrl={`${campusData.contact.websiteUrl}`}
       altText="TIGWS"
       menuItems={menuItems}
       onOpenModal={onOpenModal}

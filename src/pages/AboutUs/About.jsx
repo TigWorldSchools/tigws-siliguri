@@ -3,37 +3,20 @@ import SEOHead from '../../components/SEOHead.jsx';
 import WhyTigSection from '../../components/WhyTigSection.jsx';
 import LegacySection from '../../components/LegacySection.jsx';
 import MissionSection from '../../components/MissionSection.jsx';
-import ProgressiveDisclosure from '../../components/ProgressiveDisclosure.jsx';
 import './About.css';
-
-const cardData = [
-  {
-    icon: 'fas fa-school',
-    title: 'World-Class Infrastructure',
-    description: 'Our state-of-the-art campus features modern classrooms, advanced laboratories, well-equipped libraries, and comprehensive sports facilities.',
-    image: '/img/about/world_class_infrastructure.jpg'
-  },
-  {
-    icon: 'fas fa-trophy',
-    title: 'Academic Excellence',
-    description: 'Our students consistently achieve outstanding results in national and international examinations, reflecting our commitment to academic excellence and holistic development.',
-    image: '/img/about/academic_excellence.jpg'
-  },
-  {
-    icon: 'fas fa-heart',
-    title: 'Holistic Development',
-    description: 'We focus on nurturing every aspect of a student\'s personality - intellectual, emotional, physical, and social development through comprehensive programs and activities.',
-    image: '/img/about/holistic_development.jpg'
-  },
-  {
-    icon: 'fas fa-globe',
-    title: 'Global Standards',
-    description: 'Our curriculum follows international standards while maintaining strong roots in Indian values and culture, preparing students for global opportunities.',
-    image: '/img/about/global_standards.jpg'
-  }
-];
+import { getCampusConfig, getCampusSEO } from '../../utils/campusConfig.js';
+import { useLocation } from "react-router-dom";
+import { otherCampuses } from "../../utils/otherCampuses";
 
 const About = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+  
+  const campusData = getCampusConfig(campus);
+  const seoData = getCampusSEO(campus, 'about');
+
+  const cardData = campusData.aboutCardData;
+
   const [displayedText, setDisplayedText] = useState('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [currentCard, setCurrentCard] = useState(0);
@@ -125,10 +108,10 @@ const About = () => {
   return (
     <>
       <SEOHead
-        title="About TIGWS Siliguri - Premier All-Girls Residential School | Eastern India"
-        description="Learn about Techno India Group World School Siliguri - Eastern India's premier all-girls residential school. World-class infrastructure, academic excellence, holistic development with CBSE & WACE curriculum."
-        keywords="about TIGWS Siliguri, girls residential school, academic excellence, holistic development, world class infrastructure, CBSE WACE curriculum, North Bengal education"
-        url="/about"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        url={`/${campus}`}
         image="/img/about/first_pic.jpg"
       />
 
@@ -185,7 +168,7 @@ const About = () => {
                     textTransform: 'uppercase'
                   }}
                 >
-                  TECHNO INDIA GROUP WORLD SCHOOL SILIGURI
+                  TECHNO INDIA GROUP WORLD SCHOOL {campus.toUpperCase()}
                 </h2>
               </div>
             </div>
@@ -366,10 +349,9 @@ const About = () => {
                       SHAPING FUTURES
                     </h3>
                     <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'rgb(0, 24, 69)', textAlign: 'justify' }}>
-                      Techno India Group World School, Siliguri stands tall as Eastern India's foremost all-girls' residential institution, a true sanctuary of learning nestled amidst the tranquil greenery of Siliguri. With its state-of-the-art campus, modern infrastructure, and world-class amenities, the school offers a safe, inspiring, and empowering environment where excellence thrives in every form, academic achievement, character building, creativity, and holistic well-being.
-                    </p>
-                    <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'rgb(0, 24, 69)', textAlign: 'justify', marginTop: '20px' }}>
-                      Driven by a team of passionate and accomplished educators, Techno India Group World School is committed to shaping confident, visionary young women who lead with purpose, pride, and integrity, ready to excel and make their mark on the world.
+                      {campusData.aboutShapingFuture.description.split("<br />").map((line, i) => (
+                        <p key={i}>{line}</p>
+                      ))}
                     </p>
                   </div>
                 </div>
@@ -404,193 +386,104 @@ const About = () => {
                 OTHER CAMPUSES
               </h2>
               <div className="row g-4 justify-content-center">
-                <div className="col-lg-5 col-md-6 col-12">
-                  <div
-                    className="position-relative overflow-hidden"
-                    style={{ borderRadius: '15px', cursor: 'pointer' }}
-                    onMouseEnter={(e) => {
-                      const overlay = e.currentTarget.querySelector('.hover-overlay');
-                      const img = e.currentTarget.querySelector('img');
-                      overlay.style.opacity = '1';
-                      overlay.style.transform = 'translateY(0%)';
-                      img.style.transform = 'scale(1.1)';
-                    }}
-                    onMouseLeave={(e) => {
-                      const overlay = e.currentTarget.querySelector('.hover-overlay');
-                      const img = e.currentTarget.querySelector('img');
-                      overlay.style.opacity = '0';
-                      overlay.style.transform = 'translateY(100%)';
-                      img.style.transform = 'scale(1)';
-                    }}
-                  >
-                    <img
-                      src="/img/campuses/tigws-malda.jpg"
-                      alt="Campus Image"
-                      className="img-fluid"
-                      style={{ transition: 'transform 0.6s ease' }}
-                    />
+                {otherCampuses[campus].map((camp, index) => (
+                  <div className="col-lg-5 col-md-6 col-12">
                     <div
-                      className="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                      style={{
-                        background: 'linear-gradient(135deg, rgba(195,171,107,0.9), rgba(0,24,69,0.9))',
-                        opacity: 0,
-                        transform: 'translateY(100%)',
-                        transition: 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+                      className="position-relative overflow-hidden"
+                      style={{ borderRadius: '15px', cursor: 'pointer' }}
+                      onMouseEnter={(e) => {
+                        const overlay = e.currentTarget.querySelector('.hover-overlay');
+                        const img = e.currentTarget.querySelector('img');
+                        overlay.style.opacity = '1';
+                        overlay.style.transform = 'translateY(0%)';
+                        img.style.transform = 'scale(1.1)';
+                      }}
+                      onMouseLeave={(e) => {
+                        const overlay = e.currentTarget.querySelector('.hover-overlay');
+                        const img = e.currentTarget.querySelector('img');
+                        overlay.style.opacity = '0';
+                        overlay.style.transform = 'translateY(100%)';
+                        img.style.transform = 'scale(1)';
                       }}
                     >
-                      <div className="text-center text-white p-4">
-                        <h3 className="mb-3" style={{ fontSize: '1.8rem', fontWeight: '700', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-                          TIGWS Malda
-                        </h3>
-                        <p style={{ fontSize: '0.9rem', lineHeight: '1.5', marginBottom: '10px' }}>
-                          Sahapur, Setumore, Malda, 732142, Malda
-                          Station Road Area, India, West Bengal
-                        </p>
-                        <div className="d-flex align-items-center justify-content-center mb-3">
-                          <i className="fas fa-phone me-2" style={{ fontSize: '1rem' }}></i>
-                          <span style={{ fontSize: '1rem', fontWeight: '600' }}>8967826765</span>
+                      <img
+                        src={camp.img}
+                        alt={camp.name}
+                        className="img-fluid"
+                        style={{ transition: 'transform 0.6s ease' }}
+                      />
+                      <div
+                        className="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(195,171,107,0.9), rgba(0,24,69,0.9))',
+                          opacity: 0,
+                          transform: 'translateY(100%)',
+                          transition: 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+                        }}
+                      >
+                        <div className="text-center text-white p-4">
+                          <h3 className="mb-3" style={{ fontSize: '1.8rem', fontWeight: '700', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+                            {camp.name}
+                          </h3>
+                          <p style={{ fontSize: '0.9rem', lineHeight: '1.5', marginBottom: '10px' }}>
+                            {camp.address}
+                          </p>
+                          <div className="d-flex align-items-center justify-content-center mb-3">
+                            <i className="fas fa-phone me-2" style={{ fontSize: '1rem' }}></i>
+                            <span style={{ fontSize: '1rem', fontWeight: '600' }}>{camp.phone}</span>
+                          </div>
+                          <button
+                            className="hover-cta-btn"
+                            style={{
+                              background: 'white',
+                              color: 'rgb(0, 24, 69)',
+                              border: '2px solid transparent',
+                              padding: '12px 25px',
+                              fontSize: '14px',
+                              fontWeight: '700',
+                              borderRadius: '8px',
+                              cursor: 'pointer',
+                              transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                              textShadow: 'none',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+                              position: 'relative',
+                              overflow: 'hidden',
+                              textTransform: 'uppercase',
+                              animation: 'floatingCta 3s ease-in-out infinite',
+                              textDecoration: 'none',
+                              display: 'inline-block'
+                            }}
+                            onMouseEnter={(e) => {
+                              e.target.style.background = 'linear-gradient(135deg, rgb(163, 145, 97), rgb(183, 165, 117))';
+                              e.target.style.color = 'white';
+                              e.target.style.transform = 'scale(1.05) translateY(-2px)';
+                              e.target.style.boxShadow = '0 8px 25px rgba(163, 145, 97, 0.4)';
+                              e.target.style.textShadow = '0 2px 8px rgba(0, 0, 0, 0.3)';
+                              e.target.style.borderColor = 'rgba(163, 145, 97, 0.8)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.target.style.background = 'white';
+                              e.target.style.color = 'rgb(0, 24, 69)';
+                              e.target.style.transform = 'scale(1) translateY(0)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+                              e.target.style.textShadow = 'none';
+                              e.target.style.borderColor = 'transparent';
+                            }}
+                            onMouseDown={(e) => {
+                              e.target.style.transform = 'scale(0.98)';
+                            }}
+                            onMouseUp={(e) => {
+                              e.target.style.transform = 'scale(1.05) translateY(-2px)';
+                            }}
+                            onClick={() => (window.location.href = camp.url)}
+                          >
+                            Visit Campus
+                          </button>
                         </div>
-                        <button
-                          className="hover-cta-btn"
-                          style={{
-                            background: 'white',
-                            color: 'rgb(0, 24, 69)',
-                            border: '2px solid transparent',
-                            padding: '12px 25px',
-                            fontSize: '14px',
-                            fontWeight: '700',
-                            borderRadius: '8px',
-                            cursor: 'pointer',
-                            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                            textShadow: 'none',
-                            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
-                            position: 'relative',
-                            overflow: 'hidden',
-                            textTransform: 'uppercase',
-                            animation: 'floatingCta 3s ease-in-out infinite',
-                            textDecoration: 'none',
-                            display: 'inline-block'
-                          }}
-                          onMouseEnter={(e) => {
-                            e.target.style.background = 'linear-gradient(135deg, rgb(163, 145, 97), rgb(183, 165, 117))';
-                            e.target.style.color = 'white';
-                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
-                            e.target.style.boxShadow = '0 8px 25px rgba(163, 145, 97, 0.4)';
-                            e.target.style.textShadow = '0 2px 8px rgba(0, 0, 0, 0.3)';
-                            e.target.style.borderColor = 'rgba(163, 145, 97, 0.8)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.target.style.background = 'white';
-                            e.target.style.color = 'rgb(0, 24, 69)';
-                            e.target.style.transform = 'scale(1) translateY(0)';
-                            e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
-                            e.target.style.textShadow = 'none';
-                            e.target.style.borderColor = 'transparent';
-                          }}
-                          onMouseDown={(e) => {
-                            e.target.style.transform = 'scale(0.98)';
-                          }}
-                          onMouseUp={(e) => {
-                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
-                          }}
-                        >
-                          Visit Campus
-                        </button>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-lg-5 col-md-6 col-12">
-                  <div
-                    className="position-relative overflow-hidden"
-                    style={{ borderRadius: '15px', cursor: 'pointer' }}
-                    onMouseEnter={(e) => {
-                      const overlay = e.currentTarget.querySelector('.hover-overlay');
-                      const img = e.currentTarget.querySelector('img');
-                      overlay.style.opacity = '1';
-                      overlay.style.transform = 'translateY(0%)';
-                      img.style.transform = 'scale(1.1)';
-                    }}
-                    onMouseLeave={(e) => {
-                      const overlay = e.currentTarget.querySelector('.hover-overlay');
-                      const img = e.currentTarget.querySelector('img');
-                      overlay.style.opacity = '0';
-                      overlay.style.transform = 'translateY(100%)';
-                      img.style.transform = 'scale(1)';
-                    }}
-                  >
-                    <img
-                      src="/img/campuses/tigws-malda.jpg"
-                      alt="Campus Image"
-                      className="img-fluid"
-                      style={{ transition: 'transform 0.6s ease' }}
-                    />
-                    <div
-                      className="hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                      style={{
-                        background: 'linear-gradient(135deg, rgba(195,171,107,0.9), rgba(0,24,69,0.9))',
-                        opacity: 0,
-                        transform: 'translateY(100%)',
-                        transition: 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-                      }}
-                    >
-                      <div className="text-center text-white p-4">
-                        <h3 className="mb-3" style={{ fontSize: '2rem', fontWeight: '700', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-                          TIGWS Kolkata
-                        </h3>
-                        <p style={{ fontSize: '1.1rem', lineHeight: '1.6', marginBottom: '20px' }}>
-                          Our upcoming flagship campus in the cultural capital of India
-                        </p>
-                        <button
-                          className="hover-cta-btn"
-                          style={{
-                            background: 'white',
-                            color: 'rgb(0, 24, 69)',
-                            border: '2px solid transparent',
-                            padding: '12px 25px',
-                            fontSize: '14px',
-                            fontWeight: '700',
-                            borderRadius: '8px',
-                            cursor: 'pointer',
-                            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                            textShadow: 'none',
-                            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
-                            position: 'relative',
-                            overflow: 'hidden',
-                            textTransform: 'uppercase',
-                            animation: 'floatingCta 3s ease-in-out infinite',
-                            textDecoration: 'none',
-                            display: 'inline-block'
-                          }}
-                          onMouseEnter={(e) => {
-                            e.target.style.background = 'linear-gradient(135deg, rgb(163, 145, 97), rgb(183, 165, 117))';
-                            e.target.style.color = 'white';
-                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
-                            e.target.style.boxShadow = '0 8px 25px rgba(163, 145, 97, 0.4)';
-                            e.target.style.textShadow = '0 2px 8px rgba(0, 0, 0, 0.3)';
-                            e.target.style.borderColor = 'rgba(163, 145, 97, 0.8)';
-                          }}
-                          onMouseLeave={(e) => {
-                            e.target.style.background = 'white';
-                            e.target.style.color = 'rgb(0, 24, 69)';
-                            e.target.style.transform = 'scale(1) translateY(0)';
-                            e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
-                            e.target.style.textShadow = 'none';
-                            e.target.style.borderColor = 'transparent';
-                          }}
-                          onMouseDown={(e) => {
-                            e.target.style.transform = 'scale(0.98)';
-                          }}
-                          onMouseUp={(e) => {
-                            e.target.style.transform = 'scale(1.05) translateY(-2px)';
-                          }}
-                        >
-                          Coming Soon
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </section>

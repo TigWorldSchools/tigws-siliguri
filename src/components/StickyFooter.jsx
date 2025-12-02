@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
+import { Link, useLocation } from 'react-router-dom';
 import './StickyFooter.css';
+import { getCampusConfig } from '../utils/campusConfig.js';
 
 const StickyFooter = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+  const campusData = getCampusConfig(campus);
+
   const [showArrowShoot, setShowArrowShoot] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [footerInView, setFooterInView] = useState(false);
@@ -50,13 +56,13 @@ const StickyFooter = () => {
             <span className="sticky-footer-text">Let's secure your child's future</span>
             <div className="arrow-animation">➤</div>
             <div className="sticky-footer-contacts">
-              <a href="tel:9733018000" className="sticky-footer-contact-item pulse-phone">
+              <a href={`tel:${campusData.contact.phone}`} className="sticky-footer-contact-item pulse-phone">
                 <i className="fas fa-phone sticky-footer-icon"></i>
-                <span className="sticky-footer-contact-text">9733018000</span>
+                <span className="sticky-footer-contact-text">{campusData.contact.phone}</span>
               </a>
-              <a href="mailto:info@tigworldschool.in" className="sticky-footer-contact-item pulse-email">
+              <a href={`mailto:${campusData.contact.email}`} className="sticky-footer-contact-item pulse-email">
                 <i className="fas fa-envelope sticky-footer-icon"></i>
-                <span className="sticky-footer-contact-text">info@tigworldschool.in</span>
+                <span className="sticky-footer-contact-text">{campusData.contact.email}</span>
               </a>
             </div>
           </div>

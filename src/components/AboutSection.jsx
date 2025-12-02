@@ -12,6 +12,8 @@ const AboutSection = ({ campus = 'siliguri' }) => {
   const hasAnimatedRef = useRef(false);
   
   const fullText = campusData.about.description;
+  const imageURL = campusData.about.aboutImage;
+
 
   const handleCtaClick = () => {
     if (navigator.vibrate) {
@@ -66,8 +68,8 @@ const AboutSection = ({ campus = 'siliguri' }) => {
           <div ref={imageRef} className="about-right-section">
             <div className="about-image-container">
               <img 
-                src="/img/about/first_pic.jpg" 
-                alt="TIGWS Siliguri campus building showcasing modern architecture and green surroundings" 
+                src={imageURL} 
+                alt={`TIGWS ${campus} campus building showcasing modern architecture and green surroundings`} 
                 className="about-image parallax-image"
                 loading="lazy"
                 width="600"

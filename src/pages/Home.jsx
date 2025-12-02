@@ -35,7 +35,7 @@ const Home = ({ campus = 'siliguri' }) => {
         <section className="hero-section" style={{
           position: 'relative',
           overflow: 'hidden'
-        }} role="banner" aria-label="Welcome to TIGWS Siliguri">
+        }} role="banner" aria-label={`Welcome to ${campusData.name}`}>
           <video 
             className="hero-video"
             autoPlay 
@@ -52,7 +52,7 @@ const Home = ({ campus = 'siliguri' }) => {
               zIndex: -1
             }}
           >
-            <source src="/videos/TIGWS_Siliguri.mp4" type="video/mp4" />
+            <source src={`${campusData.bannerVideo}`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="hero-content">

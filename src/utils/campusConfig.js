@@ -2,14 +2,18 @@
 export const campusConfig = {
   siliguri: {
     name: "TIGWS Siliguri",
+    logo: "/img/logo/tigws_siliguri_logo.png",
+    bannerVideo: "/videos/TIGWS_Siliguri.mp4",
     fullName: "Techno India Group World School Siliguri",
     location: "Siliguri, North Bengal",
     type: "All-Girls Residential School",
     
     contact: {
-      phone: "+91-XXXXXXXXXX",
-      email: "admissions@tigws-siliguri.com",
-      address: "TIGWS Campus, Siliguri, West Bengal 734001"
+      phone: "9733018000",
+      email: "info@tigworldschool.in",
+      address: "Techno India Group World School, Siliguri: Himachal Vihar, Behind City Centre, Near Passport Office, Siliguri West Bengal- 734010",
+      websiteUrl: "https://www.tigworldschools.com/siliguri",
+      schoolLocation: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.4484392754775!2d88.38384597543327!3d26.733365676754516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44738e5a8e12d%3A0x78a95887aefc6a0c!2sTechno%20India%20Group%20World%20School!5e1!3m2!1sen!2sin!4v1764581156687!5m2!1sen!2sin"
     },
     
     hero: {
@@ -25,20 +29,112 @@ export const campusConfig = {
         "CBSE & WACE dual curriculum", 
         "World-class infrastructure",
         "Holistic development approach"
-      ]
-    }
+      ],
+      aboutImage: "/img/about/first_pic1.jpg"
+    },
+
+    missionVission: [
+      {
+        title: "Our Mission",
+        description: "To empower every girl to become a confident, independent, and empathetic global citizen by fostering academic excellence, emotional intelligence, and social responsibility."
+      },
+      {
+        title: "Our Vision",
+        description: "To create a world-class learning environment where Eastern roots meet Western innovation, preparing girls to excel on global platforms while staying deeply connected to their cultural identity."
+      },
+      {
+        title: "Global Outlook",
+        description: "Aligned with the National Education Policy (NEP) and the internationally recognized Australian WACE Programme, TIG World School bridges global standards with Indian values."
+      },
+    ],
+
+    whyChoose: [
+      {
+        image: "/img/academics/point4.jpg",
+        title: "Empowered by Technology & Faculty Excellence",
+        description: "With modern digital classrooms, advanced laboratories, and expert educators, our campus blends innovation with inspiration. We also offer financial aid and scholarships to ensure opportunity for all deserving learners."
+      },
+      {
+        image: "/img/academics/point5.jpg",
+        title: "Personalized Learning & Mentorship",
+        description: "Every girl’s journey is unique. Our personalized guidance, small class sizes, and strong teacher-student ratio ensure focused academic support, career counseling, and emotional well-being at every step."
+      },
+      {
+        image: "/img/academics/point6.jpg",
+        title: "Future-Ready College & Career Pathways",
+        description: "Through skill-based learning, leadership programs, and global exposure, students gain the confidence, creativity, and competence to thrive in top universities and future careers worldwide."
+      },
+      {
+        image: "/img/academics/point1.jpg",
+        title: "Safe, Supportive & Inclusive Campus",
+        description: "Safety of the girls is our top priority. We ensure 24x7 residential care, secure campus facilities, and an empathetic mentoring system. We nurture a respectful, inclusive environment where girls feel secure to explore and excel. We implement anti-bullying policies."
+      },
+      {
+        image: "/img/academics/point2.jpg",
+        title: "Global Curriculum Advantage",
+        description: "Experience a powerful dual-curriculum system — CBSE and the Australian WACE Programme, that builds academic rigor, critical thinking, and international readiness for careers in medicine, engineering, business, design, and beyond."
+      },
+      {
+        image: "/img/academics/point3.jpg",
+        title: "Holistic Growth Beyond Academics",
+        description: "From sports and performing arts to cultural clubs and community initiatives, we celebrate every talent, helping students develop discipline, teamwork, empathy, and leadership through real-world experiences."
+      }
+    ],
+
+    aboutCardData: [
+      {
+        icon: 'fas fa-school',
+        title: 'World-Class Infrastructure',
+        description: 'Our state-of-the-art campus features modern classrooms, advanced laboratories, well-equipped libraries, and comprehensive sports facilities.',
+        image: '/img/about/world_class_infrastructure.jpg'
+      },
+      {
+        icon: 'fas fa-trophy',
+        title: 'Academic Excellence',
+        description: 'Our students consistently achieve outstanding results in national and international examinations, reflecting our commitment to academic excellence and holistic development.',
+        image: '/img/about/academic_excellence.jpg'
+      },
+      {
+        icon: 'fas fa-heart',
+        title: 'Holistic Development',
+        description: 'We focus on nurturing every aspect of a student\'s personality - intellectual, emotional, physical, and social development through comprehensive programs and activities.',
+        image: '/img/about/holistic_development.jpg'
+      },
+      {
+        icon: 'fas fa-globe',
+        title: 'Global Standards',
+        description: 'Our curriculum follows international standards while maintaining strong roots in Indian values and culture, preparing students for global opportunities.',
+        image: '/img/about/global_standards.jpg'
+      }
+    ],
+
+    aboutShapingFuture: {
+      description: "Techno India Group World School, Siliguri stands tall as Eastern India's foremost all-girls' residential institution, a true sanctuary of learning nestled amidst the tranquil greenery of Siliguri. With its state-of-the-art campus, modern infrastructure, and world-class amenities, the school offers a safe, inspiring, and empowering environment where excellence thrives in every form, academic achievement, character building, creativity, and holistic well-being. <br /> Driven by a team of passionate and accomplished educators, Techno India Group World School is committed to shaping confident, visionary young women who lead with purpose, pride, and integrity, ready to excel and make their mark on the world."
+    },
+
+    academicCBSECurriculum: {
+      description: "Techno India Group World School offers an environment that is conducive to academic excellence. The curriculum encourages deeper understanding of the subjects they learn. The school follows the NCERT curriculum and is in the process to be affiliated to CBSE. <br /> The school imparts soft skills like continual learning aptitude, positive attitude, and innovative thinking."
+    },
+
+    academicWACECurriculum: {
+      description: "We are proud to offer a NEP aligned CBSE curriculum alongside the Australian WACE Programme, forging a global academic bridge between Eastern roots and Western aspirations, empowering students to dream bigger and reach farther. <br /> Our limited screen time policy helps instill digital discipline, focus, and creativity, ensuring girls grow up healthy, balanced, and confident. We don't just educate, we inspire girls to lead, innovate, and make a difference in the world. <br /> We celebrate diversity, encourage cross cultural dialogue, and prepare students to become ethical leaders in a changing world."
+    },
   },
   
   malda: {
     name: "TIGWS Malda",
+    bannerVideo: "/videos/TIGWS_Malda.mp4",
+    logo: "/img/logo/tigws_malda_logo.png",
     fullName: "Techno India Group World School Malda",
     location: "Malda, West Bengal",
     type: "Co-Educational Day School",
     
     contact: {
       phone: "8967826765",
-      email: "tigworldschoolmalda@gmail.com",
-      address: "TIGWS Campus, Malda, West Bengal"
+      email: "principal.malda@tigps.in",
+      address: "Sukhandighi, GP-Bhabuk, PO & PS Malda, 732142,Dist. Malda, West Bengal, India",
+      websiteUrl: "https://www.tigworldschools.com/malda",
+      schoolLocation: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100074.97695814424!2d88.25886809726565!3d25.144868500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb13daaaaaaaab%3A0x4bf4b39968c28b25!2sTechno%20Global%20School%20Malda!5e1!3m2!1sen!2sin!4v1764581229614!5m2!1sen!2sin"
     },
     
     hero: {
@@ -48,7 +144,7 @@ export const campusConfig = {
     },
     
     about: {
-      description: "Techno India Group World School, Malda, is a premier institution dedicated to academic excellence and holistic development. Rooted in the Techno India Group's legacy, the school fosters a vibrant learning environment that encourages curiosity, creativity, and strong character.",
+      description: "Techno India Group World School, Malda, is a premier institution dedicated to academic excellence and holistic development. Rooted in the Techno India Group’s legacy, the school fosters a vibrant learning environment that encourages curiosity, creativity, and strong character. With a comprehensive CBSE curriculum, modern teaching methods, and a focus on co-curricular activities and life skills, students are prepared for future challenges. The school aims to nurture confident, compassionate global citizens, empowering them to excel academically and contribute meaningfully to society.",
       highlights: [
         "Holistic Development Approach",
         "State-of-the-Art Infrastructure", 
@@ -56,8 +152,24 @@ export const campusConfig = {
         "Innovative Learning Methods",
         "Emphasis on Creative Arts and Hobbies",
         "Focus on Leadership and Life Skills"
-      ]
+      ],
+      aboutImage: "/img/about/first_pic1.jpg"
     },
+
+    missionVission: [
+      {
+        title: "Our Mission",
+        description: "To create a sustainable flow of quality human resources capable of meeting the technological challenges of tomorrow and thereby creating wealth for the nation at the forefront of knowledge."
+      },
+      {
+        title: "Our Vision",
+        description: "To create a unique and state of the art learning environment in the country and produce knowledge based technologists to meet the challenges of a new millennium."
+      },
+      {
+        title: "Global Outlook",
+        description: "Techno India Group World School Malda plans to introduce IGCSE and IB programs, offering students global exposure through international exchange opportunities and world-class education."
+      },
+    ],
     
     curriculum: {
       primary: "CBSE Curriculum",
@@ -67,30 +179,75 @@ export const campusConfig = {
     
     whyChoose: [
       {
+        image: "/img/academics/point4.jpg",
         title: "Holistic Development Approach",
         description: "TIGWS Malda focuses on nurturing students' physical, mental, emotional, and intellectual growth, ensuring well-rounded development for future leaders."
       },
       {
+        image: "/img/academics/point4.jpg",
         title: "State-of-the-Art Infrastructure", 
         description: "The school offers modern facilities, including smart classrooms, a well-equipped library, and advanced sports amenities, creating an ideal learning environment."
       },
       {
+        image: "/img/academics/point4.jpg",
         title: "Expert Sports and Physical Training",
         description: "With specialized football coaching from Brazilian experts and Taekwondo classes under world-renowned mentors, students gain exceptional physical training."
       },
       {
+        image: "/img/academics/point4.jpg",
         title: "Innovative Learning Methods",
         description: "Digital classrooms and a blended hybrid teaching approach make learning engaging, combining interactive tools and modern educational techniques."
       },
       {
+        image: "/img/academics/point4.jpg",
         title: "Emphasis on Creative Arts and Hobbies",
         description: "Music, dance, art, and clay modeling workshops foster creativity, allowing students to explore their talents and express themselves freely."
       },
       {
+        image: "/img/academics/point4.jpg",
         title: "Focus on Leadership and Life Skills",
         description: "TIGWS Malda promotes leadership, teamwork, and resilience, preparing students to confidently tackle life's challenges and grow into responsible individuals."
       }
     ],
+
+    aboutCardData: [
+      {
+        icon: 'fas fa-school',
+        title: 'Holistic Growth',
+        description: 'Our focus is on nurturing students\' physical, mental, emotional, and intellectual growth, empowering them to become well-rounded future leaders.',
+        image: '/img/about/world_class_infrastructure.jpg'
+      },
+      {
+        icon: 'fas fa-trophy',
+        title: 'Sports Training',
+        description: 'Our expert coaching in football and Taekwondo equips students with exceptional physical skills, setting them up for excellence in sports.',
+        image: '/img/about/academic_excellence.jpg'
+      },
+      {
+        icon: 'fas fa-heart',
+        title: 'Creative Arts',
+        description: 'Our workshops in music, dance, art, and clay modeling ignite creativity, allowing students to discover their talents and express freely.',
+        image: '/img/about/holistic_development.jpg'
+      },
+      {
+        icon: 'fas fa-globe',
+        title: 'Life Skills',
+        description: 'Our emphasis on leadership, teamwork, and resilience prepares students to confidently tackle challenges and grow into responsible, capable individuals.',
+        image: '/img/about/global_standards.jpg'
+      }
+    ],
+
+    aboutShapingFuture: {
+      description: "At Techno India Group World School Malda, we are committed to shaping the future of our students by adapting to the rapid changes in social, economic, and technological landscapes. Recognizing the need for high-quality education, we integrate cutting-edge teaching methods and the latest technologies into our curriculum. To offer a holistic learning experience, Techno India Group introduces a variety of flexible school formats, including Day, Extended Day, and Residential options. These formats are designed to provide students with a well-rounded education that caters to diverse needs, ensuring they are equipped with the skills and knowledge necessary for success in an ever-evolving global landscape."
+    },
+
+    academicCBSECurriculum: {
+      description: "Techno India World School Malda provides a nurturing environment that fosters academic excellence, focusing on both intellectual growth and comprehensive understanding. The curriculum is designed to encourage students to engage deeply with the subjects, going beyond rote learning to develop critical thinking and analytical skills. Following the guidelines set by the National Council for Educational Research & Training (NCERT), the school ensures a well-rounded education that aligns with national educational standards. Additionally, with aspirations to be affiliated with the Central Board of Secondary Education (CBSE), the school is committed to offering a globally recognized, progressive curriculum that prepares students for success in both academics and life. <br />We celebrate diversity, encourage cross-cultural dialogue, and prepare students to become ethical leaders in a changing world."
+    },
+
+    academicWACECurriculum: {
+      description: ""
+    },
     
     lifeAtSchool: [
       {

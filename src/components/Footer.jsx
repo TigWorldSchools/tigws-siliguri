@@ -1,9 +1,15 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
+import { getCampusConfig } from '../utils/campusConfig.js';
 
 const Footer = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+
+  const campusData = getCampusConfig(campus);
+
   const { ref: footerRef, inView: footerInView } = useInView({
     threshold: 0.1,
   });
@@ -13,17 +19,24 @@ const Footer = () => {
     window.footerInView = footerInView;
   }, [footerInView]);
   const quickLinks = [
-    { label: 'Admission', url: '/siliguri/admission-criteria' },
-    { label: 'Life at TIGWS', url: '/siliguri/life-at-tigws' },
-    { label: 'Academics', url: '/siliguri/curriculum' },
-    { label: 'Campuses', url: '/siliguri/about#other-campuses' },
-    { label: 'Careers', url: '/siliguri/career' }
+    { label: 'Admission', url: `/${campus}/admission-criteria` },
+    { label: 'Life at TIGWS', url: `/${campus}/life-at-tigws` },
+    { label: 'Academics', url: `/${campus}/curriculum` },
+    { label: 'Campuses', url: `/${campus}/about#other-campuses` },
+    { label: 'Careers', url: `/${campus}/career`  }
   ];
 
-  const socialLinks = [
-    { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61579539989989' },
-    { icon: 'fab fa-instagram', url: 'https://www.instagram.com/tig_world_school/?hl=en' }
-  ];
+  const socialLinks = {
+    siliguri: [
+      { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61579539989989' },
+      { icon: 'fab fa-instagram', url: 'https://www.instagram.com/technoindiagroup_world_school/' }
+    ],
+
+    malda: [
+      { icon: 'fab fa-facebook-f', url: '#' },
+      { icon: 'fab fa-instagram', url: '#' }
+    ]
+  };
 
   return (
     <footer ref={footerRef} className="footer">
@@ -32,22 +45,22 @@ const Footer = () => {
           <div className="footer__section footer__contact">
             <div className="footer__contact-item">
               <i className="fas fa-map-marker-alt"></i>
-              <span>Techno India Group World School, Siliguri: Himachal Vihar, Behind City Centre, Near Passport Office, Siliguri West Bengal- 734010</span>
+              <span>{campusData.contact.address}</span>
             </div>
             <div className="footer__contact-item">
               <i className="fas fa-phone"></i>
-              <a href="tel:9733018000" className="footer__link">9733018000</a>
+              <a href={`tel:${campusData.contact.phone}`} className="footer__link">{campusData.contact.phone}</a>
             </div>
             <div className="footer__contact-item">
               <i className="fas fa-envelope"></i>
-              <a href="mailto:info@tigworldschool.in" className="footer__link">info@tigworldschool.in</a>
+              <a href={`mailto:${campusData.contact.email}`} className="footer__link">{campusData.contact.email}</a>
             </div>
             <div className="footer__contact-item">
               <i className="fas fa-globe"></i>
-              <a href="https://www.tigworldschools.com/siliguri" className="footer__link">www.tigworldschools.com/siliguri</a>
+              <a href={`${campusData.contact.websiteUrl}`} className="footer__link">{campusData.contact.websiteUrl}</a>
             </div>
             <div className="footer__social">
-              {socialLinks.map((social, index) => (
+              {socialLinks[campus]?.map((social, index) => (
                 <a key={index} href={social.url} className="footer__social-link">
                   <i className={social.icon}></i>
                 </a>
@@ -72,7 +85,7 @@ const Footer = () => {
             <h3 className="footer__title">Locate Us</h3>
             <div className="footer__map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.7!2d88.4294!3d26.7271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQzJzM3LjYiTiA4OMKwMjUnNDUuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src={`${campusData.contact.schoolLocation}`}
                 width="100%"
                 height="200"
                 style={{ border: 0 }}

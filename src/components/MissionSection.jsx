@@ -1,12 +1,22 @@
 import React, { memo, useCallback } from 'react';
 import './MissionSection.css';
+import { useLocation } from "react-router-dom";
+import { getCampusConfig } from '../utils/campusConfig.js';
 
-const MissionSection = memo(() => {
+
+const MissionSection = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+  
+  const campusData = getCampusConfig(campus);
+
   const handleCardClick = useCallback(() => {
     if (navigator.vibrate) {
       navigator.vibrate(40);
     }
   }, []);
+  const mission_vission = campusData.missionVission;
+
 
   return (
     <section className="mission-section">
@@ -20,45 +30,24 @@ const MissionSection = memo(() => {
         </div>
 
         <div className="mission-right">
-          <div className="mission-card" onClick={handleCardClick}>
-            <div className="card-content">
-              <h3 className="card-title">Our Mission</h3>
-              <p className="card-text">
-                To empower every girl to become a confident, independent, and empathetic global citizen by fostering academic excellence, emotional intelligence, and social responsibility.
-              </p>
-              <button className="card-arrow">
-                <i className="fas fa-arrow-right"></i>
-              </button>
+          {mission_vission.map((feature, index) => (
+            <div className="mission-card" onClick={handleCardClick}>
+              <div className="card-content">
+                <h3 className="card-title">{feature.title}</h3>
+                <p className="card-text">
+                  {feature.description}
+                </p>
+                <button className="card-arrow">
+                  <i className="fas fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div className="mission-card" onClick={handleCardClick}>
-            <div className="card-content">
-              <h3 className="card-title">Our Vision</h3>
-              <p className="card-text">
-                To create a world-class learning environment where Eastern roots meet Western innovation, preparing girls to excel on global platforms while staying deeply connected to their cultural identity.
-              </p>
-              <button className="card-arrow">
-                <i className="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-
-          <div className="mission-card" onClick={handleCardClick}>
-            <div className="card-content">
-              <h3 className="card-title">Global Outlook</h3>
-              <p className="card-text">
-                Aligned with the National Education Policy (NEP) and the internationally recognized Australian WACE Programme, TIG World School bridges global standards with Indian values.
-              </p>
-              <button className="card-arrow">
-                <i className="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
-});
+
+};
 
 export default MissionSection;

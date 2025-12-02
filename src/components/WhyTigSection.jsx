@@ -2,9 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './WhyTigSection.css';
+import { useLocation } from "react-router-dom";
 import { getCampusConfig } from '../utils/campusConfig.js';
 
-const WhyTigSection = ({ campus = 'siliguri' }) => {
+const WhyTigSection = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+
   const campusData = getCampusConfig(campus);
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [flipped, setFlipped] = useState({});
@@ -14,38 +18,7 @@ const WhyTigSection = ({ campus = 'siliguri' }) => {
   const timers = useRef({});
   const autoFlipTimer = useRef(null);
 
-  const features = [
-    {
-      image: "/img/academics/point4.jpg",
-      title: "Empowered by Technology & Faculty Excellence",
-      description: "With modern digital classrooms, advanced laboratories, and expert educators, our campus blends innovation with inspiration. We also offer financial aid and scholarships to ensure opportunity for all deserving learners."
-    },
-    {
-      image: "/img/academics/point5.jpg",
-      title: "Personalized Learning & Mentorship",
-      description: "Every girl’s journey is unique. Our personalized guidance, small class sizes, and strong teacher-student ratio ensure focused academic support, career counseling, and emotional well-being at every step."
-    },
-    {
-      image: "/img/academics/point6.jpg",
-      title: "Future-Ready College & Career Pathways",
-      description: "Through skill-based learning, leadership programs, and global exposure, students gain the confidence, creativity, and competence to thrive in top universities and future careers worldwide."
-    },
-    {
-      image: "/img/academics/point1.jpg",
-      title: "Safe, Supportive & Inclusive Campus",
-      description: "Safety of the girls is our top priority. We ensure 24x7 residential care, secure campus facilities, and an empathetic mentoring system. We nurture a respectful, inclusive environment where girls feel secure to explore and excel. We implement anti-bullying policies."
-    },
-    {
-      image: "/img/academics/point2.jpg",
-      title: "Global Curriculum Advantage",
-      description: "Experience a powerful dual-curriculum system — CBSE and the Australian WACE Programme, that builds academic rigor, critical thinking, and international readiness for careers in medicine, engineering, business, design, and beyond."
-    },
-    {
-      image: "/img/academics/point3.jpg",
-      title: "Holistic Growth Beyond Academics",
-      description: "From sports and performing arts to cultural clubs and community initiatives, we celebrate every talent, helping students develop discipline, teamwork, empathy, and leadership through real-world experiences."
-    }
-  ];
+  const features = campusData.whyChoose;
 
   const handleFlip = (index, flip) => {
     if (timers.current[index]) clearTimeout(timers.current[index]);
