@@ -119,6 +119,45 @@ export const campusConfig = {
     academicWACECurriculum: {
       description: "We are proud to offer a NEP aligned CBSE curriculum alongside the Australian WACE Programme, forging a global academic bridge between Eastern roots and Western aspirations, empowering students to dream bigger and reach farther. <br /> Our limited screen time policy helps instill digital discipline, focus, and creativity, ensuring girls grow up healthy, balanced, and confident. We don't just educate, we inspire girls to lead, innovate, and make a difference in the world. <br /> We celebrate diversity, encourage cross cultural dialogue, and prepare students to become ethical leaders in a changing world."
     },
+
+    lifeAtSchool: [
+      {
+        id: '01',
+        icon: '/img/icons/academic.png',
+        title: "Academics",
+        description: "At Techno India Group World School, we cultivate academic excellence through an inspiring and future-ready learning environment. Rooted in Indian values and enriched by global perspectives, our NEP-aligned curriculum empowers students to think critically, innovate boldly, and grow holistically. We prepare every learner to dream fearlessly, adapt confidently, and achieve boundlessly in a rapidly evolving world."
+      },
+      {
+        id: '02',
+        icon: '/img/icons/stem.png',
+        title: "STEM Innovation",
+        description: "At Techno India Group World School, we inspire girls to lead with purpose, think creatively, and shape a better world with confidence and compassion. Guided by a limited screen-time policy and empowered by cutting-edge digital classrooms, our students learn to balance tradition with innovation. Here, education comes alive through curiosity, collaboration, and the joy of discovery, preparing every learner to embrace the future fearlessly."
+      },
+      {
+        id: '03',
+        icon: '/img/icons/arts.png',
+        title: "Performing Arts",
+        description: "At Techno India Group World School, we celebrate the creative spirit within every child, nurturing imagination and self-expression through music, dance, and the performing arts. In our state-of-the-art music hall, young talents discover their voice, build confidence, and experience the joy of creation. Here, artistic expression becomes a journey of growth, shaping students into confident, compassionate, and well-rounded individuals."
+      },
+      {
+        id: '04',
+        icon: '/img/icons/sport.png',
+        title: "Sports & Fitness",
+        description: "At Techno India Group World School, we believe that true education flourishes when physical vitality and mental well-being move in harmony. Our expansive campus, with its lush playgrounds and world-class sports facilities, inspires energy, teamwork, and confidence in every learner. Through diverse athletic pursuits, from swimming and tennis to rock climbing and adventure sports, students discover their strength, build resilience, and embrace the joy of movement."
+      },
+      {
+        id: '05',
+        icon: '/img/icons/sustainability.png',
+        title: "Sustainability and Outreach",
+        description: "At Techno India Group World School, sustainability is more than a practice, it’s a way of life. Through eco-conscious initiatives and meaningful community outreach, our students are encouraged to learn to lead with empathy, responsibility, and purpose. Together, we cultivate changemakers who care deeply for people, planet, and progress."
+      },
+      {
+        id: '06',
+        icon: '/img/icons/replacement.png',
+        title: "International Exchange",
+        description: "At Techno India Group World School, we strive to build global citizens who learn, connect, and grow beyond borders. Our international exchange initiatives inspire cultural understanding, empathy, and a spirit of collaboration that prepares students to thrive in an interconnected world."
+      }
+    ],
   },
   
   malda: {
@@ -251,26 +290,38 @@ export const campusConfig = {
     
     lifeAtSchool: [
       {
+        id: '01',
+        icon: '/img/icons/academic.png',
         title: "Academics",
         description: "Techno India World School Malda offers a dynamic curriculum, blending rigorous academics with interactive learning tools. Students are encouraged to develop critical thinking, problem-solving skills, and a strong foundation for future success."
       },
       {
+        id: '02',
+        icon: '/img/icons/stem.png',
         title: "STEM Innovation",
         description: "Students engage with cutting-edge STEM education, fostering creativity and analytical thinking through hands-on projects, coding, robotics, and scientific exploration, preparing them for the technological world ahead."
       },
       {
+        id: '03',
+        icon: '/img/icons/arts.png',
         title: "Performing Arts",
         description: "Techno India World School Malda nurtures artistic talent through dedicated music, dance, and drama programs, providing students with the opportunity to explore both eastern and western traditions under expert guidance."
       },
       {
+        id: '04',
+        icon: '/img/icons/sport.png',
         title: "Sports & Fitness",
         description: "With world-class sports facilities and expert coaching, TIGWS Malda emphasizes physical fitness through diverse activities including gymnastics, football, swimming, and adventure sports, fostering teamwork and healthy competition."
       },
       {
+        id: '05',
+        icon: '/img/icons/sustainability.png',
         title: "Sustainability and Outreach",
         description: "TIGWS Malda is committed to sustainability, instilling eco-friendly practices in students. Outreach programs promote social responsibility, encouraging students to contribute positively to the environment and community welfare."
       },
       {
+        id: '06',
+        icon: '/img/icons/replacement.png',
         title: "International Exchange",
         description: "TIGWS Malda fosters global learning through international exchange programs, offering students exposure to diverse cultures and perspectives while enhancing academic and personal growth."
       }
