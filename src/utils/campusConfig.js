@@ -200,7 +200,7 @@ export const campusConfig = {
     
     contact: {
       phone: "8967826765",
-      email: "principal.malda@tigps.in",
+      email: "tigworldschoolmalda@gmail.com",
       address: "Sukhandighi, GP-Bhabuk, PO & PS Malda, 732142,Dist. Malda, West Bengal, India",
       websiteUrl: "https://www.tigworldschools.com/malda",
       schoolLocation: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100074.97695814424!2d88.25886809726565!3d25.144868500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb13daaaaaaaab%3A0x4bf4b39968c28b25!2sTechno%20Global%20School%20Malda!5e1!3m2!1sen!2sin!4v1764581229614!5m2!1sen!2sin"

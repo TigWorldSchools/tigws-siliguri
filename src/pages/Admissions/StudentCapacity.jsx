@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./StudentCapacity.css";
+import { useLocation } from "react-router-dom";
 
 const StudentCapacity = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-const pdfUrl = "/pdf/student-capacity.pdf";
+  const pdfUrl = "/pdf/student-capacity.pdf";
   const fullText = "Student Capacity";
 
   // Scroll to top when component mounts
@@ -57,7 +60,7 @@ const handleDownload = () => {
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(/img/banner_images/page_banner.jpg)",
+            `url(/img/banner_images/${campus}/page_banner.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "400px",

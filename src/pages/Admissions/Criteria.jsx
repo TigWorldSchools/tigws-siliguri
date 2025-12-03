@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 
 const Criteria = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const fullText = "Admission Criteria";
@@ -29,7 +32,7 @@ const Criteria = () => {
       <section
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
-          backgroundImage: "url(/img/banner_images/page_banner.jpg)",
+          backgroundImage: `url(/img/banner_images/${campus}/page_banner.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "400px",

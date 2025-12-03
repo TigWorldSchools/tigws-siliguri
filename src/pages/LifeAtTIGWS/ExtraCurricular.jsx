@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./ExtraCurricular.css";
+import { useLocation } from "react-router-dom";
 
 const ExtraCurricular = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const fullText = "Extra Curricular";
@@ -76,7 +79,7 @@ const ExtraCurricular = () => {
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(/img/banner_images/page_banner.jpg)",
+            `url(/img/banner_images/${campus}/page_banner.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

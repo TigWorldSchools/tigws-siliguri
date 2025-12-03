@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "./StudentTestimonials.css";
+import { useLocation } from "react-router-dom";
 
 const testimonials = [
   {
@@ -30,6 +31,8 @@ const testimonials = [
 ];
 
 const StudentTestimonials = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
@@ -63,7 +66,7 @@ const StudentTestimonials = () => {
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(/img/banner_images/page_banner.jpg)",
+            `url(/img/banner_images/${campus}/page_banner.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

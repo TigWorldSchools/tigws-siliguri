@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Gallery.css";
+import { useLocation } from "react-router-dom";
 
 const Gallery = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -11,12 +14,12 @@ const Gallery = () => {
   const fullText = "Gallery";
 
   const images = [
-    "/img/gallery/image_1.jpg",
-    "/img/gallery/image_2.jpg",
-    "/img/gallery/image_3.jpg",
-    "/img/gallery/image_4.jpg",
-    "/img/gallery/image_5.jpg",
-    "/img/gallery/image_6.jpg",
+    `/img/gallery/${campus}/image_1.jpg`,
+    `/img/gallery/${campus}/image_2.jpg`,
+    `/img/gallery/${campus}/image_3.jpg`,
+    `/img/gallery/${campus}/image_4.jpg`,
+    `/img/gallery/${campus}/image_5.jpg`,
+    `/img/gallery/${campus}/image_6.jpg`,
   ];
 
   // Typing animation
@@ -91,7 +94,7 @@ const Gallery = () => {
         className="gallery-pg-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(/img/banner_images/page_banner.jpg)",
+            `url(/img/banner_images/${campus}/page_banner.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

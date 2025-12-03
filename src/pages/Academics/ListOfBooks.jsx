@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Modal } from "react-bootstrap";
 import "./ListOfBooks.css";
+import { useLocation } from "react-router-dom";
 
 const ListOfBooks = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -479,7 +482,7 @@ const ListOfBooks = () => {
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
-            "url(/img/banner_images/page_banner.jpg)",
+            `url(/img/banner_images/${campus}/page_banner.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "400px",
