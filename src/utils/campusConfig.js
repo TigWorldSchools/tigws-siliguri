@@ -85,30 +85,31 @@ export const campusConfig = {
         icon: 'fas fa-school',
         title: 'World-Class Infrastructure',
         description: 'Our state-of-the-art campus features modern classrooms, advanced laboratories, well-equipped libraries, and comprehensive sports facilities.',
-        image: '/img/about/world_class_infrastructure.jpg'
+        image: '/img/about/siliguri/world_class_infrastructure.jpg'
       },
       {
         icon: 'fas fa-trophy',
         title: 'Academic Excellence',
         description: 'Our students consistently achieve outstanding results in national and international examinations, reflecting our commitment to academic excellence and holistic development.',
-        image: '/img/about/academic_excellence.jpg'
+        image: '/img/about/siliguri/academic_excellence.jpg'
       },
       {
         icon: 'fas fa-heart',
         title: 'Holistic Development',
         description: 'We focus on nurturing every aspect of a student\'s personality - intellectual, emotional, physical, and social development through comprehensive programs and activities.',
-        image: '/img/about/holistic_development.jpg'
+        image: '/img/about/siliguri/holistic_development.jpg'
       },
       {
         icon: 'fas fa-globe',
         title: 'Global Standards',
         description: 'Our curriculum follows international standards while maintaining strong roots in Indian values and culture, preparing students for global opportunities.',
-        image: '/img/about/global_standards.jpg'
+        image: '/img/about/siliguri/global_standards.jpg'
       }
     ],
 
     aboutShapingFuture: {
-      description: "Techno India Group World School, Siliguri stands tall as Eastern India's foremost all-girls' residential institution, a true sanctuary of learning nestled amidst the tranquil greenery of Siliguri. With its state-of-the-art campus, modern infrastructure, and world-class amenities, the school offers a safe, inspiring, and empowering environment where excellence thrives in every form, academic achievement, character building, creativity, and holistic well-being. <br /> Driven by a team of passionate and accomplished educators, Techno India Group World School is committed to shaping confident, visionary young women who lead with purpose, pride, and integrity, ready to excel and make their mark on the world."
+      description: "Techno India Group World School, Siliguri stands tall as Eastern India's foremost all-girls' residential institution, a true sanctuary of learning nestled amidst the tranquil greenery of Siliguri. With its state-of-the-art campus, modern infrastructure, and world-class amenities, the school offers a safe, inspiring, and empowering environment where excellence thrives in every form, academic achievement, character building, creativity, and holistic well-being. <br /> Driven by a team of passionate and accomplished educators, Techno India Group World School is committed to shaping confident, visionary young women who lead with purpose, pride, and integrity, ready to excel and make their mark on the world.",
+      image: '/img/about/siliguri/shaping_futures.jpg'
     },
 
     academicCBSECurriculum: {
@@ -280,30 +281,31 @@ export const campusConfig = {
         icon: 'fas fa-school',
         title: 'Holistic Growth',
         description: 'Our focus is on nurturing students\' physical, mental, emotional, and intellectual growth, empowering them to become well-rounded future leaders.',
-        image: '/img/about/world_class_infrastructure.jpg'
+        image: '/img/about/malda/holistic_growth.jpg'
       },
       {
         icon: 'fas fa-trophy',
         title: 'Sports Training',
         description: 'Our expert coaching in football and Taekwondo equips students with exceptional physical skills, setting them up for excellence in sports.',
-        image: '/img/about/academic_excellence.jpg'
+        image: '/img/about/malda/sports_training.jpg'
       },
       {
         icon: 'fas fa-heart',
         title: 'Creative Arts',
         description: 'Our workshops in music, dance, art, and clay modeling ignite creativity, allowing students to discover their talents and express freely.',
-        image: '/img/about/holistic_development.jpg'
+        image: '/img/about/malda/creative_arts.jpg'
       },
       {
         icon: 'fas fa-globe',
         title: 'Life Skills',
         description: 'Our emphasis on leadership, teamwork, and resilience prepares students to confidently tackle challenges and grow into responsible, capable individuals.',
-        image: '/img/about/global_standards.jpg'
+        image: '/img/about/malda/life_skills.jpg'
       }
     ],
 
     aboutShapingFuture: {
-      description: "At Techno India Group World School Malda, we are committed to shaping the future of our students by adapting to the rapid changes in social, economic, and technological landscapes. Recognizing the need for high-quality education, we integrate cutting-edge teaching methods and the latest technologies into our curriculum. To offer a holistic learning experience, Techno India Group introduces a variety of flexible school formats, including Day, Extended Day, and Residential options. These formats are designed to provide students with a well-rounded education that caters to diverse needs, ensuring they are equipped with the skills and knowledge necessary for success in an ever-evolving global landscape."
+      description: "At Techno India Group World School Malda, we are committed to shaping the future of our students by adapting to the rapid changes in social, economic, and technological landscapes. Recognizing the need for high-quality education, we integrate cutting-edge teaching methods and the latest technologies into our curriculum. To offer a holistic learning experience, Techno India Group introduces a variety of flexible school formats, including Day, Extended Day, and Residential options. These formats are designed to provide students with a well-rounded education that caters to diverse needs, ensuring they are equipped with the skills and knowledge necessary for success in an ever-evolving global landscape.",
+      image: '/img/about/malda/shaping_futures.jpg'
     },
 
     academicCBSECurriculum: {

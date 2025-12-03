@@ -112,7 +112,7 @@ const About = () => {
         description={seoData.description}
         keywords={seoData.keywords}
         url={`/${campus}`}
-        image="/img/about/first_pic.jpg"
+        image={`/img/about/${campus}/first_pic.jpg`}
       />
 
       <main className="page-content">
@@ -360,7 +360,7 @@ const About = () => {
               <div className="col-lg-6 col-12">
                 <div className="card h-100" style={{ backgroundColor: 'white', border: 'none', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 8px 25px rgba(0,0,0,0.15)' }}>
                   <img
-                    src="/img/gallery/image_5.jpg"
+                    src={`${campusData.aboutShapingFuture.image}`}
                     alt="Shaping Futures"
                     className="img-fluid"
                     style={{ width: '100%', height: '538px', objectFit: 'cover', minHeight: '400px', maxHeight: '538spx' }}

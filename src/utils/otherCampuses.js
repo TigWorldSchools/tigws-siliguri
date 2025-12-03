@@ -10,7 +10,7 @@ export const otherCampuses = {
     },
     {
       name: "TIGWS Kolkata",
-      img: "/img/campuses/tigws-malda.jpg",
+      img: "/img/campuses/tigws-kolkata.jpg",
       address: "Our upcoming flagship campus in Kolkata",
       phone: "91-XXXXXXXXXX",
       buttonText: "Coming Soon",
@@ -21,7 +21,7 @@ export const otherCampuses = {
   malda: [
     {
       name: "TIGWS Siliguri",
-      img: "/img/campuses/tigws-malda.jpg",
+      img: "/img/campuses/tigws-siliguri.jpg",
       address: "Himachal Vihar, Behind City Centre, Siliguri",
       phone: "9733018000",
       buttonText: "Visit Campus",
@@ -29,7 +29,7 @@ export const otherCampuses = {
     },
     {
       name: "TIGWS Kolkata",
-      img: "/img/campuses/tigws-malda.jpg",
+      img: "/img/campuses/tigws-kolkata.jpg",
       address: "Our upcoming flagship campus in Kolkata",
       phone: "91-XXXXXXXXXX",
       buttonText: "Coming Soon",
@@ -40,7 +40,7 @@ export const otherCampuses = {
   kolkata: [
     {
       name: "TIGWS Siliguri",
-      img: "/img/campuses/tigws-malda.jpg",
+      img: "/img/campuses/tigws-siliguri.jpg",
       address: "Himachal Vihar, Behind City Centre, Siliguri",
       phone: "9733018000",
       buttonText: "Visit Campus",
