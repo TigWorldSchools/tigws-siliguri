@@ -84,7 +84,11 @@ const StudentPathway = () => {
         const containerTop = pathway.getBoundingClientRect().top;
         let activeHeight = rect.top - containerTop + rect.height / 2;
 
-        if (activeHeight > 770) activeHeight = 770;
+        if (window.innerWidth < 600) {
+          activeHeight = 1800;
+        } else {
+          if (activeHeight > 880) activeHeight = 898;
+        }
 
         pathway.style.setProperty("--active-line-height", `${activeHeight}px`);
       }
@@ -105,7 +109,7 @@ const StudentPathway = () => {
   return (
     <>      
       <section
-        className="page-hero d-flex align-items-center justify-content-center student-pathway"
+        className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
             `url(/img/banner_images/${campus}/page_banner.jpg)`,
