@@ -113,11 +113,13 @@ export const campusConfig = {
     },
 
     academicCBSECurriculum: {
-      description: "Techno India Group World School offers an environment that is conducive to academic excellence. The curriculum encourages deeper understanding of the subjects they learn. The school follows the NCERT curriculum and is in the process to be affiliated to CBSE. <br /> The school imparts soft skills like continual learning aptitude, positive attitude, and innovative thinking."
+      description: "Techno India Group World School offers an environment that is conducive to academic excellence. The curriculum encourages deeper understanding of the subjects they learn. The school follows the NCERT curriculum and is in the process to be affiliated to CBSE. <br /> The school imparts soft skills like continual learning aptitude, positive attitude, and innovative thinking.",
+      image: '/img/academics/siliguri/cbse_curriculum.jpg'
     },
 
     academicWACECurriculum: {
-      description: "We are proud to offer a NEP aligned CBSE curriculum alongside the Australian WACE Programme, forging a global academic bridge between Eastern roots and Western aspirations, empowering students to dream bigger and reach farther. <br /> Our limited screen time policy helps instill digital discipline, focus, and creativity, ensuring girls grow up healthy, balanced, and confident. We don't just educate, we inspire girls to lead, innovate, and make a difference in the world. <br /> We celebrate diversity, encourage cross cultural dialogue, and prepare students to become ethical leaders in a changing world."
+      description: "We are proud to offer a NEP aligned CBSE curriculum alongside the Australian WACE Programme, forging a global academic bridge between Eastern roots and Western aspirations, empowering students to dream bigger and reach farther. <br /> Our limited screen time policy helps instill digital discipline, focus, and creativity, ensuring girls grow up healthy, balanced, and confident. We don't just educate, we inspire girls to lead, innovate, and make a difference in the world. <br /> We celebrate diversity, encourage cross cultural dialogue, and prepare students to become ethical leaders in a changing world.",
+      image: '/img/academics/wace_curriculum.jpg'
     },
 
     lifeAtSchool: [
@@ -309,11 +311,13 @@ export const campusConfig = {
     },
 
     academicCBSECurriculum: {
-      description: "Techno India World School Malda provides a nurturing environment that fosters academic excellence, focusing on both intellectual growth and comprehensive understanding. The curriculum is designed to encourage students to engage deeply with the subjects, going beyond rote learning to develop critical thinking and analytical skills. Following the guidelines set by the National Council for Educational Research & Training (NCERT), the school ensures a well-rounded education that aligns with national educational standards. Additionally, with aspirations to be affiliated with the Central Board of Secondary Education (CBSE), the school is committed to offering a globally recognized, progressive curriculum that prepares students for success in both academics and life. <br />We celebrate diversity, encourage cross-cultural dialogue, and prepare students to become ethical leaders in a changing world."
+      description: "Techno India World School Malda provides a nurturing environment that fosters academic excellence, focusing on both intellectual growth and comprehensive understanding. The curriculum is designed to encourage students to engage deeply with the subjects, going beyond rote learning to develop critical thinking and analytical skills. Following the guidelines set by the National Council for Educational Research & Training (NCERT), the school ensures a well-rounded education that aligns with national educational standards. Additionally, with aspirations to be affiliated with the Central Board of Secondary Education (CBSE), the school is committed to offering a globally recognized, progressive curriculum that prepares students for success in both academics and life. <br />We celebrate diversity, encourage cross-cultural dialogue, and prepare students to become ethical leaders in a changing world.",
+      image: '/img/academics/malda/cbse_curriculum.jpg'
     },
 
     academicWACECurriculum: {
-      description: ""
+      description: "",
+      image: ""
     },
     
     lifeAtSchool: [

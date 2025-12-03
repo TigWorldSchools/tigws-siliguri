@@ -9,7 +9,6 @@ const Curriculum = () => {
   const campus = pathname.split("/")[1] || "siliguri";
   
   const campusData = getCampusConfig(campus);
-  const seoData = getCampusSEO(campus, 'curriculum');
 
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -66,6 +65,7 @@ const Curriculum = () => {
 
   return (
     <>
+
       {/* Page Banner Section */}
       <section
         className="page-hero d-flex align-items-center justify-content-center"
@@ -121,7 +121,7 @@ const Curriculum = () => {
               <Col lg={6} md={12} className="mb-3 mb-lg-0">
                 <div ref={cbseImageRef} className="curriculum-image fade-left">
                   <img
-                    src={`${process.env.PUBLIC_URL}/img/academics/cbse_curriculum.jpg`}
+                    src={`${campusData.academicCBSECurriculum.image}`}
                     alt="CBSE Curriculum"
                     className="img-fluid rounded shadow"
                   />
@@ -148,7 +148,7 @@ const Curriculum = () => {
               <Col lg={6} md={12} className="mb-3 mb-lg-0">
                 <div ref={waceImageRef} className="curriculum-image fade-right">
                   <img
-                    src={`${process.env.PUBLIC_URL}/img/academics/wace_curriculum.jpg`}
+                    src={`${campusData.academicWACECurriculum.image}`}
                     alt="WACE Curriculum"
                     className="img-fluid rounded shadow"
                   />
