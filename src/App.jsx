@@ -176,6 +176,11 @@ function App() {
             <LifeAtTIGWS campus="malda" />
           </Layout>
         } />
+        <Route path="/malda/student-pathway" element={
+          <Layout>
+            <StudentPathway campus="malda"/>
+          </Layout>
+        } />
         <Route path="/malda/extra-curricular" element={
           <Layout>
             <ExtraCurricular campus="malda" />
@@ -199,6 +204,11 @@ function App() {
         <Route path="/malda/collaborate" element={
           <Layout>
             <Collaborate campus="malda" />
+          </Layout>
+        } />
+        <Route path="/malda/social-media" element={
+          <Layout>
+            <SocialMedia campus="malda" />
           </Layout>
         } />
       </Routes>

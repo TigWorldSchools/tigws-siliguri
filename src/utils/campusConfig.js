@@ -158,6 +158,34 @@ export const campusConfig = {
         description: "At Techno India Group World School, we strive to build global citizens who learn, connect, and grow beyond borders. Our international exchange initiatives inspire cultural understanding, empathy, and a spirit of collaboration that prepares students to thrive in an interconnected world."
       }
     ],
+
+    studentPathway: [
+      {
+        number: 1,
+        grade: "Grade 9-10: Foundation (CBSE Core)",
+        description: `Students in Grades 9–10 engage in a strong academic foundation built on the NCERT-prescribed curriculum. The learning environment promotes curiosity, conceptual clarity, and deeper subject understanding. The school is in the process of obtaining affiliation with the Central Board of Secondary Education (CBSE), ensuring students receive a holistic, nationally recognized education that prepares them for higher studies.`,
+      },
+      {
+        number: 2,
+        grade: "Grade 11-12: WACE / CBSE Dual Certification",
+        description: `Students can pursue a unique dual certification through the NEP-aligned CBSE curriculum and the Australian WACE Programme. This distinctive combination bridges Eastern academic excellence with Western innovation, offering students a global perspective and expanding their university and career opportunities both in India and abroad. The program empowers learners to think critically, communicate effectively, and adapt confidently to a rapidly changing world.`,
+      },
+      {
+        number: 3,
+        grade: "Counselling & Career Guidance",
+        description: `Our dedicated counselling and career guidance cell helps students identify their strengths, interests, and aptitudes through structured assessments and one-on-one mentoring. With personalized guidance, students make informed decisions on selecting their academic streams and careers, matching their skills and passions. This support fosters confidence and clarity in the students.`,
+      },
+      {
+        number: 4,
+        grade: "University Admissions",
+        description: `Students experience direct exposure to one of India’s largest and most reputed educational networks - the Techno India Group network. It enriches their journey from PG to PhD. With over three decades of academic excellence, the Group’s universities and colleges offer diverse programs in Engineering, Technology, Management, Humanities, Social Sciences, and more. Our students benefit from seamless transition opportunities, industry partnerships, and a strong focus on innovation and research-driven learning.`,
+      },
+      {
+        number: 5,
+        grade: "Alumni Success Stories",
+        description: `Our Alumni stand as proud ambassadors of Techno India Group World School’s values and vision. They have gone on to excel in renowned universities, professional fields, and entrepreneurial ventures across the globe. Their success reflects the school’s commitment to nurturing well-rounded individuals equipped with the knowledge, confidence, and integrity to lead and inspire others.`,
+      },
+    ],
   },
   
   malda: {
@@ -299,56 +327,61 @@ export const campusConfig = {
         id: '02',
         icon: '/img/icons/stem.png',
         title: "STEM Innovation",
-        description: "Students engage with cutting-edge STEM education, fostering creativity and analytical thinking through hands-on projects, coding, robotics, and scientific exploration, preparing them for the technological world ahead."
+        description: "At Techno India World School Malda,  students engage with cutting-edge STEM education, fostering creativity and analytical thinking through hands-on projects, coding, robotics, and scientific exploration, preparing them for the technological world ahead."
       },
       {
         id: '03',
         icon: '/img/icons/arts.png',
         title: "Performing Arts",
-        description: "Techno India World School Malda nurtures artistic talent through dedicated music, dance, and drama programs, providing students with the opportunity to explore both eastern and western traditions under expert guidance."
+        description: "Techno India World School Malda,  nurtures artistic talent through dedicated music, dance, and drama programs, providing students with the opportunity to explore both eastern and western traditions under expert guidance and mentorship."
       },
       {
         id: '04',
         icon: '/img/icons/sport.png',
         title: "Sports & Fitness",
-        description: "With world-class sports facilities and expert coaching, TIGWS Malda emphasizes physical fitness through diverse activities including gymnastics, football, swimming, and adventure sports, fostering teamwork and healthy competition."
+        description: "With world-class sports facilities and expert coaching, Techno India World School Malda emphasizes physical fitness through diverse activities including gymnastics, football, swimming, and adventure sports, fostering teamwork and healthy competition."
       },
       {
         id: '05',
         icon: '/img/icons/sustainability.png',
         title: "Sustainability and Outreach",
-        description: "TIGWS Malda is committed to sustainability, instilling eco-friendly practices in students. Outreach programs promote social responsibility, encouraging students to contribute positively to the environment and community welfare."
+        description: "Techno India World School Malda is committed to sustainability, instilling eco-friendly practices in students. Outreach programs promote social responsibility, encouraging students to contribute positively to the environment and community welfare."
       },
       {
         id: '06',
         icon: '/img/icons/replacement.png',
         title: "International Exchange",
-        description: "TIGWS Malda fosters global learning through international exchange programs, offering students exposure to diverse cultures and perspectives while enhancing academic and personal growth."
+        description: "Techno India World School Malda l fosters global learning through international exchange programs, offering students exposure to diverse cultures and perspectives while enhancing academic and personal growth in a globally interconnected world."
       }
     ],
     
     studentPathway: [
       {
+        number: 1,
         grade: "Grade 9-10: Foundation (CBSE Core)",
-        description: "Students engage in a strong academic foundation built on the NCERT-prescribed curriculum. The school is in the process of obtaining CBSE affiliation, ensuring students receive a holistic, nationally recognized education."
+        description: "Students in Grades 9–10 engage in a strong academic foundation built on the NCERT-prescribed curriculum. The learning environment promotes curiosity, conceptual clarity, and deeper subject understanding. The school is in the process of obtaining affiliation with the Central Board of Secondary Education (CBSE), ensuring students receive a holistic, nationally recognized education that prepares them for higher studies."
       },
       {
+        number: 2,
         grade: "Grade 11-12",
-        description: "Following the CBSE curriculum, offering specialized streams—Science, Commerce, and Humanities. Focused on academic rigor, critical thinking, and practical application, students are prepared for higher education and competitive exams."
+        description: "In Grades 11-12, Techno India Group World School follows the CBSE curriculum, offering specialized streams—Science, Commerce, and Humanities. Focused on academic rigor, critical thinking, and practical application, students are prepared for higher education and competitive exams while developing leadership, time management, and holistic skills for future success."
       },
       {
+        number: 3,
         grade: "Counselling & Career Guidance", 
-        description: "Our dedicated counselling cell helps students identify their strengths through structured assessments and one-on-one mentoring, fostering confidence and clarity in academic and career decisions."
+        description: "Our dedicated counselling and career guidance cell helps students identify their strengths, interests, and aptitudes through structured assessments and one-on-one mentoring. With personalized guidance, students make informed decisions on selecting their academic streams and careers, matching their skills and passions. This support fosters confidence and clarity in the students."
       },
       {
+        number: 4,
         grade: "University Admissions",
-        description: "Students experience direct exposure to the Techno India Group network, enriching their journey from PG to PhD with seamless transition opportunities and industry partnerships."
+        description: "Students experience direct exposure to one of India’s largest and most reputed educational networks, the Techno India Group network. It enriches their journey from PG to PhD. With over three decades of academic excellence, the Group’s universities and colleges offer diverse programs in Engineering, Technology, Management, Humanities, Social Sciences, and more. Our students benefit from seamless transition opportunities, industry partnerships, and a strong focus on innovation and research-driven learning."
       },
       {
+        number: 5,
         grade: "Alumni Success Stories",
-        description: "Our Alumni stand as proud ambassadors, excelling in renowned universities, professional fields, and entrepreneurial ventures across the globe, reflecting our commitment to nurturing well-rounded individuals."
-      }
-    ]
+        description: "Our Alumni stand as proud ambassadors of Techno India Group World School’s values and vision. They have gone on to excel in renowned universities, professional fields, and entrepreneurial ventures across the globe. Their success reflects the school’s commitment to nurturing well-rounded individuals equipped with the knowledge, confidence, and integrity to lead and inspire others."
+      },
+    ],
   }
 };
 

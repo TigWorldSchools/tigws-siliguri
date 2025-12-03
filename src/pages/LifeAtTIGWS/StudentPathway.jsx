@@ -1,8 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./StudentPathway.css";
+import { getCampusConfig, getCampusSEO } from '../../utils/campusConfig.js';
+import { useLocation } from "react-router-dom";
 
 const StudentPathway = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+
+  const campusData = getCampusConfig(campus);
+
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const pathwayRef = useRef(null);
@@ -93,34 +100,7 @@ const StudentPathway = () => {
     };
   }, []);
 
-  
-  const stepsData = [
-    {
-      number: 1,
-      title: "Grade 9-10: Foundation (CBSE Core)",
-      text: `Students in Grades 9–10 engage in a strong academic foundation built on the NCERT-prescribed curriculum. The learning environment promotes curiosity, conceptual clarity, and deeper subject understanding. The school is in the process of obtaining affiliation with the Central Board of Secondary Education (CBSE), ensuring students receive a holistic, nationally recognized education that prepares them for higher studies.`,
-    },
-    {
-      number: 2,
-      title: "Grade 11-12: WACE / CBSE Dual Certification",
-      text: `Students can pursue a unique dual certification through the NEP-aligned CBSE curriculum and the Australian WACE Programme. This distinctive combination bridges Eastern academic excellence with Western innovation, offering students a global perspective and expanding their university and career opportunities both in India and abroad. The program empowers learners to think critically, communicate effectively, and adapt confidently to a rapidly changing world.`,
-    },
-    {
-      number: 3,
-      title: "Counselling & Career Guidance",
-      text: `Our dedicated counselling and career guidance cell helps students identify their strengths, interests, and aptitudes through structured assessments and one-on-one mentoring. With personalized guidance, students make informed decisions on selecting their academic streams and careers, matching their skills and passions. This support fosters confidence and clarity in the students.`,
-    },
-    {
-      number: 4,
-      title: "University Admissions",
-      text: `Students experience direct exposure to one of India’s largest and most reputed educational networks - the Techno India Group network. It enriches their journey from PG to PhD. With over three decades of academic excellence, the Group’s universities and colleges offer diverse programs in Engineering, Technology, Management, Humanities, Social Sciences, and more. Our students benefit from seamless transition opportunities, industry partnerships, and a strong focus on innovation and research-driven learning.`,
-    },
-    {
-      number: 5,
-      title: "Alumni Success Stories",
-      text: `Our Alumni stand as proud ambassadors of Techno India Group World School’s values and vision. They have gone on to excel in renowned universities, professional fields, and entrepreneurial ventures across the globe. Their success reflects the school’s commitment to nurturing well-rounded individuals equipped with the knowledge, confidence, and integrity to lead and inspire others.`,
-    },
-  ];
+  const stepsData = campusData.studentPathway;
 
   return (
     <>      
@@ -185,8 +165,8 @@ const StudentPathway = () => {
               >
                 <div className="step-number">{step.number}</div>
                 <div className="step-content">
-                  <h3>{step.title}</h3>
-                  <p>{step.text}</p>
+                  <h3>{step.grade}</h3>
+                  <p>{step.description}</p>
                 </div>
               </div>
             ))}
