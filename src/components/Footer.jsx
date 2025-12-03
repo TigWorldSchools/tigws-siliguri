@@ -33,8 +33,8 @@ const Footer = () => {
     ],
 
     malda: [
-      { icon: 'fab fa-facebook-f', url: '#' },
-      { icon: 'fab fa-instagram', url: '#' }
+      { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/share/1MbHwYN491/ ' },
+      { icon: 'fab fa-instagram', url: 'https://www.instagram.com/tigworldschoolmalda?igsh=eG02enl2OGRkd2Zi' }
     ]
   };
 
