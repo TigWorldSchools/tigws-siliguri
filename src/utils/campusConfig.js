@@ -1,3 +1,5 @@
+import MandatorySection from "../pages/MandatoryDisclosure";
+
 // Campus Configuration System
 export const campusConfig = {
   siliguri: {
@@ -188,6 +190,172 @@ export const campusConfig = {
         description: `Our Alumni stand as proud ambassadors of Techno India Group World School’s values and vision. They have gone on to excel in renowned universities, professional fields, and entrepreneurial ventures across the globe. Their success reflects the school’s commitment to nurturing well-rounded individuals equipped with the knowledge, confidence, and integrity to lead and inspire others.`,
       },
     ],
+
+    MandatorySection: {
+      generalInfo: [
+        {
+          id: 1,
+          info: "NAME OF THE SCHOOL",
+          details: "Techno India Group World School, Siliguri",
+        },
+        { id: 2, info: "AFFILIATION NO (IF APPLICABLE)", details: "2430441" },
+        { id: 3, info: "SCHOOL CODE", details: "16330" },
+        {
+          id: 4,
+          info: "COMPLETE ADDRESS WITH PIN CODE",
+          details:
+            "Himachal Vihar, Behind City Centre, Near Passport Office, Siliguri West Bengal – 734010",
+        },
+        {
+          id: 5,
+          info: "PRINCIPAL NAME & QUALIFICATION",
+          details: "Mrs. Malancha Ghosh",
+        },
+        {
+          id: 6,
+          info: "PRINCIPAL QUALIFICATION",
+          details: "M.A. in English, B.Ed.",
+        },
+        { id: 7, info: "SCHOOL EMAIL ID", details: "admin.slg@tigws.in" },
+        {
+          id: 8,
+          info: "CONTACT DETAILS (LANDLINE/MOBILE)",
+          details: "+91 9733018000",
+        },
+      ],
+      documents: [
+        {
+          id: 1,
+          info: "COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY",
+          link: "#",
+        },
+        {
+          id: 2,
+          info: "COPIES OF SOCIETIES/TRUST/COMPANY/REGISTRATION/ RENEWAL CERTIFICATE, AS APPLICABLE",
+          link: "/pdf/siliguri-mpd/TRUST_1.pdf",
+        },
+        {
+          id: 3,
+          info: "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
+          link: "/pdf/siliguri-mpd/NOC_1.pdf",
+        },
+        {
+          id: 4,
+          info: "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT., 2009. AND ITS RENEWAL IF APPLICABLE",
+          link: "/pdf/siliguri-mpd/RECOGNITION_CERTIFICATE_1.pdf",
+        },
+        {
+          id: 5,
+          info: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
+          link: "/pdf/siliguri-mpd/BUILDING_SAFETY_CERTIFICATE.pdf",
+        },
+        {
+          id: 6,
+          info: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
+          link: "/pdf/siliguri-mpd/FIRE_SAFETY_CERTIFICATE_1.pdf",
+        },
+        {
+          id: 7,
+          info: "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
+          link: "/pdf/siliguri-mpd/SELF-CERTIFICATION.pdf",
+        },
+        {
+          id: 8,
+          info: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
+          link: "/pdf/siliguri-mpd/WATER,_HEALTH_AND_SANITATION.pdf",
+        },
+      ],
+      academics: [
+        {
+          id: 1,
+          info: "FEE STRUCTURE OF THE SCHOOL",
+          link: "/pdf/siliguri-mpd/FEE_STRUCTURE.pdf",
+        },
+        { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "#" },
+        { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "#" },
+        {
+          id: 4,
+          info: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
+          link: "#",
+        },
+        {
+          id: 5,
+          info: "ANNUAL REPORT",
+          link: "/pdf/siliguri-mpd/ANNUAL_REPORT_siliguri.pdf",
+        },
+        {
+          id: 6,
+          info: "DETAILS OF CURRICULUM",
+          link: "https://cbseacademic.nic.in/curriculum_2025.html",
+        },
+        {
+          id: 7,
+          info: "SAMPLE OF TRANSFER CERTIFICATE",
+          link: "/pdf/siliguri-mpd/SAMPLE_OF_TC_siliguri.pdf",
+        },
+        {
+          id: 8,
+          info: "DETAILS OF TEACHERS TRAINING",
+          link: "/pdf/siliguri-mpd/Details_of_Teachers_Training.pdf",
+        },
+        {
+          id: 9,
+          info: "STAFF STATEMENT 2024-25",
+          link: "/pdf/siliguri-mpd/STAFF_STATEMENT_2024-25_TIGWS.pdf",
+        },
+        {
+          id: 10,
+          info: "SELF AFFIDAVIT",
+          link: "/pdf/siliguri-mpd/SELF-AFFIDAVIT.pdf",
+        },
+      ],
+      staffInfo: [
+        { id: 1, info: "PRINCIPAL", details: "01" },
+        { id: 2, info: "TOTAL NO. OF TEACHERS", details: "23" },
+        { id: 3, info: "PGT", details: "0" },
+        { id: 4, info: "TGT", details: "10" },
+        { id: 5, info: "PRT", details: "13" },
+        { id: 6, info: "TEACHERS SECTION RATIO", details: "1:5" },
+        { id: 7, info: "DETAILS OF SPECIAL EDUCATOR", details: "01" },
+        {
+          id: 8,
+          info: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER",
+          details: "01",
+        },
+      ],
+      infrastructure: [
+        {
+          id: 1,
+          info: "TOTAL CAMPUS AREA OF THE SCHOOL (IN SQ. MTR.)",
+          details: "12,140.569",
+        },
+        {
+          id: 2,
+          info: "NO. AND SIZE OF THE CLASS ROOMS (IN SQ. MTR.)",
+          details: "15 classrooms (46.50 sq.m each)",
+        },
+        {
+          id: 3,
+          info: "NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ. MTR.)",
+          details: "6 Labs (Average 75 sq.m each)",
+        },
+        { id: 4, info: "INTERNET FACILITY", details: "Yes" },
+        { id: 5, info: "NO. OF GIRLS TOILETS", details: "30" },
+        { id: 6, info: "NO. OF BOYS TOILETS", details: "NA" },
+        {
+          id: 7,
+          info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL",
+          details: (
+            <a
+              href="https://www.youtube.com/watch?v=BbcLCNIAyCs" target="_blank"
+              className="click-link"
+            >
+              Click Here
+            </a>
+          ),
+        },
+      ]
+    }, 
   },
   
   malda: {
@@ -386,6 +554,170 @@ export const campusConfig = {
         description: "Our Alumni stand as proud ambassadors of Techno India Group World School’s values and vision. They have gone on to excel in renowned universities, professional fields, and entrepreneurial ventures across the globe. Their success reflects the school’s commitment to nurturing well-rounded individuals equipped with the knowledge, confidence, and integrity to lead and inspire others."
       },
     ],
+
+    MandatorySection: {
+        generalInfo: [
+          {
+            id: 1,
+            info: "NAME OF THE SCHOOL",
+            details: "Techno India Group World School, Malda",
+          },
+          { id: 2, info: "AFFILIATION NO (IF APPLICABLE)", details: "" },
+          { id: 3, info: "SCHOOL CODE", details: "" },
+          {
+            id: 4,
+            info: "COMPLETE ADDRESS WITH PIN CODE",
+            details:
+              "Sukhandighi GP Bhabuk, PO Malda Dist Malda, West Bengal PIN: 732142",
+          },
+          {
+            id: 5,
+            info: "PRINCIPAL NAME & QUALIFICATION",
+            details: "Ms. Nandita Banerjee",
+          },
+          {
+            id: 6,
+            info: "PRINCIPAL QUALIFICATION",
+            details: "M.A. in History, B.Ed.",
+          },
+          { id: 7, info: "SCHOOL EMAIL ID", details: "principal.malda@tigps.in" },
+          {
+            id: 8,
+            info: "CONTACT DETAILS (LANDLINE/MOBILE)",
+            details: "77974-05946",
+          },
+        ],
+        documents: [
+          {
+            id: 1,
+            info: "COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY",
+            link: "#",
+          },
+          {
+            id: 2,
+            info: "COPIES OF SOCIETIES/TRUST/COMPANY/REGISTRATION/ RENEWAL CERTIFICATE, AS APPLICABLE",
+            link: "#",
+          },
+          {
+            id: 3,
+            info: "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
+            link: "#",
+          },
+          {
+            id: 4,
+            info: "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT., 2009. AND ITS RENEWAL IF APPLICABLE",
+            link: "#",
+          },
+          {
+            id: 5,
+            info: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
+            link: "#",
+          },
+          {
+            id: 6,
+            info: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
+            link: "#",
+          },
+          {
+            id: 7,
+            info: "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
+            link: "#",
+          },
+          {
+            id: 8,
+            info: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
+            link: "#",
+          },
+        ],
+        academics: [
+          {
+            id: 1,
+            info: "FEE STRUCTURE OF THE SCHOOL",
+            link: "#",
+          },
+          { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "#" },
+          { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "#" },
+          {
+            id: 4,
+            info: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
+            link: "#",
+          },
+          {
+            id: 5,
+            info: "ANNUAL REPORT",
+            link: "#",
+          },
+          {
+            id: 6,
+            info: "DETAILS OF CURRICULUM",
+            link: "#",
+          },
+          {
+            id: 7,
+            info: "SAMPLE OF TRANSFER CERTIFICATE",
+            link: "#",
+          },
+          {
+            id: 8,
+            info: "DETAILS OF TEACHERS TRAINING",
+            link: "#",
+          },
+          {
+            id: 9,
+            info: "STAFF STATEMENT 2024-25",
+            link: "#",
+          },
+          {
+            id: 10,
+            info: "SELF AFFIDAVIT",
+            link: "#",
+          },
+        ],
+        staffInfo: [
+          { id: 1, info: "PRINCIPAL", details: "01" },
+          { id: 2, info: "TOTAL NO. OF TEACHERS", details: "16" },
+          { id: 3, info: "PGT", details: "00" },
+          { id: 4, info: "TGT", details: "11" },
+          { id: 5, info: "PRT", details: "05" },
+          { id: 6, info: "TEACHERS SECTION RATIO", details: "1:1.5" },
+          { id: 7, info: "DETAILS OF SPECIAL EDUCATOR", details: "01" },
+          {
+            id: 8,
+            info: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER",
+            details: "01",
+          },
+        ],
+        infrastructure: [
+          {
+            id: 1,
+            info: "TOTAL CAMPUS AREA OF THE SCHOOL (IN SQ. MTR.)",
+            details: "15742.27 SQUARE MTR",
+          },
+          {
+            id: 2,
+            info: "NO. AND SIZE OF THE CLASS ROOMS (IN SQ. MTR.)",
+            details: "24 classrooms (46.50 sq.m each)",
+          },
+          {
+            id: 3,
+            info: "NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ. MTR.)",
+            details: "3 Labs (Average 64 sq.m each)",
+          },
+          { id: 4, info: "INTERNET FACILITY", details: "Yes" },
+          { id: 5, info: "NO. OF GIRLS TOILETS", details: "6" },
+          { id: 6, info: "NO. OF BOYS TOILETS", details: "6" },
+          {
+            id: 7,
+            info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL",
+            details: "#"
+          },
+          {
+            id: 8,
+            info: "Upload Teachers List (Download Sample Format)",
+            details: "#"
+          },
+        ]
+      },
   }
 };
 

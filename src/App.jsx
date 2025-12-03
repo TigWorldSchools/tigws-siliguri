@@ -146,6 +146,11 @@ function App() {
             <About campus="malda" />
           </Layout>
         } />
+        <Route path="/malda/mandatory-disclosure" element={
+          <Layout>
+            <MandatoryDisclosure campus="malda"/>
+          </Layout>
+        } />
         <Route path="/malda/curriculum" element={
           <Layout>
             <Curriculum campus="malda" />
