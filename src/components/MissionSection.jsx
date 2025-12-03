@@ -23,7 +23,7 @@ const MissionSection = () => {
       <div className="mission-container">
         <div className="mission-left">
           <img
-            src="/img/about/mission_vision.jpg"
+            src={`/img/about/${campus}/mission_vision.jpg`}
             alt="TIGWS Admission"
             className="mission-image"
           />

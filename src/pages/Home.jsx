@@ -28,7 +28,7 @@ const Home = ({ campus = 'siliguri' }) => {
         description={seoData.description}
         keywords={seoData.keywords}
         url={`/${campus}`}
-        image="/img/about/first_pic.jpg"
+        image={`/img/about/${campus}/first_pic.jpg`}
       />
       
       <main>

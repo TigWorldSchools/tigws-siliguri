@@ -30,7 +30,6 @@ export const campusConfig = {
         "World-class infrastructure",
         "Holistic development approach"
       ],
-      aboutImage: "/img/about/first_pic1.jpg"
     },
 
     missionVission: [
@@ -50,32 +49,32 @@ export const campusConfig = {
 
     whyChoose: [
       {
-        image: "/img/academics/point4.jpg",
+        image: "/img/academics/siliguri/point4.jpg",
         title: "Empowered by Technology & Faculty Excellence",
         description: "With modern digital classrooms, advanced laboratories, and expert educators, our campus blends innovation with inspiration. We also offer financial aid and scholarships to ensure opportunity for all deserving learners."
       },
       {
-        image: "/img/academics/point5.jpg",
+        image: "/img/academics/siliguri/point5.jpg",
         title: "Personalized Learning & Mentorship",
         description: "Every girl’s journey is unique. Our personalized guidance, small class sizes, and strong teacher-student ratio ensure focused academic support, career counseling, and emotional well-being at every step."
       },
       {
-        image: "/img/academics/point6.jpg",
+        image: "/img/academics/siliguri/point6.jpg",
         title: "Future-Ready College & Career Pathways",
         description: "Through skill-based learning, leadership programs, and global exposure, students gain the confidence, creativity, and competence to thrive in top universities and future careers worldwide."
       },
       {
-        image: "/img/academics/point1.jpg",
+        image: "/img/academics/siliguri/point1.jpg",
         title: "Safe, Supportive & Inclusive Campus",
         description: "Safety of the girls is our top priority. We ensure 24x7 residential care, secure campus facilities, and an empathetic mentoring system. We nurture a respectful, inclusive environment where girls feel secure to explore and excel. We implement anti-bullying policies."
       },
       {
-        image: "/img/academics/point2.jpg",
+        image: "/img/academics/siliguri/point2.jpg",
         title: "Global Curriculum Advantage",
         description: "Experience a powerful dual-curriculum system — CBSE and the Australian WACE Programme, that builds academic rigor, critical thinking, and international readiness for careers in medicine, engineering, business, design, and beyond."
       },
       {
-        image: "/img/academics/point3.jpg",
+        image: "/img/academics/siliguri/point3.jpg",
         title: "Holistic Growth Beyond Academics",
         description: "From sports and performing arts to cultural clubs and community initiatives, we celebrate every talent, helping students develop discipline, teamwork, empathy, and leadership through real-world experiences."
       }
@@ -220,7 +219,6 @@ export const campusConfig = {
         "Emphasis on Creative Arts and Hobbies",
         "Focus on Leadership and Life Skills"
       ],
-      aboutImage: "/img/about/first_pic1.jpg"
     },
 
     missionVission: [
@@ -246,32 +244,32 @@ export const campusConfig = {
     
     whyChoose: [
       {
-        image: "/img/academics/point4.jpg",
+        image: "/img/academics/malda/point1.jpg",
         title: "Holistic Development Approach",
         description: "TIGWS Malda focuses on nurturing students' physical, mental, emotional, and intellectual growth, ensuring well-rounded development for future leaders."
       },
       {
-        image: "/img/academics/point4.jpg",
+        image: "/img/academics/malda/point2.jpg",
         title: "State-of-the-Art Infrastructure", 
         description: "The school offers modern facilities, including smart classrooms, a well-equipped library, and advanced sports amenities, creating an ideal learning environment."
       },
       {
-        image: "/img/academics/point4.jpg",
+        image: "/img/academics/malda/point3.jpg",
         title: "Expert Sports and Physical Training",
         description: "With specialized football coaching from Brazilian experts and Taekwondo classes under world-renowned mentors, students gain exceptional physical training."
       },
       {
-        image: "/img/academics/point4.jpg",
+        image: "/img/academics/malda/point4.jpg",
         title: "Innovative Learning Methods",
         description: "Digital classrooms and a blended hybrid teaching approach make learning engaging, combining interactive tools and modern educational techniques."
       },
       {
-        image: "/img/academics/point4.jpg",
+        image: "/img/academics/malda/point5.jpg",
         title: "Emphasis on Creative Arts and Hobbies",
         description: "Music, dance, art, and clay modeling workshops foster creativity, allowing students to explore their talents and express themselves freely."
       },
       {
-        image: "/img/academics/point4.jpg",
+        image: "/img/academics/malda/point6.jpg",
         title: "Focus on Leadership and Life Skills",
         description: "TIGWS Malda promotes leadership, teamwork, and resilience, preparing students to confidently tackle life's challenges and grow into responsible individuals."
       }

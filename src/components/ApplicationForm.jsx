@@ -1,9 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ApplicationForm.css';
 import SuccessPopup from './SuccessPopup';
+import { useLocation } from "react-router-dom";
 import { submitToGoogleSheets, createMailtoLink } from '../utils/googleSheets';
 
 const ApplicationForm = () => {
+  const { pathname } = useLocation();
+  const campus = pathname.split("/")[1] || "siliguri";
+
   const [formData, setFormData] = useState({
     parentName: '',
     studentName: '',
@@ -134,7 +138,7 @@ const ApplicationForm = () => {
         <div className="application-content">
           <div ref={imageRef} className="application-image-section">
             <img 
-              src="/img/admission/admission_pic.jpg" 
+              src={`/img/admission/${campus}/admission_pic.jpg`} 
               alt="Student Application" 
               className="application-image" 
             />

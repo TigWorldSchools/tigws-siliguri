@@ -12,7 +12,7 @@ const AboutSection = ({ campus = 'siliguri' }) => {
   const hasAnimatedRef = useRef(false);
   
   const fullText = campusData.about.description;
-  const imageURL = campusData.about.aboutImage;
+  const imageURL = `/img/about/${campus}/first_pic.jpg`;
 
 
   const handleCtaClick = () => {
