@@ -12,7 +12,7 @@ const AboutSection = ({ campus = 'siliguri' }) => {
   const hasAnimatedRef = useRef(false);
   
   const fullText = campusData.about.description;
-  const imageURL = `/img/about/${campus}/first_pic.jpg`;
+  const imageURL = campusData.about.aboutImage;
 
 
   const handleCtaClick = () => {
@@ -57,8 +57,12 @@ const AboutSection = ({ campus = 'siliguri' }) => {
               <p className="about-text">
                 {fullText}
               </p>
-              {showCta && (
-                <button className="about-cta fade-in-cta" onClick={handleCtaClick} aria-label="Read more about TIGWS Siliguri">
+              {campus !== 'kolkata' && showCta && (
+                <button
+                  className="about-cta fade-in-cta"
+                  onClick={handleCtaClick}
+                  aria-label={`Read more about TIGWS ${campus}`}
+                >
                   Read More
                   <i className="fas fa-arrow-right cta-arrow" aria-hidden="true"></i>
                 </button>

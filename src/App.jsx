@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './layouts/Layout.jsx';
 import MainLayout from './layouts/MainLayout.jsx';
+import KolkataLayout from './layouts/KolkataLayout.jsx';
+
 
 // Main Homepage
 import NewHome from './pages/NewHome.jsx';
@@ -26,6 +28,7 @@ import MandatoryDisclosure from './pages/MandatoryDisclosure.jsx';
 import Career from './pages/ContactUs/Career.jsx';
 import Collaborate from './pages/ContactUs/Collaborate.jsx';
 import SocialMedia from './pages/ContactUs/SocialMedia.jsx';
+import NewHomeKolkata from './pages/NewHomeKolkata.jsx';
 
 function App() {
   return (
@@ -215,6 +218,13 @@ function App() {
           <Layout>
             <SocialMedia campus="malda" />
           </Layout>
+        } />
+
+        {/* Homepage for Kolkata*/}
+        <Route path="/kolkata" element={
+          <KolkataLayout>
+            <NewHomeKolkata />
+          </KolkataLayout>
         } />
       </Routes>
     </BrowserRouter>

@@ -15,15 +15,15 @@ const MissionSection = () => {
       navigator.vibrate(40);
     }
   }, []);
-  const mission_vission = campusData.missionVission;
-
+  const mission_vission = campusData.missionVission.missionVissionContent;
+  const mission_vision_image = campusData.missionVission.missionVissionImage;
 
   return (
     <section className="mission-section">
       <div className="mission-container">
         <div className="mission-left">
           <img
-            src={`/img/about/${campus}/mission_vision.jpg`}
+            src={`${mission_vision_image}`}
             alt="TIGWS Admission"
             className="mission-image"
           />

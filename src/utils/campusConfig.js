@@ -32,22 +32,26 @@ export const campusConfig = {
         "World-class infrastructure",
         "Holistic development approach"
       ],
+      aboutImage: "/img/about/siliguri/first_pic.jpg"
     },
 
-    missionVission: [
-      {
-        title: "Our Mission",
-        description: "To empower every girl to become a confident, independent, and empathetic global citizen by fostering academic excellence, emotional intelligence, and social responsibility."
-      },
-      {
-        title: "Our Vision",
-        description: "To create a world-class learning environment where Eastern roots meet Western innovation, preparing girls to excel on global platforms while staying deeply connected to their cultural identity."
-      },
-      {
-        title: "Global Outlook",
-        description: "Aligned with the National Education Policy (NEP) and the internationally recognized Australian WACE Programme, TIG World School bridges global standards with Indian values."
-      },
-    ],
+    missionVission: {
+      missionVissionContent: [
+        {
+          title: "Our Mission",
+          description: "To empower every girl to become a confident, independent, and empathetic global citizen by fostering academic excellence, emotional intelligence, and social responsibility."
+        },
+        {
+          title: "Our Vision",
+          description: "To create a world-class learning environment where Eastern roots meet Western innovation, preparing girls to excel on global platforms while staying deeply connected to their cultural identity."
+        },
+        {
+          title: "Global Outlook",
+          description: "Aligned with the National Education Policy (NEP) and the internationally recognized Australian WACE Programme, TIG World School bridges global standards with Indian values."
+        }
+      ],
+      missionVissionImage: "/img/about/siliguri/mission_vision.jpg"
+    },
 
     whyChoose: [
       {
@@ -390,22 +394,26 @@ export const campusConfig = {
         "Emphasis on Creative Arts and Hobbies",
         "Focus on Leadership and Life Skills"
       ],
+      aboutImage: "/img/about/malda/first_pic.jpg"
     },
 
-    missionVission: [
-      {
-        title: "Our Mission",
-        description: "To create a sustainable flow of quality human resources capable of meeting the technological challenges of tomorrow and thereby creating wealth for the nation at the forefront of knowledge."
-      },
-      {
-        title: "Our Vision",
-        description: "To create a unique and state of the art learning environment in the country and produce knowledge based technologists to meet the challenges of a new millennium."
-      },
-      {
-        title: "Global Outlook",
-        description: "Techno India Group World School Malda plans to introduce IGCSE and IB programs, offering students global exposure through international exchange opportunities and world-class education."
-      },
-    ],
+    missionVission: {
+      missionVissionContent: [
+        {
+          title: "Our Mission",
+          description: "To create a sustainable flow of quality human resources capable of meeting the technological challenges of tomorrow and thereby creating wealth for the nation at the forefront of knowledge."
+        },
+        {
+          title: "Our Vision",
+          description: "To create a unique and state of the art learning environment in the country and produce knowledge based technologists to meet the challenges of a new millennium."
+        },
+        {
+          title: "Global Outlook",
+          description: "Techno India Group World School Malda plans to introduce IGCSE and IB programs, offering students global exposure through international exchange opportunities and world-class education."
+        }
+      ],
+      missionVissionImage: "/img/about/malda/mission_vision.jpg"
+    },
     
     curriculum: {
       primary: "CBSE Curriculum",
@@ -718,6 +726,99 @@ export const campusConfig = {
           },
         ]
       },
+  },
+
+  kolkata: {
+    name: "TIGWS Kolkata",
+    bannerVideo: "/videos/TIGWS_Kolkata.mp4",
+    logo: "/img/logo/tigws_kolkata_logo.png",
+    fullName: "Techno India Group World School kolkata",
+    location: "kolkata, West Bengal",
+    type: "Co-Educational Day School",
+
+    contact: {
+      phone: "",
+      email: "",
+      address: "",
+      websiteUrl: "https://www.tigworldschools.com/kolkata",
+      schoolLocation: ""
+    },
+
+    hero: {
+      title: "Welcome to TIGWS Kolkata",
+      subtitle: "Empowering young minds to shape global leaders",
+      tagline: "Shaping Futures Through Excellence"
+    },
+
+    about: {
+      description: "Techno India Group World School, Kolkata, is set to become a leading educational institution, blending academic excellence with holistic development. With a strong CBSE curriculum and modern teaching methods, the school will foster curiosity, creativity, and critical thinking. Beyond academics, it will emphasize co-curricular activities, life skills, and values-based education, preparing students to thrive in a global world. The school aims to nurture confident, compassionate, and responsible global citizens equipped with the knowledge, skills, and mindset to excel academically and contribute meaningfully to society, shaping a bright future for each student.",
+      highlights: [
+        "Holistic Development Approach",
+        "State-of-the-Art Infrastructure",
+        "Expert Sports and Physical Training",
+        "Innovative Learning Methods",
+        "Emphasis on Creative Arts and Hobbies",
+        "Focus on Leadership and Life Skills"
+      ],
+      aboutImage: "/img/about/kolkata/first_pic_kolkata.jpg"
+    },
+
+    missionVission: {
+      missionVissionContent: [
+        {
+          title: "Our Mission",
+          description: "To drive national growth by systematically developing future technologists equipped to navigate the challenges of advanced knowledge and innovation."
+        },
+        {
+          title: "Our Vision",
+          description: "To establish a distinguished, state-of-the-art educational environment that produces technology-driven experts prepared to meet the evolving demands of the new millennium."
+        },
+        {
+          title: "Global Outlook",
+          description: "Techno India Group World School Kolkata is aimed at offering international curricula and programs, providing students with global exposure through exchange opportunities and ensuring a world-class education."
+        },
+      ],
+      missionVissionImage: "/img/about/kolkata/mission_vision.jpg"
+    },
+
+    curriculum: {
+      primary: "CBSE Curriculum",
+      description: "",
+      future: ""
+    },
+
+    whyChoose: [
+      {
+        image: "/img/academics/kolkata/point1.jpg",
+        title: "Supportive & Inclusive Campus",
+        description: ""
+      },
+      {
+        image: "/img/academics/kolkata/point2.jpg",
+        title: "Comprehensive Educational Curriculum",
+        description: ""
+      },
+      {
+        image: "/img/academics/kolkata/point3.jpg",
+        title: "Holistic Growth Beyond Academics",
+        description: ""
+      },
+      {
+        image: "/img/academics/kolkata/point4.jpg",
+        title: "Empowered by Technology & Faculty Excellence",
+        description: ""
+      },
+      {
+        image: "/img/academics/kolkata/point5.jpg",
+        title: "Personalized Learning & Mentorship",
+        description: ""
+      },
+      {
+        image: "/img/academics/kolkata/point6.jpg",
+        title: "Future-Ready College & Career Pathways",
+        description: ""
+      }
+    ],
   }
 };
 
