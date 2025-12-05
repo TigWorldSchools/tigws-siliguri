@@ -79,9 +79,6 @@ const NewHomeKolkata = ({ campus = 'kolkata' }) => {
         <section id="why-tigws">
             <WhyTigSection campus={campus} />
         </section>
-        <section id="contact">
-            <ApplicationForm campus={campus} />
-        </section>
       </main>
       
       <AdmissionModal 

@@ -144,35 +144,6 @@ const KolkataHeader = ({ onOpenModal }) => {
                 </nav>
             </div>
             </div>
-
-            <div className="d-none d-lg-block" style={{ marginLeft: '20px' }}>
-            <button 
-                onClick={onOpenModal}
-                className="header-apply-btn"
-                aria-label="Open admission enquiry form"
-                style={{
-                background: 'white',
-                color: 'rgb(0, 24, 69)',
-                border: '2px solid transparent',
-                padding: '12px 25px',
-                fontSize: '14px',
-                fontWeight: '700',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-                textShadow: 'none',
-                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
-                position: 'relative',
-                overflow: 'hidden',
-                textTransform: 'uppercase',
-                animation: 'floatingCta 3s ease-in-out infinite',
-                textDecoration: 'none',
-                display: 'inline-block'
-                }}
-            >
-                Apply Now
-            </button>
-            </div>
             
             <div className="header__right d-lg-none">
             <div className="header__right--item">
