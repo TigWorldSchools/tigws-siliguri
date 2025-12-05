@@ -360,6 +360,27 @@ export const campusConfig = {
         },
       ]
     }, 
+
+    gallery: [
+      {
+        image: "/img/gallery/siliguri/image_1.jpg"
+      },
+      {
+        image: "/img/gallery/siliguri/image_5.jpg"
+      },
+      {
+        image: "/img/gallery/siliguri/image_3.jpg"
+      },
+      {
+        image: "/img/gallery/siliguri/image_4.jpg"
+      },
+      {
+        image: "/img/gallery/siliguri/image_2.jpg"
+      },
+      {
+        image: "/img/gallery/siliguri/image_6.jpg"
+      },
+    ]
   },
   
   malda: {
@@ -726,6 +747,27 @@ export const campusConfig = {
           },
         ]
       },
+
+      gallery: [
+      {
+        image: "/img/gallery/malda/image_1.jpg"
+      },
+      {
+        image: "/img/gallery/malda/image_5.jpg"
+      },
+      {
+        image: "/img/gallery/malda/image_3.jpg"
+      },
+      {
+        image: "/img/gallery/malda/image_4.jpg"
+      },
+      {
+        image: "/img/gallery/malda/image_2.jpg"
+      },
+      {
+        image: "/img/gallery/kolkata/image_6.jpg"
+      },
+    ]
   },
 
   kolkata: {

@@ -2,10 +2,12 @@ import React, { useState, useEffect, useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Gallery.css";
 import { useLocation } from "react-router-dom";
+import { getCampusConfig } from '../../utils/campusConfig.js';
 
 const Gallery = () => {
   const { pathname } = useLocation();
   const campus = pathname.split("/")[1] || "siliguri";
+  const campusData = getCampusConfig(campus);
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -13,14 +15,7 @@ const Gallery = () => {
 
   const fullText = "Gallery";
 
-  const images = [
-    `/img/gallery/${campus}/image_1.jpg`,
-    `/img/gallery/${campus}/image_2.jpg`,
-    `/img/gallery/${campus}/image_3.jpg`,
-    `/img/gallery/${campus}/image_4.jpg`,
-    `/img/gallery/${campus}/image_5.jpg`,
-    `/img/gallery/${campus}/image_6.jpg`,
-  ];
+  const images = campusData.gallery;
 
   // Typing animation
   useEffect(() => {
@@ -152,7 +147,7 @@ const Gallery = () => {
                     className="gallery-pg-item"
                     onClick={() => openLightbox(index)}
                   >
-                    <img src={img} alt={`gallery-${index}`} />
+                    <img src={img.image} alt={`gallery-${index}`} />
                     <div className="gallery-pg-overlay"></div>
                     <div className="gallery-pg-icon">
                       <span>+</span>
@@ -183,7 +178,7 @@ const Gallery = () => {
           </button>
 
           <img
-            src={images[currentIndex]}
+            src={images[currentIndex].image}
             alt={`preview-${currentIndex}`}
             onClick={(e) => e.stopPropagation()}
           />
