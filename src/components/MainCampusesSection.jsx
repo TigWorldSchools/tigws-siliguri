@@ -7,7 +7,7 @@ const MainCampusesSection = () => {
     {
       name: 'TIGWS Siliguri',
       description: 'Eastern India\'s premier all-girls residential school launching soon in Siliguri.',
-      image: '/img/about/first_pic.jpg',
+      image: '/img/campuses/tigws-siliguri.jpg',
       url: '/siliguri',
       cta: 'Explore Campus'
     },
@@ -21,7 +21,7 @@ const MainCampusesSection = () => {
     {
       name: 'TIGWS Kolkata',
       description: 'Our flagship campus in Kolkata setting new standards in global education.',
-      image: '/img/about/first_pic.jpg',
+      image: '/img/campuses/master_kolkata.jpg',
       url: '/kolkata',
       cta: 'Explore Campus'
     }
