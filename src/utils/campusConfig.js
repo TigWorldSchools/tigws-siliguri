@@ -662,21 +662,11 @@ export const campusConfig = {
         },
         {
           id: 5,
-          info: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
-          link: "#",
-        },
-        {
-          id: 6,
-          info: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
-          link: "#",
-        },
-        {
-          id: 7,
           info: "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
           link: "#",
         },
         {
-          id: 8,
+          id: 6,
           info: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
           link: "#",
         },

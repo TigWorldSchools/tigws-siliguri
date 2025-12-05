@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SEOHead from '../../components/SEOHead.jsx';
+import PrincipalQuote from '../../components/PrincipalQuote.jsx';
 import WhyTigSection from '../../components/WhyTigSection.jsx';
 import LegacySection from '../../components/LegacySection.jsx';
 import MissionSection from '../../components/MissionSection.jsx';
@@ -51,7 +52,13 @@ const About = () => {
     const hash = window.location.hash;
     const headerHeight = 80;
 
-    if (hash === '#why-tigws') {
+    if (hash === '#principal-quote') {
+      const element = document.getElementById('principal-quote');
+      if (element) {
+        const elementPosition = element.offsetTop - headerHeight;
+        window.scrollTo({ top: elementPosition, behavior: 'smooth' });
+      }
+    } else if (hash === '#why-tigws') {
       const element = document.getElementById('why-tigws');
       if (element) {
         const elementPosition = element.offsetTop - headerHeight;
@@ -370,6 +377,10 @@ const About = () => {
             </div>
           </div>
         </section>
+        
+        <div id="principal-quote">
+          <PrincipalQuote />
+        </div>
 
         <div id="why-tigws">
           <WhyTigSection />

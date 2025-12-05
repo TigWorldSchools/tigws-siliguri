@@ -16,6 +16,7 @@ const Header = ({ onOpenModal }) => {
       url: `/${campus}/about`,
       dropdown: [
         { label: 'About TIGWS', url: `/${campus}/about` },
+        { label: "Principal's Message", url: `/${campus}/about#principal-quote` },
         { label: 'Why TIGWS', url: `/${campus}/about#why-tigws` },
         { label: 'Legacy of TIG', url: `/${campus}/about#legacy` },
         { label: 'Other Campuses', url: `/${campus}/about#other-campuses` },
