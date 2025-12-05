@@ -378,9 +378,12 @@ const About = () => {
           </div>
         </section>
         
-        <div id="principal-quote">
-          <PrincipalQuote />
-        </div>
+        {campus === 'malda' && (
+          <div id="principal-quote">
+            <PrincipalQuote />
+          </div>
+        )}
+        
 
         <div id="why-tigws">
           <WhyTigSection />
