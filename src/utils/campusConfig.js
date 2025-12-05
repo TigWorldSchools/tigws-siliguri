@@ -834,9 +834,9 @@ export const getCampusSEO = (campus, page = 'home') => {
   const seoData = {
     malda: {
       home: {
-        title: `Best School in Malda | ${config.name} - CBSE Curriculum`,
+        title: `Best School in West Bengal | ${config.name} - CBSE Curriculum`,
         description: `Premier co-educational school in Malda, West Bengal. CBSE curriculum, holistic development, modern facilities. Expert sports training & creative arts. Admissions open.`,
-        keywords: "best school Malda, CBSE school Malda, co-educational school, holistic development, sports training Malda"
+        keywords: "best school West Bengal, best school Malda, CBSE school Malda, co-educational school, holistic development, sports training Malda"
       },
       about: {
         title: `About ${config.name} - Holistic Development & Academic Excellence`,

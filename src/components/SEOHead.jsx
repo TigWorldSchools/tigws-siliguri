@@ -78,6 +78,48 @@ const SEOHead = ({
       }
       canonical.setAttribute('href', `https://www.tigworldschools.com${url}`);
     }
+
+    // Add Organization schema with logo
+    let orgSchemaScript = document.querySelector('script[type="application/ld+json"][data-schema="organization"]');
+    if (!orgSchemaScript) {
+      orgSchemaScript = document.createElement('script');
+      orgSchemaScript.setAttribute('type', 'application/ld+json');
+      orgSchemaScript.setAttribute('data-schema', 'organization');
+      document.head.appendChild(orgSchemaScript);
+    }
+    orgSchemaScript.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Techno India Group World School",
+      "url": "https://www.tigworldschools.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png"
+      }
+    });
+
+    // Add WebSite schema
+    let websiteSchemaScript = document.querySelector('script[type="application/ld+json"][data-schema="website"]');
+    if (!websiteSchemaScript) {
+      websiteSchemaScript = document.createElement('script');
+      websiteSchemaScript.setAttribute('type', 'application/ld+json');
+      websiteSchemaScript.setAttribute('data-schema', 'website');
+      document.head.appendChild(websiteSchemaScript);
+    }
+    websiteSchemaScript.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Techno India Group World School",
+      "url": "https://www.tigworldschools.com",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Techno India Group World School",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png"
+        }
+      }
+    });
   }, [title, description, keywords, image, url, type]);
 
   return null; // This component doesn't render anything
