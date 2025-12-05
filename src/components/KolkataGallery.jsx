@@ -131,7 +131,7 @@ const KolkataGallery = () => {
           </button>
 
           <img
-            src={images[currentIndex]}
+            src={images[currentIndex].image}
             alt={`preview-${currentIndex}`}
             onClick={(e) => e.stopPropagation()}
           />
