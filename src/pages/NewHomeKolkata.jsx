@@ -57,10 +57,6 @@ const NewHomeKolkata = ({ campus = 'kolkata' }) => {
           </video>
           <div className="hero-content">
             <h1 className="hero-title">{campusData.hero.title}<br/>{campusData.hero.subtitle}</h1>
-            <button className="hero-cta" onClick={handleCtaClick} aria-label="Open admission enquiry form for 2026-2027">
-              Admission Enquiry 2026-2027
-              <i className="fas fa-arrow-right hero-arrow" aria-hidden="true"></i>
-            </button>
           </div>
         </section>
 
