@@ -778,7 +778,7 @@ export const campusConfig = {
       image: "/img/gallery/malda/image_2.jpg"
     },
     {
-      image: "/img/gallery/kolkata/image_6.jpg"
+      image: "/img/gallery/malda/image_6.jpg"
     },
     ],
 
