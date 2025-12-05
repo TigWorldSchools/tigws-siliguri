@@ -380,6 +380,29 @@ export const campusConfig = {
       {
         image: "/img/gallery/siliguri/image_6.jpg"
       },
+    ],
+
+    testimonials: [
+      {
+        text: "The blend of WACE and CBSE was the perfect launchpad for my MIT admission.",
+        name: "Aarav Shah",
+        designation: "2023",
+      },
+      {
+        text: "TIGWS gave me the confidence to pursue biomedical research in Australia.",
+        name: "Riya Sen",
+        designation: "Class of 2022",
+      },
+      {
+        text: "The teachers here are very supportive and always encourage creative learning.",
+        name: "Ishita Verma",
+        designation: "Batch of 2021",
+      },
+      {
+        text: "I loved how TIGWS balanced academics and extracurriculars, preparing me for college life abroad.",
+        name: "Karan Patel",
+        designation: "Class of 2020",
+      }
     ]
   },
   
@@ -585,188 +608,196 @@ export const campusConfig = {
     ],
 
     MandatorySection: {
-        generalInfo: [
-          {
-            id: 1,
-            info: "NAME OF THE SCHOOL",
-            details: "Techno India Group World School, Malda",
-          },
-          { id: 2, info: "AFFILIATION NO (IF APPLICABLE)", details: "" },
-          { id: 3, info: "SCHOOL CODE", details: "" },
-          {
-            id: 4,
-            info: "COMPLETE ADDRESS WITH PIN CODE",
-            details:
-              "Sukhandighi GP Bhabuk, PO Malda Dist Malda, West Bengal PIN: 732142",
-          },
-          {
-            id: 5,
-            info: "PRINCIPAL NAME & QUALIFICATION",
-            details: "Ms. Nandita Banerjee",
-          },
-          {
-            id: 6,
-            info: "PRINCIPAL QUALIFICATION",
-            details: "M.A. in History, B.Ed.",
-          },
-          { id: 7, info: "SCHOOL EMAIL ID", details: "principal.malda@tigps.in" },
-          {
-            id: 8,
-            info: "CONTACT DETAILS (LANDLINE/MOBILE)",
-            details: "77974-05946",
-          },
-        ],
-        documents: [
-          {
-            id: 1,
-            info: "COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY",
-            link: "#",
-          },
-          {
-            id: 2,
-            info: "COPIES OF SOCIETIES/TRUST/COMPANY/REGISTRATION/ RENEWAL CERTIFICATE, AS APPLICABLE",
-            link: "#",
-          },
-          {
-            id: 3,
-            info: "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
-            link: "#",
-          },
-          {
-            id: 4,
-            info: "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT., 2009. AND ITS RENEWAL IF APPLICABLE",
-            link: "#",
-          },
-          {
-            id: 5,
-            info: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
-            link: "#",
-          },
-          {
-            id: 6,
-            info: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
-            link: "#",
-          },
-          {
-            id: 7,
-            info: "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
-            link: "#",
-          },
-          {
-            id: 8,
-            info: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
-            link: "#",
-          },
-        ],
-        academics: [
-          {
-            id: 1,
-            info: "FEE STRUCTURE OF THE SCHOOL",
-            link: "#",
-          },
-          { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "#" },
-          { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "#" },
-          {
-            id: 4,
-            info: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
-            link: "#",
-          },
-          {
-            id: 5,
-            info: "ANNUAL REPORT",
-            link: "#",
-          },
-          {
-            id: 6,
-            info: "DETAILS OF CURRICULUM",
-            link: "#",
-          },
-          {
-            id: 7,
-            info: "SAMPLE OF TRANSFER CERTIFICATE",
-            link: "#",
-          },
-          {
-            id: 8,
-            info: "DETAILS OF TEACHERS TRAINING",
-            link: "#",
-          },
-          {
-            id: 9,
-            info: "STAFF STATEMENT 2024-25",
-            link: "#",
-          },
-          {
-            id: 10,
-            info: "SELF AFFIDAVIT",
-            link: "#",
-          },
-        ],
-        staffInfo: [
-          { id: 1, info: "PRINCIPAL", details: "01" },
-          { id: 2, info: "TOTAL NO. OF TEACHERS", details: "16" },
-          { id: 3, info: "PGT", details: "00" },
-          { id: 4, info: "TGT", details: "11" },
-          { id: 5, info: "PRT", details: "05" },
-          { id: 6, info: "TEACHERS SECTION RATIO", details: "1:1.5" },
-          { id: 7, info: "DETAILS OF SPECIAL EDUCATOR", details: "01" },
-          {
-            id: 8,
-            info: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER",
-            details: "01",
-          },
-        ],
-        infrastructure: [
-          {
-            id: 1,
-            info: "TOTAL CAMPUS AREA OF THE SCHOOL (IN SQ. MTR.)",
-            details: "15742.27 SQUARE MTR",
-          },
-          {
-            id: 2,
-            info: "NO. AND SIZE OF THE CLASS ROOMS (IN SQ. MTR.)",
-            details: "24 classrooms (46.50 sq.m each)",
-          },
-          {
-            id: 3,
-            info: "NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ. MTR.)",
-            details: "3 Labs (Average 64 sq.m each)",
-          },
-          { id: 4, info: "INTERNET FACILITY", details: "Yes" },
-          { id: 5, info: "NO. OF GIRLS TOILETS", details: "6" },
-          { id: 6, info: "NO. OF BOYS TOILETS", details: "6" },
-          {
-            id: 7,
-            info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL",
-            details: "#"
-          },
-          {
-            id: 8,
-            info: "Upload Teachers List (Download Sample Format)",
-            details: "#"
-          },
-        ]
-      },
+      generalInfo: [
+        {
+          id: 1,
+          info: "NAME OF THE SCHOOL",
+          details: "Techno India Group World School, Malda",
+        },
+        { id: 2, info: "AFFILIATION NO (IF APPLICABLE)", details: "" },
+        { id: 3, info: "SCHOOL CODE", details: "" },
+        {
+          id: 4,
+          info: "COMPLETE ADDRESS WITH PIN CODE",
+          details:
+            "Sukhandighi GP Bhabuk, PO Malda Dist Malda, West Bengal PIN: 732142",
+        },
+        {
+          id: 5,
+          info: "PRINCIPAL NAME",
+          details: "Ms. Nilanjana K Jha",
+        },
+        {
+          id: 6,
+          info: "PRINCIPAL QUALIFICATION",
+          details: "MSc, MSo, B.Ed",
+        },
+        { id: 7, info: "PRINCIPAL EMAIL ID", details: "principal.mld@tigws.in" },
+        {
+          id: 8,
+          info: "CONTACT DETAILS (LANDLINE/MOBILE)",
+          details: "77974-05946",
+        },
+      ],
+      documents: [
+        {
+          id: 1,
+          info: "COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY",
+          link: "#",
+        },
+        {
+          id: 2,
+          info: "COPIES OF SOCIETIES/TRUST/COMPANY/REGISTRATION/ RENEWAL CERTIFICATE, AS APPLICABLE",
+          link: "#",
+        },
+        {
+          id: 3,
+          info: "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
+          link: "#",
+        },
+        {
+          id: 4,
+          info: "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT., 2009. AND ITS RENEWAL IF APPLICABLE",
+          link: "#",
+        },
+        {
+          id: 5,
+          info: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
+          link: "#",
+        },
+        {
+          id: 6,
+          info: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
+          link: "#",
+        },
+        {
+          id: 7,
+          info: "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
+          link: "#",
+        },
+        {
+          id: 8,
+          info: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
+          link: "#",
+        },
+      ],
+      academics: [
+        {
+          id: 1,
+          info: "FEE STRUCTURE OF THE SCHOOL",
+          link: "#",
+        },
+        { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "#" },
+        { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "#" },
+        {
+          id: 4,
+          info: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
+          link: "#",
+        },
+        {
+          id: 5,
+          info: "ANNUAL REPORT",
+          link: "#",
+        },
+        {
+          id: 6,
+          info: "DETAILS OF CURRICULUM",
+          link: "#",
+        },
+        {
+          id: 7,
+          info: "SAMPLE OF TRANSFER CERTIFICATE",
+          link: "#",
+        },
+        {
+          id: 8,
+          info: "DETAILS OF TEACHERS TRAINING",
+          link: "#",
+        },
+        {
+          id: 9,
+          info: "STAFF STATEMENT 2024-25",
+          link: "#",
+        },
+        {
+          id: 10,
+          info: "SELF AFFIDAVIT",
+          link: "#",
+        },
+      ],
+      staffInfo: [
+        { id: 1, info: "PRINCIPAL", details: "01" },
+        { id: 2, info: "TOTAL NO. OF TEACHERS", details: "16" },
+        { id: 3, info: "PGT", details: "00" },
+        { id: 4, info: "TGT", details: "11" },
+        { id: 5, info: "PRT", details: "05" },
+        { id: 6, info: "TEACHERS SECTION RATIO", details: "1:1.5" },
+        { id: 7, info: "DETAILS OF SPECIAL EDUCATOR", details: "01" },
+        {
+          id: 8,
+          info: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER",
+          details: "01",
+        },
+      ],
+      infrastructure: [
+        {
+          id: 1,
+          info: "TOTAL CAMPUS AREA OF THE SCHOOL (IN SQ. MTR.)",
+          details: "15742.27 SQUARE MTR",
+        },
+        {
+          id: 2,
+          info: "NO. AND SIZE OF THE CLASS ROOMS (IN SQ. MTR.)",
+          details: "24 classrooms (46.50 sq.m each)",
+        },
+        {
+          id: 3,
+          info: "NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ. MTR.)",
+          details: "3 Labs (Average 64 sq.m each)",
+        },
+        { id: 4, info: "INTERNET FACILITY", details: "Yes" },
+        { id: 5, info: "NO. OF GIRLS TOILETS", details: "6" },
+        { id: 6, info: "NO. OF BOYS TOILETS", details: "6" },
+        {
+          id: 7,
+          info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL",
+          details: "#"
+        },
+        {
+          id: 8,
+          info: "Upload Teachers List (Download Sample Format)",
+          details: "#"
+        },
+      ]
+    },
 
-      gallery: [
+    gallery: [
+    {
+      image: "/img/gallery/malda/image_1.jpg"
+    },
+    {
+      image: "/img/gallery/malda/image_5.jpg"
+    },
+    {
+      image: "/img/gallery/malda/image_3.jpg"
+    },
+    {
+      image: "/img/gallery/malda/image_4.jpg"
+    },
+    {
+      image: "/img/gallery/malda/image_2.jpg"
+    },
+    {
+      image: "/img/gallery/kolkata/image_6.jpg"
+    },
+    ],
+
+    testimonials: [
       {
-        image: "/img/gallery/malda/image_1.jpg"
-      },
-      {
-        image: "/img/gallery/malda/image_5.jpg"
-      },
-      {
-        image: "/img/gallery/malda/image_3.jpg"
-      },
-      {
-        image: "/img/gallery/malda/image_4.jpg"
-      },
-      {
-        image: "/img/gallery/malda/image_2.jpg"
-      },
-      {
-        image: "/img/gallery/kolkata/image_6.jpg"
-      },
+        text: "The blend of WACE and CBSE was the perfect launchpad for my MIT admission.",
+        name: "Aarav Shah",
+        designation: "2023",
+      }
     ]
   },
 

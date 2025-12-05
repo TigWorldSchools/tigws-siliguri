@@ -6,35 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "./StudentTestimonials.css";
 import { useLocation } from "react-router-dom";
-
-const testimonials = [
-  {
-    text: "The blend of WACE and CBSE was the perfect launchpad for my MIT admission.",
-    name: "Aarav Shah",
-    designation: "2023",
-  },
-  {
-    text: "TIGWS gave me the confidence to pursue biomedical research in Australia.",
-    name: "Riya Sen",
-    designation: "Class of 2022",
-  },
-  {
-    text: "The teachers here are very supportive and always encourage creative learning.",
-    name: "Ishita Verma",
-    designation: "Batch of 2021",
-  },
-  {
-    text: "I loved how TIGWS balanced academics and extracurriculars, preparing me for college life abroad.",
-    name: "Karan Patel",
-    designation: "Class of 2020",
-  },
-];
+import { getCampusConfig} from '../../utils/campusConfig.js';
 
 const StudentTestimonials = () => {
   const { pathname } = useLocation();
   const campus = pathname.split("/")[1] || "siliguri";
+  const campusData = getCampusConfig(campus);
+
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
+
+  const testimonials = campusData.testimonials;
 
   const fullText = "Student Testimonials";
 
@@ -140,15 +122,19 @@ const StudentTestimonials = () => {
                     </SwiperSlide>
                   ))}
                 </Swiper>
+
+                {testimonials.length > 1 && (
+                  <div className="arrows d-flex justify-content-center gap-3 mt-4">
+                    <button className="swiper-button-prev-custom testimonials-prev-btn">
+                      <i className="fas fa-arrow-left"></i>
+                    </button>
+                    <button className="swiper-button-next-custom testimonials-next-btn">
+                      <i className="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                )}
                 
-                <div className="arrows d-flex justify-content-center gap-3 mt-4">
-                  <button className="swiper-button-prev-custom testimonials-prev-btn">
-                    <i className="fas fa-arrow-left"></i>
-                  </button>
-                  <button className="swiper-button-next-custom testimonials-next-btn">
-                    <i className="fas fa-arrow-right"></i>
-                  </button>
-                </div>
+
               </div>
             </div>
           </div>
