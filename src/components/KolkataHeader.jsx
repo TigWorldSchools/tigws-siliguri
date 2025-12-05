@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { getCampusConfig } from '../utils/campusConfig.js';
 
 const KolkataHeader = ({ onOpenModal }) => {
     const { pathname } = useLocation();
+    const navigate = useNavigate();
     const campus = pathname.split("/")[1] || "kolkata";
 
     const campusData = getCampusConfig(campus);
@@ -73,7 +74,7 @@ const KolkataHeader = ({ onOpenModal }) => {
         >
         <div className="header__wrapper">
             <div className="header__logo">
-            <div onClick={() => scrollToSection('hero')} className="header__logo--link" style={{ cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}>
+            <div onClick={() => navigate('/')} className="header__logo--link" style={{ cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}>
                 <img src={`${campusData.logo}`} alt={`${campusData.name}`} />
             </div>
             </div>

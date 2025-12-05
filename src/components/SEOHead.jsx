@@ -94,7 +94,9 @@ const SEOHead = ({
       "url": "https://www.tigworldschools.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png"
+        "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png",
+        "width": 250,
+        "height": 60
       }
     });
 
@@ -116,10 +118,41 @@ const SEOHead = ({
         "name": "Techno India Group World School",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png"
+          "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png",
+          "width": 250,
+          "height": 60
         }
       }
     });
+
+    // Add CollectionPage schema for Best Schools listing
+    if (title && title.includes('Best Schools')) {
+      let collectionSchemaScript = document.querySelector('script[type="application/ld+json"][data-schema="collection"]');
+      if (!collectionSchemaScript) {
+        collectionSchemaScript = document.createElement('script');
+        collectionSchemaScript.setAttribute('type', 'application/ld+json');
+        collectionSchemaScript.setAttribute('data-schema', 'collection');
+        document.head.appendChild(collectionSchemaScript);
+      }
+      collectionSchemaScript.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": title,
+        "description": description,
+        "url": `https://www.tigworldschools.com${url}`,
+        "image": `https://www.tigworldschools.com${image}`,
+        "publisher": {
+          "@type": "Organization",
+          "name": "Techno India Group World School",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png",
+            "width": 250,
+            "height": 60
+          }
+        }
+      });
+    }
   }, [title, description, keywords, image, url, type]);
 
   return null; // This component doesn't render anything
