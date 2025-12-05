@@ -22,7 +22,7 @@ const MainCampusesSection = () => {
       name: 'TIGWS Kolkata',
       description: 'Our flagship campus in Kolkata setting new standards in global education.',
       image: '/img/about/first_pic.jpg',
-      url: '#',
+      url: '/kolkata',
       cta: 'Explore Campus'
     }
   ];
