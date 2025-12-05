@@ -819,6 +819,27 @@ export const campusConfig = {
         description: ""
       }
     ],
+
+    gallery: [
+      {
+        image: "/img/gallery/kolkata/image_1.jpg"
+      },
+      {
+        image: "/img/gallery/kolkata/image_5.jpg"
+      },
+      {
+        image: "/img/gallery/kolkata/image_3.jpg"
+      },
+      {
+        image: "/img/gallery/kolkata/image_4.jpg"
+      },
+      {
+        image: "/img/gallery/kolkata/image_2.jpg"
+      },
+      {
+        image: "/img/gallery/kolkata/image_6.jpg"
+      },
+    ]
   }
 };
 

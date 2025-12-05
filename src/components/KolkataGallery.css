@@ -1,0 +1,125 @@
+/* Typing Cursor Animation */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Hero Section */
+.gallery-pg-hero {
+  position: relative;
+}
+
+.gallery-pg-title {
+  font-family: 'Lora', serif !important;
+}
+
+/* Gallery Grid */
+.gallery-pg-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-pg-item img {
+  width: 100%;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.gallery-pg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.4s ease;
+}
+
+.gallery-pg-icon {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  transition: left 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+/* Hover Effects */
+.gallery-pg-item:hover .gallery-pg-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-pg-item:hover .gallery-pg-icon {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+/* Lightbox */
+.gallery-pg-lightbox {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.gallery-pg-lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.gallery-pg-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Lightbox Navigation Buttons */
+.gallery-pg-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  z-index: 10000;
+}
+
+.gallery-pg-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.gallery-pg-prev {
+  left: 30px;
+}
+
+.gallery-pg-next {
+  right: 30px;
+}
+#gallery-pg{
+  background-color: rgb(0, 24, 69);
+}
+
+.row{
+margin: 0;
+}

@@ -5,7 +5,7 @@ import MissionSection from '../components/MissionSection.jsx';
 import LegacySection from '../components/LegacySection.jsx';
 import FounderSection from '../components/FounderSection.jsx';
 import WhyTigSection from '../components/WhyTigSection.jsx';
-import ApplicationForm from '../components/ApplicationForm.jsx';
+import Gallery from '../components/KolkataGallery.jsx';
 import AdmissionModal from '../components/AdmissionModal';
 import { getCampusConfig, getCampusSEO } from '../utils/campusConfig.js';
 
@@ -74,6 +74,9 @@ const NewHomeKolkata = ({ campus = 'kolkata' }) => {
         </section>
         <section id="why-tigws">
             <WhyTigSection campus={campus} />
+        </section>
+        <section id="why-tigws">
+            <Gallery campus={campus} />
         </section>
       </main>
       
