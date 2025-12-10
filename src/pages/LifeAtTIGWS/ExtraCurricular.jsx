@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./ExtraCurricular.css";
 import { useLocation } from "react-router-dom";
+import { getCampusConfig} from '../../utils/campusConfig.js';
 
 const ExtraCurricular = () => {
   const { pathname } = useLocation();
   const campus = pathname.split("/")[1] || "siliguri";
+  const campusData = getCampusConfig(campus);
+
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const fullText = "Extra Curricular";
@@ -51,26 +54,7 @@ const ExtraCurricular = () => {
   }, []);
 
   // Section data
-  const sections = [
-    {
-      title: "Sports And Yoga",
-      text: `Our school places a strong emphasis on activities and sports to promote physical and mental fitness, teamwork, and resilience among students. Students are encouraged to participate in a variety of games and activities such as handball, badminton, volleyball, cycling, running, calisthenics, aerobics and yoga.`,
-      img: "/img/extra_curricular/sports_yoga.jpg",
-      reverse: false,
-    },
-    {
-      title: "Dance",
-      text: `Through dance students learn teamwork and improvisational skills. Dance also enables students to better understand and analyse themselves by helping them to grow their real potential. Students at TIGWS learn pure form of Bharatnatyam and Rabindra Nritya.`,
-      img: "/img/extra_curricular/dance.jpg",
-      reverse: true,
-    },
-    {
-      title: "Music",
-      text: `Music can help students to focus, relax, feel motivated, improve memory and make the process more enjoyable. Students at TIGWS learn Indian vocal music, Western music and Rabindra Sangeet as well as violin.`,
-      img: "/img/extra_curricular/music.jpg",
-      reverse: false,
-    },
-  ];
+  const sections = campusData.ExtraCurricularSection;
 
   return (
     <>

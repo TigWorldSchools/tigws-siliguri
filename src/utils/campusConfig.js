@@ -1,4 +1,5 @@
 import StudentCapacity from "../pages/Admissions/StudentCapacity";
+import ExtraCurricular from "../pages/LifeAtTIGWS/ExtraCurricular";
 import MandatorySection from "../pages/MandatoryDisclosure";
 
 // Campus Configuration System
@@ -854,7 +855,28 @@ export const campusConfig = {
         { class: "11", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
         { class: "12", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
       ]
-    }
+    },
+
+    ExtraCurricularSection: [
+      {
+        title: "Sports And Yoga",
+        text: `Our school places a strong emphasis on activities and sports to promote physical and mental fitness, teamwork, and resilience among students. Students are encouraged to participate in a variety of games and activities such as handball, badminton, volleyball, cycling, running, calisthenics, aerobics and yoga.`,
+        img: "/img/extra_curricular/sports_yoga.jpg",
+        reverse: false,
+      },
+      {
+        title: "Dance",
+        text: `Through dance students learn teamwork and improvisational skills. Dance also enables students to better understand and analyse themselves by helping them to grow their real potential. Students at TIGWS learn pure form of Bharatnatyam and Rabindra Nritya.`,
+        img: "/img/extra_curricular/dance.jpg",
+        reverse: true,
+      },
+      {
+        title: "Music",
+        text: `Music can help students to focus, relax, feel motivated, improve memory and make the process more enjoyable. Students at TIGWS learn Indian vocal music, Western music and Rabindra Sangeet as well as violin.`,
+        img: "/img/extra_curricular/music.jpg",
+        reverse: false,
+      },
+    ]
   },
   
   malda: {
@@ -1381,7 +1403,16 @@ export const campusConfig = {
     StudentCapacity : {
       StudentCapacityPDFLink : "",
       studentData : ""
-    }
+    },
+
+    ExtraCurricularSection: [
+      {
+        title: "Beyond Classroom",
+        text: `TIGWS Malda provides a vibrant range of extra-curricular activities that nurture creativity, leadership, teamwork, and holistic development. Students participate in dynamic clubs such as MUN, Cyber, Photography, Entrepreneurship, and Interact. The school also hosts major events like Sports Day and the Annual Concert, along with engaging inter-house competitions in debate, elocution, singing, dancing, and culinary skills.`,
+        img: "/img/extra_curricular/sports_yoga.jpg",
+        reverse: false,
+      }
+    ]
   },
 
   kolkata: {
