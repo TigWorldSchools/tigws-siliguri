@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./StudentCapacity.css";
 import { useLocation } from "react-router-dom";
+import { getCampusConfig} from '../../utils/campusConfig.js';
 
 const StudentCapacity = () => {
   const { pathname } = useLocation();
   const campus = pathname.split("/")[1] || "siliguri";
+  const campusData = getCampusConfig(campus);
+
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const pdfUrl = "/pdf/student-capacity.pdf";
+  const pdfUrl = campusData.StudentCapacity.StudentCapacityPDFLink;
   const fullText = "Student Capacity";
 
   // Scroll to top when component mounts
@@ -30,33 +33,17 @@ const StudentCapacity = () => {
       return () => clearInterval(typingInterval);
     }, []);
 
-  const studentData = [
-    { class: "BAL VATIKA 1 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 4, boys: 0, transGender: 0, totalStudents: 4, cwsn: 0 },
-    { class: "BAL VATIKA 2 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 5, boys: 0, transGender: 0, totalStudents: 5, cwsn: 0 },
-    { class: "BAL VATIKA 3 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 9, boys: 0, transGender: 0, totalStudents: 9, cwsn: 0 },
-    { class: "1", totalSections: 1, maxIntake: 40, girls: 11, boys: 0, transGender: 0, totalStudents: 11, cwsn: 0 },
-    { class: "2", totalSections: 1, maxIntake: 40, girls: 4, boys: 0, transGender: 0, totalStudents: 4, cwsn: 0 },
-    { class: "3", totalSections: 1, maxIntake: 40, girls: 7, boys: 0, transGender: 0, totalStudents: 7, cwsn: 0 },
-    { class: "4", totalSections: 1, maxIntake: 40, girls: 8, boys: 0, transGender: 0, totalStudents: 8, cwsn: 0 },
-    { class: "5", totalSections: 1, maxIntake: 40, girls: 8, boys: 0, transGender: 0, totalStudents: 8, cwsn: 0 },
-    { class: "6", totalSections: 1, maxIntake: 40, girls: 7, boys: 0, transGender: 0, totalStudents: 7, cwsn: 0 },
-    { class: "7", totalSections: 1, maxIntake: 40, girls: 6, boys: 0, transGender: 0, totalStudents: 6, cwsn: 0 },
-    { class: "8", totalSections: 1, maxIntake: 40, girls: 9, boys: 0, transGender: 0, totalStudents: 9, cwsn: 0 },
-    { class: "9", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
-    { class: "10", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
-    { class: "11", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
-    { class: "12", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
-  ];
-const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "student-capacity.pdf";
-    link.click();
+  const studentData = campusData.StudentCapacity.studentData;
+  const handleDownload = () => {
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "student-capacity.pdf";
+      link.click();
   };
   return (
     <>
       {/* ===== Page Banner ===== */}
-       <section
+      <section
         className="page-hero d-flex align-items-center justify-content-center"
         style={{
           backgroundImage:
@@ -112,11 +99,13 @@ const handleDownload = () => {
             paddingBottom: '10px'
           }}>
           <h2 style={{ color: 'rgb(0, 24, 69)' }}>The Number of Students Class Wise</h2>
-           </div>
-          <button className="listbtn fade-in-cta" onClick={handleDownload}>
-                <i className="fas fa-download listofbook-icon"></i>
-                <span className="listofbook-contact-text">Download</span>
-          </button>
+          </div>
+          {pdfUrl && (
+              <button className="listbtn fade-in-cta" onClick={handleDownload}>
+                    <i className="fas fa-download listofbook-icon"></i>
+                    <span className="listofbook-contact-text">Download</span>
+              </button>
+          )}
           </div>
           <div className="table-responsive">
             <table className="student-table ">
@@ -138,18 +127,26 @@ const handleDownload = () => {
               </tr>
             </thead>
             <tbody>
-              {studentData.map((row, index) => (
-                <tr key={index}>
-                  <td>{row.class}</td>
-                  <td>{row.totalSections}</td>
-                  <td>{row.maxIntake}</td>
-                  <td>{row.girls}</td>
-                  <td>{row.boys}</td>
-                  <td>{row.transGender}</td>
-                  <td>{row.totalStudents}</td>
-                  <td>{row.cwsn}</td>
-                </tr>
-              ))}
+              {studentData && studentData.length > 0 ? (
+                  studentData.map((row, index) => (
+                    <tr key={index}>
+                      <td>{row.class}</td>
+                      <td>{row.totalSections}</td>
+                      <td>{row.maxIntake}</td>
+                      <td>{row.girls}</td>
+                      <td>{row.boys}</td>
+                      <td>{row.transGender}</td>
+                      <td>{row.totalStudents}</td>
+                      <td>{row.cwsn}</td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan="8" style={{ textAlign: "center", fontWeight: "600" }}>
+                      No data available
+                    </td>
+                  </tr>
+                )}
             </tbody>
             </table>
           </div>

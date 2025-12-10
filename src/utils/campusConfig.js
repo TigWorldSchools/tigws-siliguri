@@ -1,3 +1,4 @@
+import StudentCapacity from "../pages/Admissions/StudentCapacity";
 import MandatorySection from "../pages/MandatoryDisclosure";
 
 // Campus Configuration System
@@ -403,7 +404,457 @@ export const campusConfig = {
         name: "Karan Patel",
         designation: "Class of 2020",
       }
-    ]
+    ],
+
+    BookList : {
+      bookPDFLink : "/pdf/siliguri-mpd/BOOK_LIST_2024-25_siliguri.pdf",
+      bookData : [
+        {
+          class: "Class I",
+          books: [
+            { subject: "ENGLISH", titles: ["Literature Reader For You - 1", "a) Grammar For You - 1", "b) Tune In Develop Your Listening and Speaking Skills BK-1 with CD", "Snow White (to enhance reading skill)"] },
+            { subject: "MATHEMATICS", titles: ["Mathematics Made Easy 1", "Math Magic - 1"] },
+            { subject: "EVS", titles: ["Earth & Universe For You - 1"] },
+            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 1"] },
+            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 1"] },
+            { subject: "COMPUTER", titles: ["IT Beans BK - 1"] },
+            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 1"] },
+            { subject: "BENGALI", titles: ["Bangla Porichoy - 1", "Bangla Porichoy WB - 1", "Likhte Likhte Sekho BK 1"] },
+            { subject: "HINDI", titles: ["Rimjhim - 1", "Indradhanush BK - 1", "Vyakaran Mala - 1"] },
+          ],
+        },
+        {
+          class: "Class II",
+          books: [
+            { subject: "ENGLISH", titles: ["Literature Reader For You - 2", "a) Grammar For You - 2", "b) Tune In Develop Your Listening and Speaking Skills BK-2 with CD", "Fairy Tales Vol. 1 (to enhance reading skill)"] },
+            { subject: "MATHEMATICS", titles: ["Mathematics Made Easy 2", "Math Magic - 2"] },
+            { subject: "EVS", titles: ["Earth & Universe For You - 2"] },
+            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 2"] },
+            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 2"] },
+            { subject: "COMPUTER", titles: ["IT Beans BK - 2"] },
+            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 2"] },
+            { subject: "BENGALI", titles: ["Bangla Porichoy - 2", "Bangla Porichoy WB - 2", "Likhte Likhte Sekho BK 2"] },
+            { subject: "HINDI", titles: ["Rimjhim - 2", "Indradhanush BK - 2", "Vyakaran Mala - 2"] },
+          ],
+        },
+        {
+          class: "Class III",
+          books: [
+            { subject: "ENGLISH", titles: ["Literature Reader For You - 3", "Grammar For You - 3", "Hibiscus Course Book - 3", "The Jungle Book (FOR READING SKILL)"] },
+            { subject: "MATHEMATICS", titles: ["Maths Step BK 3", "Math Magic - 3", "Mental Calculations For You - 3"] },
+            { subject: "SCIENCE", titles: ["Your Scientific Journey - 3"] },
+            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 3"] },
+            { subject: "G.K", titles: ["Techno’s Know & Grow with Derek BK. 3"] },
+            { subject: "COMPUTER", titles: ["IT Beans BK - 3"] },
+            { subject: "SOCIAL STUDIES", titles: ["Our Heritage - 3"] },
+            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 3"] },
+            { subject: "BENGALI", titles: ["Bangla Porichoy - 3", "Bangla Porichoy WB - 3", "Little Likhte Sekho BK 3", "sishu bharati vyakaran and rachana part- 1"] },
+            { subject: "HINDI", titles: ["Rimjhim - 3", "Indradhanush BK - 3", "Vyakaran Mala - 3"] },
+          ],
+        },
+        {
+          class: "CLASS: IV",
+          books: [
+            { subject: "ENGLISH", titles: ["Literature Reader For You - 4", "Grammar For You - 4", "HIBISCUS COURSE BOOK-4", "Jataka Stories (to enhance Reading Skills)"] },
+            { subject: "MATHEMATICS", titles: ["Maths Step BK 4", "Math Magic - 4", "Mental Calculations For You - 4"] },
+            { subject: "SCIENCE", titles: ["Your Scientific Journey - 4"] },
+            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 4"] },
+            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 4"] },
+            { subject: "COMPUTER", titles: ["IT Beans BK - 4"] },
+            { subject: "SOCIAL STUDIES", titles: ["OUR HERITAGE -4"] },
+            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 4"] },
+            { subject: "BENGALI", titles: ["Bangla Porichoy - 4", "Bangla Porichoy WB - 4", "Little Likhte Sekho BK 4", "sishu bharati vyakaran and rachana part- 1"] },
+            { subject: "HINDI", titles: ["Rimjhim - 4", "Indradhanush BK - 4", "Vyakaran Mala - 4"] },
+          ],
+        },
+        {
+          class: "CLASS: V",
+          books: [
+            {
+              subject: "ENGLISH",
+              titles: [
+                "Literature Reader For You - 5",
+                "Grammar For You - 5",
+                "HIBISCUS COURSE BOOK-5",
+                "The Wit & Wisdom of Tenali Raman & Birbal (Easy Reader) ( FOR READING SKILL)"
+              ]
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: [
+                "Maths Step BK 5",
+                "Math Magic - 5",
+                "Mental Calculations For You - 5"
+              ]
+            },
+            { subject: "SCIENCE", titles: ["Your Scientific Journey - 5"] },
+            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 5"] },
+            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 5"] },
+            {
+              subject: "COMPUTER",
+              titles: ["Cyber Apps BK - 5"]
+            },
+            { subject: "SOCIAL STUDIES", titles: ["OUR HERITAGE -5"] },
+            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 5"] },
+            {
+              subject: "BENGALI 2nd Language",
+              titles: [
+                "Bangla Porichoy - 5",
+                "Bangla Porichoy WB - 5",
+                "Bangla Vyakaran - 5",
+                "Golpo Pather Asar"
+              ]
+            },
+            {
+              subject: "HINDI 2nd Language",
+              titles: [
+                "Rimjhim - 5",
+                "Indradhanush Bk - 5",
+                "Vyakaran Mala - 5",
+                
+              ]
+            },
+            {
+              subject: "3rd Language HINDI",
+              titles: [
+                "Rimjhim Text - 1",
+                "Rimjhim Workbook 1"
+              ]
+            },
+            {
+              subject: "3rd Language BENGALI",
+              titles: ["Sahaj Path BK - 1"]
+            }
+          ]
+        },
+        {
+          class: "CLASS: VI",
+          books: [
+            {
+              subject: "ENGLISH",
+              titles: [
+                "Literature Reader For You - 6",
+                "Grammar For You - 6",
+                "HIBISCUS COURSE BOOK-6",
+                "Best of O Henry ( FOR READING SKILL)"
+              ]
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: [
+                "Maths - 6",
+                "Mathamatics - 6 (R S Agarwal )",
+                "Lab Manual (Together with Mathematics) For Std. VI"
+              ]
+            },
+            {
+              subject: "SCIENCE",
+              titles: [
+                "Science Around Us - 6",
+                "Science - 6",
+                "Science Lab Exploration Book - 6"
+              ]
+            },
+            {
+              subject: "G.K",
+              titles: [
+                "Techno's Know & Grow with Derek BK. 6"
+              ]
+            },
+            {
+              subject: "COMPUTER",
+              titles: [
+                "Cyber Apps BK - 6"
+              ]
+            },
+            {
+              subject: "SOCIAL STUDIES",
+              titles: [
+                "OUR HERITAGE -6",
+                "Our Past - History",
+                "Earth - Our habitat - Geography",
+                "Social and Political Life - Civics",
+                "Map Practice Geography & History BK-6"
+              ]
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: [
+                "Art & Craft For You - 6"
+              ]
+            },
+            {
+              subject: "LIFE SKILL",
+              titles: [
+                "Values, Ethics & Life Skills For You - 6"
+              ]
+            },
+            {
+              subject: "EVS",
+              titles: [
+                "Our Environment - 6"
+              ]
+            },
+            {
+              subject: "2nd Language BENGALI",
+              titles: [
+                "Bangla Porichoy - 6",
+                "Bangla Porichoy WB - 6",
+                "Bangla Vyakaran - 6",
+                "Ramer Sumati"
+              ]
+            },
+            {
+              subject: "3rd Language BENGALI",
+              titles: [
+                "Sahaj Path Bk. 2"
+              ]
+            },
+            {
+              subject: "2nd Language HINDI",
+              titles: [
+                "Rimjhim Text - 2",
+                "Rimjhim Workbook - 2"
+              ]
+            },
+            {
+              subject: "3rd Language HINDI",
+              titles: [
+                "Manak Hindi Vyakaran Evam Rachna - 6",
+                "Basant - 1",
+                "Bal Ram Katha"
+              ]
+            }
+          ]
+        },
+        {
+          class: "CLASS: VII",
+          books: [
+            {
+              subject: "ENGLISH",
+              titles: [
+                "HIBISCUS Literature Reader Book - 7",
+                "HIBISCUS work Book - 7",
+                "HIBISCUS Course Book - 7",
+                "Grammar For You - 7",
+                "David Copperfield ( FOR READING SKILL)"
+              ]
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: [
+                "Mathamatics - 7",
+                "Mathamatics - 7",
+                "Lab Manual (Together with Mathematics) For Std. VII"
+              ]
+            },
+            {
+              subject: "SCIENCE",
+              titles: [
+                "Science Around Us - 7",
+                "Science - 7",
+                "Science Lab Exploration Book - 7"
+              ]
+            },
+            {
+              subject: "G.K",
+              titles: [
+                "Techno's Know & Grow with Derek BK. 7"
+              ]
+            },
+            {
+              subject: "COMPUTER",
+              titles: [
+                "Cyber Apps BK - 7"
+              ]
+            },
+            {
+              subject: "SOCIAL STUDIES",
+              titles: [
+                "OUR HERITAGE -7",
+                "Our Past 7 - History",
+                "Our Environment - Geography",
+                "Social and Political Life 7 - Civics",
+                "Map Practice Geography & History BK-7"
+              ]
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: [
+                "Art & Craft For You - 7"
+              ]
+            },
+            {
+              subject: "LIFE SKILL",
+              titles: [
+                "Values, Ethics & Life Skills For You - 7"
+              ]
+            },
+            {
+              subject: "EVS",
+              titles: [
+                "Our Environment - 7"
+              ]
+            },
+            {
+              subject: "2nd Language BENGALI",
+              titles: [
+                "Bangla Porichoy - 7",
+                "Bangla Porichoy WB - 7",
+                "Bangla Vyakaran - 7",
+                "Avagir Swarga and Mahesh"
+              ]
+            },
+            {
+              subject: "2nd Language HINDI",
+              titles: [
+                "Manak Hindi Vyakaran Evam Rachna - 7",
+                "Basant - 3",
+                "Bal Mahabharat Katha"
+              ]
+            },
+            {
+              subject: "3rd Language BENGALI",
+              titles: [
+                "Sahitya Katha Bk. III"
+              ]
+            },
+            {
+              subject: "3rd Language HINDI",
+              titles: [
+                "Rim Jhim Text - 3",
+                "Rimjhim Workbook 3"
+              
+              ]
+            }
+          ]
+        },
+        {
+          class: "CLASS: VIII",
+          books: [
+            {
+              subject: "ENGLISH",
+              titles: [
+                "HIBISCUS Literature Reader Book - 8",
+                "HIBISCUS work Book - 8",
+                "HIBISCUS Course Book - 8",
+                "Grammar For You - 8",
+                "THE HOUND OF BASKERVILLES ( FOR READING SKILL)"
+              ]
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: [
+                "Mathamatics - 8",
+                "Mathamatic - 8",
+                "Lab Manual (Together with Mathematics) For Std. VIII"
+              ]
+            },
+            {
+              subject: "SCIENCE",
+              titles: [
+                "Science Around Us - 8",
+                "Science - 8",
+                "Science Lab Exploration Book - 8"
+              ]
+            },
+            {
+              subject: "G.K",
+              titles: [
+                "Techno's Know & Grow with Derek BK. 8"
+              ]
+            },
+            {
+              subject: "COMPUTER",
+              titles: [
+                "Cyber Apps BK - 8"
+              ]
+            },
+            {
+              subject: "SOCIAL STUDIES",
+              titles: [
+                "OUR HERITAGE -8",
+                "Our Past - Part I and Part II - History",
+                "Resource and Development - Geography",
+                "Social and Political Life - Civics",
+                "Map Practice Geography & History BK-8"
+              ]
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: [
+                "Art & Craft For You - 8"
+              ]
+            },
+            {
+              subject: "LIFE SKILL",
+              titles: [
+                "Values, Ethics & Life Skills For You - 8"
+              ]
+            },
+            {
+              subject: "EVS",
+              titles: [
+                "Our Environment - 8"
+              ]
+            },
+            {
+              subject: "2nd Language BENGALI",
+              titles: [
+                "Bangla Porichoy - 8",
+                "Bangla Porichoy WB - 8",
+                "Bangla Vyakaran - 8",
+                "Chelebela"
+              ]
+            },
+            {
+              subject: "3rd Language HINDI",
+              titles: [
+                "Rim Jhim Text - 4",
+                "Rimjhim Workbook 4"
+              ]
+            },
+            {
+              subject: "2nd Language HINDI",
+              titles: [
+                "Manak Hindi Vyakaran Evam Rachna - 8",
+                "Basant - 3",
+                "Bharat Ek Khoj"
+              ]
+            },
+            {
+              subject: "3rd Language BENGALI",
+              titles: [
+                "Sahitya Katha Part IV"
+                
+              
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    StudentCapacity : {
+      StudentCapacityPDFLink : "/pdf/siliguri-mpd/student-capacity.pdf",
+      studentData : [
+        { class: "BAL VATIKA 1 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 4, boys: 0, transGender: 0, totalStudents: 4, cwsn: 0 },
+        { class: "BAL VATIKA 2 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 5, boys: 0, transGender: 0, totalStudents: 5, cwsn: 0 },
+        { class: "BAL VATIKA 3 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 9, boys: 0, transGender: 0, totalStudents: 9, cwsn: 0 },
+        { class: "1", totalSections: 1, maxIntake: 40, girls: 11, boys: 0, transGender: 0, totalStudents: 11, cwsn: 0 },
+        { class: "2", totalSections: 1, maxIntake: 40, girls: 4, boys: 0, transGender: 0, totalStudents: 4, cwsn: 0 },
+        { class: "3", totalSections: 1, maxIntake: 40, girls: 7, boys: 0, transGender: 0, totalStudents: 7, cwsn: 0 },
+        { class: "4", totalSections: 1, maxIntake: 40, girls: 8, boys: 0, transGender: 0, totalStudents: 8, cwsn: 0 },
+        { class: "5", totalSections: 1, maxIntake: 40, girls: 8, boys: 0, transGender: 0, totalStudents: 8, cwsn: 0 },
+        { class: "6", totalSections: 1, maxIntake: 40, girls: 7, boys: 0, transGender: 0, totalStudents: 7, cwsn: 0 },
+        { class: "7", totalSections: 1, maxIntake: 40, girls: 6, boys: 0, transGender: 0, totalStudents: 6, cwsn: 0 },
+        { class: "8", totalSections: 1, maxIntake: 40, girls: 9, boys: 0, transGender: 0, totalStudents: 9, cwsn: 0 },
+        { class: "9", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
+        { class: "10", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
+        { class: "11", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
+        { class: "12", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
+      ]
+    }
   },
   
   malda: {
@@ -788,7 +1239,149 @@ export const campusConfig = {
         name: "Aarav Shah",
         designation: "2023",
       }
-    ]
+    ],
+
+    BookList : {
+      bookPDFLink : "/pdf/malda-mpd/booklist-tigws-malda.pdf",
+      bookData : [
+        {
+          class: "NUR-UKG",
+          books: [
+            { subject: "ENGLISH", titles: ["MADHUBUN PUBLICATIONS BOOK"] },
+            { subject: "MATHEMATICS", titles: ["MADHUBUN PUBLICATIONS BOOK"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["MADHUBUN PUBLICATIONS BOOK"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["MADHUBUN PUBLICATIONS BOOK"] },
+            { subject: "EVS", titles: ["MADHUBUN PUBLICATIONS BOOK"] },
+            { subject: "COMPUTER", titles: ["MADHUBUN PUBLICATIONS BOOK"] }
+          ],
+        },
+        {
+          class: "Class I",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford Reading Circle 1", "Oxford New learner's Grammar 1", "Oxford Friday Afternoon", "Comprehension and Composition 1"] },
+            { subject: "MATHEMATICS", titles: ["Oxford New Guided Mathematics Book 1"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["তাতার বই, grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 1 (Amity University)", "Abhyas Pustika Book 1 (Amity University)"] },
+            { subject: "EVS", titles: ["Oxford Hello Earth Class 1"] },
+            { subject: "COMPUTER", titles: ["Oxford Reboot Class 1"] }
+          ],
+        },
+        {
+          class: "Class II",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford Reading Circle 2", "Oxford New learner's Grammar 2", "Oxford Friday Afternoon", "Comprehension and Composition 2"] },
+            { subject: "MATHEMATICS", titles: ["Oxford New Guided Mathematics Book 2"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["তাতার বই, grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 2 (Amity University)", "Abhyas Pustika Book 2 (Amity University)"] },
+            { subject: "EVS", titles: ["Oxford Hello Earth Class 2"] },
+            { subject: "COMPUTER", titles: ["Oxford Reboot Class 2"] }
+          ],
+        },
+        {
+          class: "Class III",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford Reading Circle 3", "Oxford New learner's Grammar 3", "Oxford Friday Afternoon", "Comprehension and Composition 3"] },
+            { subject: "MATHEMATICS", titles: ["Oxford New Guided Mathematics Book 3"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["বিচিত্র পাঠ পাঠমালা, Grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 3 (Amity University)", "Abhyas Pustika Book 3 (Amity University)"] },
+            { subject: "EVS", titles: ["Oxford Hello Earth Class 3"] },
+            { subject: "COMPUTER", titles: ["Oxford Reboot Class 3"] }
+          ],
+        },
+        {
+          class: "Class IV",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford Reading Circle 4", "Oxford New learner's Grammar 4", "Oxford Friday Afternoon", "Comprehension and Composition 4"] },
+            { subject: "MATHEMATICS", titles: ["Oxford New Guided Mathematics Book 4"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["বিচিত্র পাঠ পাঠমালা, Grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 4 (Amity University)", "Abhyas Pustika Book 4 (Amity University)"] },
+            { subject: "EVS", titles: ["Oxford Hello Earth Class 4"] },
+            { subject: "COMPUTER", titles: ["Oxford Reboot Class 4"] }
+          ],
+        },
+        {
+          class: "Class V",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford New Pathways Coursebook 5", "Oxford New learner's Grammar and composition 5", "Reader-Room of the Roof (Ruskin Bond)"] },
+            { subject: "MATHEMATICS", titles: ["Oxford New Guided Mathematics Book 5"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["বিচিত্র পাঠ পাঠমালা, Grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 5 (Amity University)", "Abhyas Pustika Book 5 (Amity University)"] },
+            { subject: "BENGALI 3rd LANGUAGE", titles: ["Kotha Mukul book 1 (Bibhabati)"] },
+            { subject: "HINDI 3rd LANGUAGE", titles: ["Jagrity Book 1 (Amity University)", "Abhyas Pustika Book 1 (Amity University)"] },
+            { subject: "EVS", titles: ["Oxford Hello Earth Class 1"] },
+            { subject: "COMPUTER", titles: ["AI and You 5", "Innovate 5 (Avartan Publishers)"] }
+          ],
+        },
+        {
+          class: "Class VI",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford New Pathways Coursebook 6", "Oxford New learner's Grammar and composition 6 ", "Reader- The Adventures of Tom Sawyer (Mark Twain)"] },
+            { subject: "MATHEMATICS", titles: ["NCERT Mathematics class 6"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["বিচিত্র পাঠ পাঠমালা, Grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 6 (Amity University)", "Hindi vyakaran evang rachana Class 6 (Dhanpat Rai Publications)"] },
+            { subject: "BENGALI 3rd LANGUAGE", titles: ["Kotha Mukul book 2 (Bibhabati)"] },
+            { subject: "HINDI 3rd LANGUAGE", titles: ["Jagrity Book 2 (Amity University)", "Abhyas Pustika Book 3 (Amity University)"] },
+            { subject: "SST", titles: ["Excellence in Social Science 6 (Prachi Publications)"] },
+            { subject: "SCIENCE", titles: ["Let's Explore Science Class 6 (Arya Book Depot)"]},
+            { subject: "COMPUTER", titles: ["AI and You 6", "Innovate 6 (Avartan Publishers)"] }
+          ],
+        },
+        {
+          class: "Class VII",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford New Pathways Coursebook 7", "Oxford New learner's Grammar and composition 7", "Reader - Treasure Island (Robert Louis Stevenson)"] },
+            { subject: "MATHEMATICS", titles: ["NCERT Mathematics class 7"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["বিচিত্র পাঠ পাঠমালা, Grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 7 (Amity University)", "Hindi vyakaran evang rachana Class 6 (Dhanpat Rai Publications)"] },
+            { subject: "BENGALI 3rd LANGUAGE", titles: ["Kotha Mukul book 3 (Bibhabati)"] },
+            { subject: "HINDI 3rd LANGUAGE", titles: ["Jagrity Book 3 (Amity University)", "Abhyas Pustika Book 3 (Amity University)"] },
+            { subject: "SST", titles: ["Excellence in Social Science 7 (Prachi Publications)"] },
+            { subject: "SCIENCE", titles: ["Let's Explore Science Class 7 (Arya Book Depot)"]},
+            { subject: "COMPUTER", titles: ["AI and You 7", "Innovate 7 (Avartan Publishers)"] }
+          ],
+        },
+        {
+          class: "Class VIII",
+          books: [
+            { subject: "ENGLISH", titles: ["Oxford New Pathways Coursebook 8", "Oxford New learner's Grammar and composition 8", "Reader- Little Women (Louisa Mary Alcot)"] },
+            { subject: "MATHEMATICS", titles: ["NCERT Mathematics class 8"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["বিচিত্র পাঠ পাঠমালা, Grammar - Reader -"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Jagrity Book 4 (Amity University)", "Hindi vyakaran evang rachana Class 6 (Dhanpat Rai Publications)"] },
+            { subject: "BENGALI 3rd LANGUAGE", titles: ["Kotha Mukul book 4 (Bibhabati)"] },
+            { subject: "HINDI 3rd LANGUAGE", titles: ["Jagrity Book 4 (Amity University)", "Abhyas Pustika Book 4 (Amity University)"] },
+            { subject: "SST", titles: ["Excellence in Social Science 8 (Prachi Publications)"] },
+            { subject: "SCIENCE", titles: ["Let's Explore Science Class 8 (Arya Book Depot)"]},
+            { subject: "COMPUTER", titles: ["AI and You 8", "Innovate 8 (Avartan Publishers)"] }
+          ],
+        },
+        {
+          class: "Class IX",
+          books: [
+            { subject: "ENGLISH", titles: ["Textbook-Beehive (NCERT)", "Reader - Moments (NCERT)", "Together with CBSE (Question Bank) by Rachna Sagar"] },
+            { subject: "MATHEMATICS", titles: ["NCERT"] },
+            { subject: "BENGALI 2ND LANGUAGE", titles: ["সাহিত্য সঞ্চয়ন", "আম আটির ভেঁপু", "বাংলা ব্যাকরণ ও রচনা"] },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["स्पर्श- भाग 1", "संचयन - भाग 1", "व्याकरण - भाषा अधिगम और व्याकरण"] },
+            { subject: "SST", titles: ["NCERT"] },
+            { subject: "SCIENCE", titles: ["NCERT", "ABD (Let's Explore Physics/Chemistry/Biology)"] },
+            { subject: "COMPUTER", titles: ["Artificial Intellligence Class 9 (Avartan Publishers)"] }
+          ],
+        },
+        {
+          class: "Class X",
+          books: [
+            { subject: "MATHEMATICS", titles: ["NCERT"] },
+            { subject: "SST", titles: ["NCERT"] },
+            { subject: "SCIENCE", titles: ["NCERT", "ABD (Let's Explore Physics/Chemistry/Biology)"] },
+            { subject: "COMPUTER", titles: ["Artificial Intellligence Class 10 (Avartan Publishers)"] }
+          ],
+        }
+      ]
+    },
+
+    StudentCapacity : {
+      StudentCapacityPDFLink : "",
+      studentData : ""
+    }
   },
 
   kolkata: {
