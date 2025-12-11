@@ -1401,8 +1401,24 @@ export const campusConfig = {
     },
 
     StudentCapacity : {
-      StudentCapacityPDFLink : "",
-      studentData : ""
+      StudentCapacityPDFLink : "/pdf/malda-mpd/student-capacity.pdf",
+      studentData : [
+        { class: "BAL VATIKA 1 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 6, boys: 6, transGender: 0, totalStudents: 12, cwsn: 1 },
+        { class: "BAL VATIKA 2 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 3, boys: 6, transGender: 0, totalStudents: 9, cwsn: 1 },
+        { class: "BAL VATIKA 3 (PRE-SCHOOL)", totalSections: 1, maxIntake: 40, girls: 11, boys: 15, transGender: 0, totalStudents: 25, cwsn: 0 },
+        { class: "1", totalSections: 1, maxIntake: 40, girls: 16, boys: 10, transGender: 0, totalStudents: 26, cwsn: 0 },
+        { class: "2", totalSections: 1, maxIntake: 40, girls: 10, boys: 20, transGender: 0, totalStudents: 30, cwsn: 0 },
+        { class: "3", totalSections: 2, maxIntake: 40, girls: 20, boys: 14, transGender: 0, totalStudents: 34, cwsn: 0 },
+        { class: "4", totalSections: 2, maxIntake: 40, girls: 17, boys: 20, transGender: 0, totalStudents: 37, cwsn: 1 },
+        { class: "5", totalSections: 1, maxIntake: 40, girls: 15, boys: 16, transGender: 0, totalStudents: 31, cwsn: 1 },
+        { class: "6", totalSections: 2, maxIntake: 40, girls: 11, boys: 22, transGender: 0, totalStudents: 33, cwsn: 0 },
+        { class: "7", totalSections: 1, maxIntake: 40, girls: 13, boys: 15, transGender: 0, totalStudents: 28, cwsn: 1 },
+        { class: "8", totalSections: 1, maxIntake: 40, girls: 12, boys: 8, transGender: 0, totalStudents: 20, cwsn: 0 },
+        { class: "9", totalSections: 1, maxIntake: 0, girls: 4, boys: 6, transGender: 0, totalStudents: 10, cwsn: 0 },
+        { class: "10", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
+        { class: "11", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
+        { class: "12", totalSections: 0, maxIntake: 0, girls: 0, boys: 0, transGender: 0, totalStudents: 0, cwsn: 0 },
+      ]
     },
 
     ExtraCurricularSection: [
