@@ -105,14 +105,14 @@ const ExtraCurricular = () => {
             <div
               key={index}
               className={`row g-40 align-items-center mb-5 ${
-                sec.reverse ? "flex-row-reverse" : ""
+                index % 2 === 1 ? "flex-row-reverse" : ""
               }`}
             >
               <div className="col-lg-6">
                 <div
                   ref={(el) => (animatedRefs.current[index * 2] = el)}
                   className={`rts-left-section ${
-                    sec.reverse ? "fade-right" : "fade-left"
+                    index % 2 === 1 ? "fade-right" : "fade-left"
                   }`}
                 >
                   <h3 className="campus__life--single--title extra-curricular-title">
@@ -128,7 +128,7 @@ const ExtraCurricular = () => {
                 <div
                   ref={(el) => (animatedRefs.current[index * 2 + 1] = el)}
                   className={`rts-right-section rt-relative ${
-                    sec.reverse ? "fade-left" : "fade-right"
+                    index % 2 === 1 ? "fade-left" : "fade-right"
                   }`}
                 >
                   <div className="campus-video">

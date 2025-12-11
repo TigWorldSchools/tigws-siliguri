@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Container, Row, Col } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import { getCampusConfig, getCampusSEO } from '../../utils/campusConfig.js';
 
 const Criteria = () => {
   const { pathname } = useLocation();
   const campus = pathname.split("/")[1] || "siliguri";
+  const campusData = getCampusConfig(campus);
+
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
   const fullText = "Admission Criteria";
+  const cbseImageRef = useRef(null);
+  const cbseTextRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -25,6 +31,27 @@ const Criteria = () => {
       }
     }, 150);
     return () => clearInterval(typingInterval);
+  }, []);
+
+  // Scroll animations using Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+            observer.unobserve(entry.target); // Trigger only once
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    [cbseImageRef, cbseTextRef].forEach((ref) => {
+      if (ref.current) observer.observe(ref.current);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -65,30 +92,75 @@ const Criteria = () => {
         </div>
       </section>
 
-      <section className="py-5" style={{ backgroundColor: "rgb(0, 24, 69)", minHeight: "60vh" }}>
-        <div className="container">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-6 col-12 order-lg-1 order-1 text-center">
-              <h2 style={{ 
-                color: "#C3AB6B", 
-                fontSize: "3rem", 
-                fontWeight: "700",
-                textTransform: "uppercase",
-                letterSpacing: "2px"
-              }}>
-                COMING SOON
-              </h2>
-            </div>
-            <div className="col-lg-6 col-12 order-lg-2 order-2 text-center mb-4">
-              <img 
-                src="/img/gallery/image_3.jpg" 
-                alt="Coming Soon" 
-                className="img-fluid"
-                style={{ maxWidth: "400px", borderRadius: "15px" }}
-              />
-            </div>
-          </div>
-        </div>
+      <section className="curriculum-section py-5">
+        <Container>
+          {/* CBSE Curriculum */}
+          {campusData?.AdmissionCriteria?.description ? (
+            <Row className="align-items-center mb-5">
+              <Col lg={6} md={12} className="mb-3 mb-lg-0">
+                <div ref={cbseImageRef} className="curriculum-image fade-left">
+                  <img
+                    src={`${campusData.AdmissionCriteria.image}`}
+                    alt="CBSE Curriculum"
+                    className="img-fluid rounded shadow"
+                  />
+                </div>
+              </Col>
+              <Col lg={6} md={12}>
+                <div ref={cbseTextRef} className="curriculum-content fade-right">
+                  <h3 className="curriculum-title" style={{ color: "#C3AB6B" }}>
+                    Admission Criteria
+                  </h3>
+                  <p className="curriculum-text">
+                    {campusData.AdmissionCriteria.description.split("<br />").map((line, i) => (
+                        <p key={i}>{line}</p>
+                      ))}
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          ) :
+            (
+              // ============================
+              //      COMING SOON SECTION
+              // ============================
+              <section
+                className="py-5"
+                style={{
+                  backgroundColor: "rgb(0, 24, 69)",
+                  minHeight: "60vh",
+                }}
+              >
+                <div className="container">
+                  <div className="row align-items-center justify-content-center">
+                    <div className="col-lg-6 col-12 order-lg-1 order-1 text-center">
+                      <h2
+                        style={{
+                          color: "#C3AB6B",
+                          fontSize: "3rem",
+                          fontWeight: "700",
+                          textTransform: "uppercase",
+                          letterSpacing: "2px",
+                        }}
+                      >
+                        COMING SOON
+                      </h2>
+                    </div>
+
+                    <div className="col-lg-6 col-12 order-lg-2 order-2 text-center mb-4">
+                      <img
+                        src="/img/gallery/image_1.jpg"
+                        alt="Coming Soon"
+                        className="img-fluid"
+                        style={{ maxWidth: "400px", borderRadius: "15px" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+            )
+          }
+        </Container>
       </section>
     </>
   );

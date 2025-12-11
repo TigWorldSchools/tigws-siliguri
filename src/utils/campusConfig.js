@@ -861,22 +861,27 @@ export const campusConfig = {
       {
         title: "Sports And Yoga",
         text: `Our school places a strong emphasis on activities and sports to promote physical and mental fitness, teamwork, and resilience among students. Students are encouraged to participate in a variety of games and activities such as handball, badminton, volleyball, cycling, running, calisthenics, aerobics and yoga.`,
-        img: "/img/extra_curricular/sports_yoga.jpg",
+        img: "/img/extra_curricular/siliguri/sports_yoga.jpg",
         reverse: false,
       },
       {
         title: "Dance",
         text: `Through dance students learn teamwork and improvisational skills. Dance also enables students to better understand and analyse themselves by helping them to grow their real potential. Students at TIGWS learn pure form of Bharatnatyam and Rabindra Nritya.`,
-        img: "/img/extra_curricular/dance.jpg",
+        img: "/img/extra_curricular/siliguri/dance.jpg",
         reverse: true,
       },
       {
         title: "Music",
         text: `Music can help students to focus, relax, feel motivated, improve memory and make the process more enjoyable. Students at TIGWS learn Indian vocal music, Western music and Rabindra Sangeet as well as violin.`,
-        img: "/img/extra_curricular/music.jpg",
+        img: "/img/extra_curricular/siliguri/music.jpg",
         reverse: false,
       },
-    ]
+    ],
+
+    AdmissionCriteria: {
+      image: "",
+      description: ""
+    }
   },
   
   malda: {
@@ -1425,10 +1430,39 @@ export const campusConfig = {
       {
         title: "Beyond Classroom",
         text: `TIGWS Malda provides a vibrant range of extra-curricular activities that nurture creativity, leadership, teamwork, and holistic development. Students participate in dynamic clubs such as MUN, Cyber, Photography, Entrepreneurship, and Interact. The school also hosts major events like Sports Day and the Annual Concert, along with engaging inter-house competitions in debate, elocution, singing, dancing, and culinary skills.`,
-        img: "/img/extra_curricular/sports_yoga.jpg",
+        img: "/img/extra_curricular/malda/beyound_academics.jpg",
+        reverse: false,
+      },
+      {
+        title: "Sports and Yoga",
+        text: `At Techno India Group World School Malda, students engage in sports, yoga, and Taekwondo to develop strength, flexibility, discipline, and mental focus. These activities promote physical fitness, teamwork, and mindfulness, supporting both physical and emotional well-being, fostering a balanced lifestyle and overall growth.`,
+        img: "/img/extra_curricular/malda/sports_yoga.jpg",
+        reverse: false,
+      },
+      {
+        title: "Dance",
+        text: `Our dance program, including Zumba, encourages creativity, coordination, and physical fitness. Students express themselves through movement, building confidence, rhythm, and teamwork. Dance fosters mental well-being and self-expression, offering an exciting and energetic way for students to stay active and connect with their artistic side.`,
+        img: "/img/extra_curricular/malda/dance.jpg",
+        reverse: false,
+      },
+      {
+        title: "Music",
+        text: `The music program offers students the chance to explore vocal and instrumental skills. Through recitation, singing, and playing instruments, students enhance creativity, focus, and teamwork, while fostering emotional expression and a lifelong appreciation for music and the arts.`,
+        img: "/img/extra_curricular/malda/music.jpg",
+        reverse: false,
+      },
+      {
+        title: "Art and Craft",
+        text: `The Art and Craft program encourages students to explore their creativity through various mediums. Students develop their artistic skills, improve problem-solving abilities, and express themselves through drawing, painting, and crafting. This activity nurtures imagination, attention to detail, and offers a therapeutic outlet for self-expression.`,
+        img: "/img/extra_curricular/malda/art_craft.jpg",
         reverse: false,
       }
-    ]
+    ],
+
+    AdmissionCriteria: {
+      image: "/img/admission/malda/admission_pic.jpg",
+      description: "Admission to Techno India Group World School Malda will be granted based on the candidate's merit and the results of an entrance examination. The dates for the entrance examination will be announced in advance. The final decision regarding admission will be made by the school. Following the entrance exam, a parent interview will be conducted as part of the admission process."
+    }
   },
 
   kolkata: {
