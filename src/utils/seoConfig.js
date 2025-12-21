@@ -46,8 +46,8 @@ export const seoConfig = {
   
   // Social media links
   social: {
-    facebook: "https://www.facebook.com/tigwssiliguri",
-    instagram: "https://www.instagram.com/tigwssiliguri",
+    facebook: "https://www.facebook.com/profile.php?id=61555824702266",
+    instagram: " https://www.instagram.com/tig_world_school",
     youtube: "https://www.youtube.com/tigwssiliguri",
     linkedin: "https://www.linkedin.com/school/tigws-siliguri"
   }
