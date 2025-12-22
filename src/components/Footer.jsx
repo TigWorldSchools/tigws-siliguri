@@ -28,8 +28,8 @@ const Footer = () => {
 
   const socialLinks = {
     siliguri: [
-      { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61579539989989' },
-      { icon: 'fab fa-instagram', url: 'https://www.instagram.com/technoindiagroup_world_school/' }
+      { icon: 'fab fa-facebook-f', url: 'https://www.facebook.com/profile.php?id=61555824702266' },
+      { icon: 'fab fa-instagram', url: 'https://www.instagram.com/tig_world_school' }
     ],
 
     malda: [
