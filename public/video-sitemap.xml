@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Siliguri Hero Video -->
+  <url>
+    <loc>https://www.tigworldschools.com/siliguri</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/banner_images/siliguri/page_banner.jpg</video:thumbnail_loc>
+      <video:title>TIGWS Siliguri - Campus Tour</video:title>
+      <video:description>Welcome to TIGWS Siliguri - Eastern India's premier all-girls residential school offering CBSE & Australian WACE curriculum with world-class facilities.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/videos/TIGWS_Siliguri.mp4</video:content_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- Malda Hero Video -->
+  <url>
+    <loc>https://www.tigworldschools.com/malda</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/banner_images/malda/page_banner.jpg</video:thumbnail_loc>
+      <video:title>TIGWS Malda - Campus Tour</video:title>
+      <video:description>Welcome to TIGWS Malda - Premier co-educational school in West Bengal offering CBSE curriculum with holistic development and modern facilities.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/videos/TIGWS_Malda.mp4</video:content_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- Kolkata Hero Video -->
+  <url>
+    <loc>https://www.tigworldschools.com/kolkata</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/banner_images/kolkata/page_banner.jpg</video:thumbnail_loc>
+      <video:title>TIGWS Kolkata - Campus Tour</video:title>
+      <video:description>Welcome to TIGWS Kolkata - Leading educational institution offering CBSE curriculum with state-of-the-art infrastructure and holistic development.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/videos/TIGWS_Kolkata.mp4</video:content_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- Siliguri Extra Curricular Videos -->
+  <url>
+    <loc>https://www.tigworldschools.com/siliguri/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/siliguri/sports_yoga.jpg</video:thumbnail_loc>
+      <video:title>Sports And Yoga - TIGWS Siliguri</video:title>
+      <video:description>Our school places a strong emphasis on activities and sports to promote physical and mental fitness, teamwork, and resilience among students. Students are encouraged to participate in a variety of games and activities such as handball, badminton, volleyball, cycling, running, calisthenics, aerobics and yoga.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/siliguri/sports_yoga.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.tigworldschools.com/siliguri/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/siliguri/dance.jpg</video:thumbnail_loc>
+      <video:title>Dance - TIGWS Siliguri</video:title>
+      <video:description>Through dance students learn teamwork and improvisational skills. Dance also enables students to better understand and analyse themselves by helping them to grow their real potential. Students at TIGWS learn pure form of Bharatnatyam and Rabindra Nritya.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/siliguri/dance.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.tigworldschools.com/siliguri/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/siliguri/music.jpg</video:thumbnail_loc>
+      <video:title>Music - TIGWS Siliguri</video:title>
+      <video:description>Music can help students to focus, relax, feel motivated, improve memory and make the process more enjoyable. Students at TIGWS learn Indian vocal music, Western music and Rabindra Sangeet as well as violin.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/siliguri/music.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- Malda Extra Curricular Videos -->
+  <url>
+    <loc>https://www.tigworldschools.com/malda/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/malda/beyound_academics.jpg</video:thumbnail_loc>
+      <video:title>Beyond Classroom - TIGWS Malda</video:title>
+      <video:description>TIGWS Malda provides a vibrant range of extra-curricular activities that nurture creativity, leadership, teamwork, and holistic development. Students participate in dynamic clubs such as MUN, Cyber, Photography, Entrepreneurship, and Interact.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/malda/beyound_academics.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.tigworldschools.com/malda/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/malda/sports_yoga.jpg</video:thumbnail_loc>
+      <video:title>Sports and Yoga - TIGWS Malda</video:title>
+      <video:description>At Techno India Group World School Malda, students engage in sports, yoga, and Taekwondo to develop strength, flexibility, discipline, and mental focus. These activities promote physical fitness, teamwork, and mindfulness.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/malda/sports_yoga.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.tigworldschools.com/malda/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/malda/dance.jpg</video:thumbnail_loc>
+      <video:title>Dance - TIGWS Malda</video:title>
+      <video:description>Our dance program, including Zumba, encourages creativity, coordination, and physical fitness. Students express themselves through movement, building confidence, rhythm, and teamwork.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/malda/dance.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.tigworldschools.com/malda/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/malda/music.jpg</video:thumbnail_loc>
+      <video:title>Music - TIGWS Malda</video:title>
+      <video:description>The music program offers students the chance to explore vocal and instrumental skills. Through recitation, singing, and playing instruments, students enhance creativity, focus, and teamwork.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/malda/music.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.tigworldschools.com/malda/extra-curricular</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/extra_curricular/malda/art_craft.jpg</video:thumbnail_loc>
+      <video:title>Art and Craft - TIGWS Malda</video:title>
+      <video:description>The Art and Craft program encourages students to explore their creativity through various mediums. Students develop their artistic skills, improve problem-solving abilities, and express themselves through drawing, painting, and crafting.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/img/extra_curricular/malda/art_craft.jpg</video:content_loc>
+      <video:duration>300</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- Main Homepage Hero Video -->
+  <url>
+    <loc>https://www.tigworldschools.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.tigworldschools.com/img/banner_images/page_banner.jpg</video:thumbnail_loc>
+      <video:title>Techno India Group World School - Excellence in Education</video:title>
+      <video:description>Discover Techno India Group World School - Premier educational institution across multiple campuses offering world-class education and holistic development.</video:description>
+      <video:content_loc>https://www.tigworldschools.com/videos/TIGWS_Main.mp4</video:content_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2024-01-01T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+</urlset>
