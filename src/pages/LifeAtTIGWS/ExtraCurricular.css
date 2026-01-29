@@ -54,7 +54,7 @@
 
 .overlay-title {
   color: #c3ab6b;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 1.3;
@@ -63,10 +63,10 @@
 
 .overlay-text {
   color: #ffffff;
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .carousel-controls {

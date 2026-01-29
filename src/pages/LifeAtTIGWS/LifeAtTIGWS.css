@@ -37,14 +37,14 @@
   position: absolute;
   right: 0;
   top: -30px;
-  color: #000;
+  color: #ffffff;
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  border: 5px solid #ffffff;
+  border: 5px solid #c3ab6b;
   display: grid;
   place-items: center;
-  background: #d5d5d5;
+  background: #c3ab6b;
   transition: all 0.4s ease;
 }
 .rts-research-section .research__items .research-procedure > * {
@@ -54,7 +54,7 @@
 .research-procedure {
   padding: 40px 30px 40px 40px;
   position: relative;
-  background: #d5d5d5;
+  background: #ffffff;
   height: 100%;
   transition: all 0.4s ease;
   border-radius: 5px;
