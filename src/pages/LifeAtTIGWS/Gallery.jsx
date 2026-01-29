@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Gallery.css";
 import { useLocation } from "react-router-dom";
@@ -14,6 +14,7 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const fullText = "Gallery";
+  const galleryRef = useRef([]);
 
   const images = campusData.gallery;
 
@@ -82,6 +83,61 @@ const Gallery = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [lightboxOpen, showNext, showPrev]);
 
+  // Gallery flip animation
+  useEffect(() => {
+    const cards = Array.from(document.querySelectorAll('.gallery-card'));
+    const dotsContainer = document.querySelector('.gallery-dots');
+    if (cards.length && dotsContainer) {
+      let currentSet = 0;
+      const isMobile = window.innerWidth <= 768;
+      const itemsPerSet = isMobile ? 1 : 3;
+      const totalSets = Math.ceil(cards.length / itemsPerSet);
+      
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < totalSets; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'dot';
+        dot.addEventListener('click', () => showSet(i));
+        dotsContainer.appendChild(dot);
+      }
+      
+      const dots = document.querySelectorAll('.dot');
+      
+      function showSet(setIndex) {
+        currentSet = setIndex;
+        const start = setIndex * itemsPerSet;
+        const end = start + itemsPerSet;
+        
+        cards.forEach((card, i) => {
+          if (i >= start && i < end) {
+            card.classList.add('active');
+          } else {
+            card.classList.remove('active');
+          }
+        });
+        
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === setIndex);
+        });
+      }
+      
+      function next() {
+        currentSet = (currentSet + 1) % totalSets;
+        showSet(currentSet);
+      }
+      
+      showSet(0);
+      
+      const rotationInterval = setInterval(() => {
+        next();
+      }, 5000);
+
+      return () => {
+        clearInterval(rotationInterval);
+      };
+    }
+  }, [images.length]);
+
   return (
     <>
       {/* Hero Section */}
@@ -137,27 +193,18 @@ const Gallery = () => {
 
       {/* Gallery Section */}
       <div className="gallery-pg-section section-bg py-5" id="gallery-pg">
-        <div className="container">
-          
-          <div className="row g-4">
-            {images.map((img, index) => (
-              <div className="col-lg-4 col-md-6" key={index}>
-                <div className="gallery-pg-single">
-                  <div
-                    className="gallery-pg-item"
-                    onClick={() => openLightbox(index)}
-                  >
-                    <img src={img.image} alt={`gallery-${index}`} />
-                    <div className="gallery-pg-overlay"></div>
-                    <div className="gallery-pg-icon">
-                      <span>+</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="gallery-track">
+          {images.map((img, index) => (
+            <div 
+              key={index} 
+              className="gallery-card"
+              onClick={() => openLightbox(index)}
+            >
+              <img src={img.image} alt={`gallery-${index}`} />
+            </div>
+          ))}
         </div>
+        <div className="gallery-dots"></div>
       </div>
 
       {/* Lightbox */}

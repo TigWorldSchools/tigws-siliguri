@@ -382,6 +382,16 @@ export const campusConfig = {
       {
         image: "/img/gallery/siliguri/image_6.jpg"
       },
+      {
+        image: "/img/gallery/siliguri/IMG_5364.JPG"
+      },
+
+      {
+        image: "/img/gallery/siliguri/IMG_5631.JPG"
+      },
+      {
+        image: "/img/gallery/siliguri/IMG_5648.JPG"
+      },
     ],
 
     testimonials: [

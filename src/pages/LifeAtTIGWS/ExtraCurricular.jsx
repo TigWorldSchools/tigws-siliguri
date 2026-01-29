@@ -10,6 +10,7 @@ const ExtraCurricular = () => {
 
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const fullText = "Extra Curricular";
 
   // Scroll to top when component mounts
@@ -56,6 +57,22 @@ const ExtraCurricular = () => {
   // Section data
   const sections = campusData.ExtraCurricularSection;
 
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % sections.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + sections.length) % sections.length);
+  };
+
+  // Auto-scroll every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [sections.length]);
+
   return (
     <>
       {/* Hero Section */}
@@ -101,43 +118,21 @@ const ExtraCurricular = () => {
       {/* Extra Curricular Section */}
       <section id="extracurricular" className="rts-campus rts-section-padding py-5">
         <div className="container pb--20">
-          {sections.map((sec, index) => (
-            <div
-              key={index}
-              className={`row g-40 align-items-center mb-5 ${
-                index % 2 === 1 ? "flex-row-reverse" : ""
-              }`}
-            >
-              <div className="col-lg-6">
-                <div
-                  ref={(el) => (animatedRefs.current[index * 2] = el)}
-                  className={`rts-left-section ${
-                    index % 2 === 1 ? "fade-right" : "fade-left"
-                  }`}
-                >
-                  <h3 className="campus__life--single--title extra-curricular-title">
-                    {sec.title}
-                  </h3>
-                  <div className="left-section-content extra-curricular-text">
-                    <p>{sec.text}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-6">
-                <div
-                  ref={(el) => (animatedRefs.current[index * 2 + 1] = el)}
-                  className={`rts-right-section rt-relative ${
-                    index % 2 === 1 ? "fade-left" : "fade-right"
-                  }`}
-                >
-                  <div className="campus-video">
-                    <img src={sec.img} alt={sec.title} />
-                  </div>
+          <div className="carousel-wrapper">
+            <div className="carousel-content">
+              <div className="carousel-image-wrapper">
+                <img src={sections[currentIndex].img} alt={sections[currentIndex].title} className="campus-video-img" />
+                <div className="video-overlay-box">
+                  <h3 className="overlay-title">{sections[currentIndex].title}</h3>
+                  <p className="overlay-text">{sections[currentIndex].text}</p>
                 </div>
               </div>
             </div>
-          ))}
+            <div className="carousel-controls">
+              <button className="carousel-btn prev-btn" onClick={handlePrev}>‹</button>
+              <button className="carousel-btn next-btn" onClick={handleNext}>›</button>
+            </div>
+          </div>
         </div>
       </section>
     </>
