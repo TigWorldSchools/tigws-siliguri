@@ -94,8 +94,8 @@ const SEOHead = ({
       "url": "https://www.tigworldschools.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png",
-        "width": 250,
+        "url": "https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png",
+        "width": 600,
         "height": 60
       }
     });
@@ -118,8 +118,8 @@ const SEOHead = ({
         "name": "Techno India Group World School",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png",
-          "width": 250,
+          "url": "https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png",
+          "width": 600,
           "height": 60
         }
       }
@@ -146,8 +146,8 @@ const SEOHead = ({
           "name": "Techno India Group World School",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.tigworldschools.com/img/logo/tigws_logo_search.png",
-            "width": 250,
+            "url": "https://www.tigworldschools.com/img/logo/tigws_siliguri_logo.png",
+            "width": 600,
             "height": 60
           }
         }
