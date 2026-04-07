@@ -1,5 +1,5 @@
 // Google Sheets integration utility
-const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbzBKJcFi_OdvGD__aoZjlWspShZUGevHrLUu3_NFce2G4lKMMIFiiMarGwQOEfCiYOs/exec';
+const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbz33AXeNylAIJMx6NpWP4GKpjZV39Z6xzUUCdZEMzjwGWTEUcV9VRuk5N29FJQigeW6gg/exec';
 
 // Fallback email service (using Formspree as example)
 const FALLBACK_EMAIL_URL = 'https://formspree.io/f/YOUR_FORM_ID';
@@ -34,7 +34,7 @@ export const submitToGoogleSheets = async (formData) => {
     return { success: true, method: 'google-sheets' };
   } catch (error) {
     console.error('Google Sheets submission failed, trying fallback:', error);
-    
+
     // Fallback to email service
     try {
       const fallbackResponse = await fetch(FALLBACK_EMAIL_URL, {
@@ -57,14 +57,14 @@ export const submitToGoogleSheets = async (formData) => {
           `
         })
       });
-      
+
       if (fallbackResponse.ok) {
         return { success: true, method: 'email-fallback' };
       }
     } catch (fallbackError) {
       console.error('Fallback email submission also failed:', fallbackError);
     }
-    
+
     throw new Error('Failed to submit form data');
   }
 };
@@ -83,6 +83,6 @@ Grade: ${formData.grade}
 City: ${formData.city}
 Timestamp: ${new Date().toISOString()}
   `);
-  
+
   return `mailto:admissions@tigws.edu.in?subject=${subject}&body=${body}`;
 };
