@@ -263,7 +263,7 @@ export const campusConfig = {
         {
           id: 7,
           info: "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
-          link: "/pdf/siliguri-mpd/SELF-CERTIFICATION.pdf",
+          link: "",
         },
         {
           id: 8,
@@ -351,14 +351,7 @@ export const campusConfig = {
         {
           id: 7,
           info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL",
-          details: (
-            <a
-              href="https://www.youtube.com/watch?v=BbcLCNIAyCs" target="_blank"
-              className="click-link"
-            >
-              Click Here
-            </a>
-          ),
+          details: "",
         },
       ]
     }, 
