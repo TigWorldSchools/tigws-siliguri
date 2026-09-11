@@ -36,12 +36,6 @@ const ProgressiveDisclosure = () => {
       fullText: 'A vibrant mix of sports and cultural pursuits empowers students to explore their talents, from classical arts to global competitions, every achievement is valued and celebrated. We provide platforms for students to showcase their abilities and reach their full potential.'
     },
     {
-      icon: 'fas fa-globe',
-      title: 'Global Standards',
-      summary: 'NEP-aligned CBSE curriculum with Australian WACE Programme.',
-      fullText: 'With an NEP-aligned CBSE curriculum and the globally recognized Australian WACE Programme, we bridge Eastern values with Western innovation, preparing girls to dream boldly and achieve globally. Our international partnerships ensure world-class education standards.'
-    },
-    {
       icon: 'fas fa-heart',
       title: 'Mindful Living',
       summary: 'Limited screen-time policy for balanced, confident lives.',

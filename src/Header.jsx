@@ -40,7 +40,7 @@ const Header = ({ onOpenModal }) => {
       url: `/${campus}/admission-criteria`,
       dropdown: [
         { label: 'Criteria', url: `/${campus}/admission-criteria` },
-        { label: 'Student Capacity', url: `/${campus}/student-capacity` },
+        // { label: 'Student Capacity', url: `/${campus}/student-capacity` },
         { label: 'Application Form', url: `/${campus}/application-form` }
       ]
     },
@@ -49,8 +49,8 @@ const Header = ({ onOpenModal }) => {
       {label: 'Life At TIGWS', url:`/${campus}/life-at-tigws`},
       {label:'Student Pathway', url:`/${campus}/student-pathway`},
       {label:'Extra Curricular', url:`/${campus}/extra-curricular`},
-      {label:'Gallery', url:`/${campus}/gallery`},
-      {label:'Student Testimonials', url:`/${campus}/student-testimonials`}
+      {label:'Gallery', url:`/${campus}/gallery`}
+      // {label:'Student Testimonials', url:`/${campus}/student-testimonials`}
     ]
     },
 

@@ -2,7 +2,7 @@
 export const seoConfig = {
   defaultTitle: "TIGWS Siliguri - Best Girls School in North Bengal",
   titleTemplate: "%s | TIGWS Siliguri",
-  defaultDescription: "Premier all-girls residential school in Siliguri offering CBSE & WACE curriculum. World-class education, modern facilities, holistic development. Admissions open 2026-27.",
+  defaultDescription: "Premier all-girls residential school in Siliguri offering CBSE curriculum. World-class education, modern facilities, holistic development. Admissions open 2026-27.",
   siteUrl: "https://www.tigworldschools.com",
   defaultImage: "/img/about/first_pic.jpg",
   
@@ -10,8 +10,8 @@ export const seoConfig = {
   pages: {
     home: {
       title: "Best Girls School in Siliguri | TIGWS - Techno India Group World School",
-      description: "Top-rated all-girls residential school in Siliguri, North Bengal. CBSE & WACE curriculum, world-class facilities, holistic education. Admissions open 2026-27.",
-      keywords: "best girls school Siliguri, residential school North Bengal, CBSE school Siliguri, WACE curriculum, all girls boarding school, Techno India Group"
+      description: "Top-rated all-girls residential school in Siliguri, North Bengal. CBSE curriculum, world-class facilities, holistic education. Admissions open 2026-27.",
+      keywords: "best girls school Siliguri, residential school North Bengal, CBSE school Siliguri, all girls boarding school, Techno India Group"
     },
     about: {
       title: "About TIGWS Siliguri - Premier All-Girls Education Excellence",
@@ -24,9 +24,9 @@ export const seoConfig = {
       keywords: "TIGWS admission 2026, Siliguri school admission, girls school application, admission criteria, residential school admission"
     },
     curriculum: {
-      title: "CBSE & WACE Curriculum | Academic Excellence at TIGWS Siliguri",
-      description: "Discover TIGWS Siliguri's dual curriculum approach with CBSE and Australian WACE programs, designed for global competency and academic excellence.",
-      keywords: "CBSE curriculum Siliguri, WACE program India, international curriculum, academic excellence, dual curriculum school"
+      title: "CBSE Curriculum | Academic Excellence at TIGWS Siliguri",
+      description: "Discover TIGWS Siliguri's dual curriculum approach with CBSE and Australian programs, designed for global competency and academic excellence.",
+      keywords: "CBSE curriculum Siliguri program India, international curriculum, academic excellence, dual curriculum school"
     }
   },
   
@@ -79,7 +79,7 @@ export const generateStructuredData = (pageType, pageData = {}) => {
       "availableLanguage": ["English", "Hindi", "Bengali"]
     },
     "sameAs": Object.values(seoConfig.social),
-    "educationalCredentialAwarded": ["CBSE Certificate", "WACE Certificate"],
+    "educationalCredentialAwarded": ["CBSE Certificate"],
     "audience": {
       "@type": "EducationalAudience",
       "educationalRole": "student",

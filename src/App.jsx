@@ -82,11 +82,11 @@ function App() {
             <Criteria />
           </Layout>
         } />
-        <Route path="/siliguri/student-capacity" element={
+        {/* <Route path="/siliguri/student-capacity" element={
           <Layout>
             <StudentCapacity />
           </Layout>
-        } />
+        } /> */}
         <Route path="/siliguri/application-form" element={
           <Layout>
             <ApplicationFormPage />
@@ -112,11 +112,11 @@ function App() {
             <Gallery />
           </Layout>
         } />
-        <Route path="/siliguri/student-testimonials" element={
+        {/* <Route path="/siliguri/student-testimonials" element={
           <Layout>
             <StudentTestimonials />
           </Layout>
-        } />
+        } /> */}
         <Route path="/siliguri/mandatory-disclosure" element={
           <Layout>
             <MandatoryDisclosure />

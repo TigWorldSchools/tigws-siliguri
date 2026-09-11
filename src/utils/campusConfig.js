@@ -14,7 +14,7 @@ export const campusConfig = {
     
     contact: {
       phone: "9733018000",
-      email: "info@tigworldschool.in",
+      email: "admin.slg@tigws.in",
       address: "Techno India Group World School, Siliguri: Himachal Vihar, Behind City Centre, Near Passport Office, Siliguri West Bengal- 734010",
       websiteUrl: "https://www.tigworldschools.com/siliguri",
       schoolLocation: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.4484392754775!2d88.38384597543327!3d26.733365676754516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44738e5a8e12d%3A0x78a95887aefc6a0c!2sTechno%20India%20Group%20World%20School!5e1!3m2!1sen!2sin!4v1764581156687!5m2!1sen!2sin"
@@ -27,10 +27,10 @@ export const campusConfig = {
     },
     
     about: {
-      description: "Eastern India's premier all-girls residential school offering world-class education with CBSE & Australian WACE curriculum in the heart of North Bengal.",
+      description: "Eastern India's premier all-girls residential school offering world-class education with CBSE & Australian in the heart of North Bengal.",
       highlights: [
         "Premier all-girls residential school",
-        "CBSE & WACE dual curriculum", 
+        "CBSE  curriculum", 
         "World-class infrastructure",
         "Holistic development approach"
       ],
@@ -49,7 +49,7 @@ export const campusConfig = {
         },
         {
           title: "Global Outlook",
-          description: "Aligned with the National Education Policy (NEP) and the internationally recognized Australian WACE Programme, TIG World School bridges global standards with Indian values."
+          description: "Aligned with the National Education Policy (NEP) and the internationally recognized Australian, TIG World School bridges global standards with Indian values."
         }
       ],
       missionVissionImage: "/img/about/siliguri/mission_vision.jpg"
@@ -79,7 +79,7 @@ export const campusConfig = {
       {
         image: "/img/academics/siliguri/point2.jpg",
         title: "Global Curriculum Advantage",
-        description: "Experience a powerful dual-curriculum system — CBSE and the Australian WACE Programme, that builds academic rigor, critical thinking, and international readiness for careers in medicine, engineering, business, design, and beyond."
+        description: "Experience a powerful dual-curriculum system — CBSE and the Australian Programme, that builds academic rigor, critical thinking, and international readiness for careers in medicine, engineering, business, design, and beyond."
       },
       {
         image: "/img/academics/siliguri/point3.jpg",
@@ -175,26 +175,22 @@ export const campusConfig = {
         grade: "Grade 9-10: Foundation (CBSE Core)",
         description: `Students in Grades 9–10 engage in a strong academic foundation built on the NCERT-prescribed curriculum. The learning environment promotes curiosity, conceptual clarity, and deeper subject understanding. The school is in the process of obtaining affiliation with the Central Board of Secondary Education (CBSE), ensuring students receive a holistic, nationally recognized education that prepares them for higher studies.`,
       },
+      // {
+      //   number: 2,
+      //   grade: "CBSE Dual Certification",
+      //   description: `Students can pursue a unique dual certification through the NEP-aligned CBSE curriculum and the Australian WACE Programme. This distinctive combination bridges Eastern academic excellence with Western innovation, offering students a global perspective and expanding their university and career opportunities both in India and abroad. The program empowers learners to think critically, communicate effectively, and adapt confidently to a rapidly changing world.`,
+      // },
       {
         number: 2,
-        grade: "Grade 11-12: WACE / CBSE Dual Certification",
-        description: `Students can pursue a unique dual certification through the NEP-aligned CBSE curriculum and the Australian WACE Programme. This distinctive combination bridges Eastern academic excellence with Western innovation, offering students a global perspective and expanding their university and career opportunities both in India and abroad. The program empowers learners to think critically, communicate effectively, and adapt confidently to a rapidly changing world.`,
-      },
-      {
-        number: 3,
         grade: "Counselling & Career Guidance",
         description: `Our dedicated counselling and career guidance cell helps students identify their strengths, interests, and aptitudes through structured assessments and one-on-one mentoring. With personalized guidance, students make informed decisions on selecting their academic streams and careers, matching their skills and passions. This support fosters confidence and clarity in the students.`,
       },
       {
-        number: 4,
+        number: 3,
         grade: "University Admissions",
         description: `Students experience direct exposure to one of India’s largest and most reputed educational networks - the Techno India Group network. It enriches their journey from PG to PhD. With over three decades of academic excellence, the Group’s universities and colleges offer diverse programs in Engineering, Technology, Management, Humanities, Social Sciences, and more. Our students benefit from seamless transition opportunities, industry partnerships, and a strong focus on innovation and research-driven learning.`,
       },
-      {
-        number: 5,
-        grade: "Alumni Success Stories",
-        description: `Our Alumni stand as proud ambassadors of Techno India Group World School’s values and vision. They have gone on to excel in renowned universities, professional fields, and entrepreneurial ventures across the globe. Their success reflects the school’s commitment to nurturing well-rounded individuals equipped with the knowledge, confidence, and integrity to lead and inspire others.`,
-      },
+      
     ],
 
     MandatorySection: {
@@ -233,7 +229,7 @@ export const campusConfig = {
         {
           id: 1,
           info: "COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY",
-          link: "/pdf/siliguri-mpd/affiliation_class_X.pdf",
+          link: "/pdf/siliguri-mpd/CBSE_Affilation_Class_X.pdf",
         },
         {
           id: 2,
@@ -243,51 +239,51 @@ export const campusConfig = {
         {
           id: 3,
           info: "COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY THE STATE GOVT./UT",
-          link: "/pdf/siliguri-mpd/NOC_1.pdf",
+          link: "/pdf/siliguri-mpd/Noc.pdf",
         },
         {
           id: 4,
           info: "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT., 2009. AND ITS RENEWAL IF APPLICABLE",
-          link: "/pdf/siliguri-mpd/RECOGNITION_CERTIFICATE_1.pdf",
+          link: "/pdf/siliguri-mpd/Recognition_certificate.pdf",
         },
         {
           id: 5,
           info: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",
-          link: "/pdf/siliguri-mpd/BUILDING_SAFETY_CERTIFICATE.pdf",
+          link: "/pdf/siliguri-mpd/Building_safety.pdf",
         },
         {
           id: 6,
           info: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",
-          link: "/pdf/siliguri-mpd/FIRE_SAFETY_CERTIFICATE_1.pdf",
+          link: "/pdf/siliguri-mpd/Fire_Safety_Certificate.pdf",
         },
         {
           id: 7,
           info: "COPY OF THE SELF CERTIFICATION SUBMITTED BY THE SCHOOL FOR AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION",
-          link: "",
+          link: "/pdf/siliguri-mpd/Self_Certification.pdf",
         },
         {
           id: 8,
           info: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
-          link: "/pdf/siliguri-mpd/water_health_sanitation.pdf",
+          link: "/pdf/siliguri-mpd/Water_Health_and_Sanitation.pdf",
         },
       ],
       academics: [
         {
           id: 1,
           info: "FEE STRUCTURE OF THE SCHOOL",
-          link: "/pdf/siliguri-mpd/fee_structure _2026-27.pdf",
+          link: "/pdf/siliguri-mpd/Fee_Structure2026.pdf",
         },
-        { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "/pdf/siliguri-mpd/annual_calendar_2026-27.pdf" },
-        { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "/pdf/siliguri-mpd/school_management_committee.pdf" },
+        { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "/pdf/siliguri-mpd/Annual_Calendar.pdf" },
+        { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "/pdf/siliguri-mpd/School_Management_Committee.pdf" },
         {
           id: 4,
           info: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
-          link: "/pdf/siliguri-mpd/parent_teacher_association.pdf",
+          link: "/pdf/siliguri-mpd/Parent_Teacher_Asssociation.pdf",
         },
         {
           id: 5,
           info: "ANNUAL REPORT",
-          link: "/pdf/siliguri-mpd/annual_report_2025-26.pdf",
+          link: "/pdf/siliguri-mpd/Annual_Report2026.pdf",
         },
         {
           id: 6,
@@ -297,17 +293,17 @@ export const campusConfig = {
         {
           id: 7,
           info: "SAMPLE OF TRANSFER CERTIFICATE",
-          link: "/pdf/siliguri-mpd/transfer_certificate_sample.pdf",
+          link: "/pdf/siliguri-mpd/Transfer_Certificate_Sample.pdf",
         },
         {
           id: 8,
           info: "DETAILS OF TEACHERS TRAINING",
-          link: "/pdf/siliguri-mpd/teachers'_training_2025-26.pdf",
+          link: "/pdf/siliguri-mpd/Teachers'_Training.pdf",
         },
         {
           id: 9,
           info: "STAFF STATEMENT 2024-25",
-          link: "/pdf/siliguri-mpd/self_affidavit.pdf",
+          link: "/pdf/siliguri-mpd/Self_Affidavit.pdf",
         },
         // {
         //   id: 10,
@@ -317,7 +313,7 @@ export const campusConfig = {
       ],
       staffInfo: [
         { id: 1, info: "PRINCIPAL", details: "01" },
-        { id: 2, info: "TOTAL NO. OF TEACHERS", details: "25" },
+        { id: 2, info: "TOTAL NO. OF TEACHERS", details: "26" },
         { id: 3, info: "PGT", details: "11" },
         { id: 4, info: "TGT", details: "6" },
         { id: 5, info: "PRT", details: "9" },
@@ -351,7 +347,14 @@ export const campusConfig = {
         {
           id: 7,
           info: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL",
-          details: "",
+          details: (
+            <a
+              href="https://www.youtube.com/watch?v=BbcLCNIAyCs" target="_blank"
+              className="click-link"
+            >
+              Click Here
+            </a>
+          ),
         },
       ]
     }, 
@@ -835,6 +838,136 @@ export const campusConfig = {
               ]
             }
           ]
+        },
+        {
+          class: "CLASS: IX",
+          books: [
+            {
+              subject: "ENGLISH",
+              titles: [
+                "Textbook-Beehive (NCERT)",
+                "Reader - Moments (NCERT)"
+              ]
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: [
+                "Mathematics Text Book for Class IX (NCERT)",
+                "Mathematics ,R.S.Aggarwal IX (Bharti Bhavan)"
+                
+              ]
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: [
+                "Sahitya Sanchayan ",
+                "Aam Aatir Bhepu- CBSE prescribed",
+                "Bangla Byakaran O Rachana"
+              ]
+            },
+            {
+              subject: "HINDI 2ND LANGUAGE",
+              titles: [
+                "Sanchayan - Bhag 1",
+                "Sparsh - Bhag 1",
+                " Bhasha Adhigam Avam Vyakaran ( Both IX - X)"
+              ]
+            },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Nepali Sahitya Sudha- P.M. Khanal",
+                "Katha Bimba- P.M. Khana",
+                "Madhyamik Nepali Byakaran Ra Rachna- Shivraj Sharma",
+                "Pratibha Parichay- Punyaprasad Sharma"
+              ]
+            },
+            {
+              subject: "SSC",
+              titles: [
+                "Understanding Society: India and Beyond – NCERT"
+                
+              ]
+            },
+            {
+              subject: "SCIENCE",
+              titles: [
+                "Textbook for Class IX- NCERT"
+              ]
+            },
+            {
+              subject: "COMPUTER",
+              titles: [
+                "Artificial Intellligence Class 9 (Avartan Publishers)"
+              ]
+            }
+          ]
+        },
+        {
+          class: "CLASS: X",
+          books: [
+            {
+              subject: "ENGLISH",
+              titles: [
+                "Textbook-First Flight (NCERT)",
+                "Reader - Footprints Without feet (NCERT)"
+              ]
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: [
+                "Mathematics Text Book for Class X (NCERT)",
+                "Mathematics ,R.S.Aggarwal X (Bharti Bhavan)"
+              ]
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: [
+                "Sahitya Sanchayan",
+                "Golpo Guccho- CBSE prescribed",
+                "Bangla Byakaran O Rachana"
+              ]
+            },
+            {
+              subject: "HINDI 2ND LANGUAGE",
+              titles: [
+                "Sanchayan - Bhag 2",
+                "Sparsh - Bhag 2",
+                "Bhasha Adhigam Avam Vyakaran ( Both IX - X)"
+              ]
+            },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Nepali Sahitya Sudha- P.M. Khanal",
+                "Katha Bimba- P.M. Khanal",
+                "Madhyamik Nepali Byakaran Ra Rachna- Shivraj Sharma",
+                "Pratibha Parichay- Punyaprasad Sharma"
+              ]
+            },
+            {
+              subject: "SSC",
+              titles: [
+                "Economics- Textbook for class X- NCERT",
+                "History- India and the Contemporary World II- NCERT",
+                "Civics- Democratic Politics-II",
+                "Geography- Contemporary India II- NCERT"
+              ]
+            },
+            {
+              subject: "SCIENCE",
+              titles: [
+                "Textbook for Class X- NCERT"
+              ]
+            },
+            {
+              subject: "COMPUTER",
+              titles: [
+                "Artificial Intellligence Class 10 (Avartan Publishers)"
+              ]
+            }
+            
+          ]
         }
       ]
     },
@@ -1066,11 +1199,7 @@ export const campusConfig = {
         grade: "Grade 9-10: Foundation (CBSE Core)",
         description: "Students in Grades 9–10 engage in a strong academic foundation built on the NCERT-prescribed curriculum. The learning environment promotes curiosity, conceptual clarity, and deeper subject understanding. The school is in the process of obtaining affiliation with the Central Board of Secondary Education (CBSE), ensuring students receive a holistic, nationally recognized education that prepares them for higher studies."
       },
-      {
-        number: 2,
-        grade: "Grade 11-12",
-        description: "In Grades 11-12, Techno India Group World School follows the CBSE curriculum, offering specialized streams—Science, Commerce, and Humanities. Focused on academic rigor, critical thinking, and practical application, students are prepared for higher education and competitive exams while developing leadership, time management, and holistic skills for future success."
-      },
+      
       {
         number: 3,
         grade: "Counselling & Career Guidance", 

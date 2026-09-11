@@ -21,8 +21,8 @@ const NewHome = () => {
     <>
       <SEOHead 
         title="Best School in West Bengal | TIGWS - Techno India Group World School"
-        description="Top-rated all-girls residential school in Siliguri, North Bengal. CBSE & WACE curriculum, world-class facilities, holistic education. Admissions open 2026-27. Call now!"
-        keywords="best school West Bengal, best girls school Siliguri, residential school North Bengal, CBSE school Siliguri, WACE curriculum, all girls boarding school, Techno India Group, TIGWS Siliguri , TIGWs , tigws"
+        description="Top-rated all-girls residential school in Siliguri, North Bengal. CBSE curriculum, world-class facilities, holistic education. Admissions open 2026-27. Call now!"
+        keywords="best school West Bengal, best girls school Siliguri, residential school North Bengal, CBSE school Siliguri all girls boarding school, Techno India Group, TIGWS Siliguri , TIGWs , tigws"
         url="/"
         image="/img/about/first_pic.jpg"
       />

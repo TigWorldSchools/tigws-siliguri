@@ -142,32 +142,7 @@ const Curriculum = () => {
           )}
 
           {/* WACE Curriculum */}
-          {campusData.academicWACECurriculum?.description !== "" && (
-            <Row className="align-items-center flex-lg-row-reverse">
-              <Col lg={6} md={12} className="mb-3 mb-lg-0">
-                <div ref={waceImageRef} className="curriculum-image fade-right">
-                  <img
-                    src={`${campusData.academicWACECurriculum.image}`}
-                    alt="WACE Curriculum"
-                    className="img-fluid rounded shadow"
-                  />
-                </div>
-              </Col>
-              <Col lg={6} md={12}>
-                <div ref={waceTextRef} className="curriculum-content fade-left">
-                  <h3 className="curriculum-title">
-                    WACE Curriculum
-                  </h3>
-                  <p className="curriculum-text">
-                    {campusData.academicWACECurriculum.description.split("<br />").map((line, i) => (
-                        <p key={i}>{line}</p>
-                      ))}
-
-                  </p>
-                </div>
-              </Col>
-            </Row>
-          )}
+          
         </Container>
       </section>
     </>
