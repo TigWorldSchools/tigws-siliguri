@@ -106,12 +106,12 @@ const ListOfBooks = () => {
           }}>
           <h2 style={{ color: 'rgb(0, 24, 69)' }}>Book List - Session 2026-27</h2>
           </div>
-          {/* {pdfUrl && (
+          {pdfUrl && (
             <button className="listbtn fade-in-cta" onClick={handleDownload}>
               <i className="fas fa-download listofbook-icon"></i>
               <span className="listofbook-contact-text">Download</span>
             </button>
-          )} */}
+          )}
           </div>
 
           {bookData.map((cls, index) => (

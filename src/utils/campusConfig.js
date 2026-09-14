@@ -413,65 +413,218 @@ export const campusConfig = {
       }
     ],
 
-    BookList : {
-      bookPDFLink : "/pdf/siliguri-mpd/BOOK_LIST_2024-25_siliguri.pdf",
-      bookData : [
+    BookList: {
+      bookPDFLink: "/pdf/siliguri-mpd/booklist_tigws_2026-27.xlsx",
+      bookData: [
+        {
+          class: "CLASS NUR-UKG",
+          books: [
+            {
+              subject: "INTEGRATED",
+              titles: [
+                "ZEN We can Learn - Nursery, LKG, UKG (Madhubun Publications)",
+              ],
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: ["Bangla Bhalobashi 1 (El Elma)"],
+            },
+            {
+              subject: "HINDI 2ND LANGUAGE",
+              titles: ["Gunjan Praveshika (Madhubun)"],
+            },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: ["Sahitya Rashmi (Shatabdi Prakashan)"],
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: [
+                "Rohan's Art Festival A, B, C (Rohan Book Company Pvt Ltd)",
+              ],
+            },
+          ],
+        },
         {
           class: "Class I",
           books: [
-            { subject: "ENGLISH", titles: ["Literature Reader For You - 1", "a) Grammar For You - 1", "b) Tune In Develop Your Listening and Speaking Skills BK-1 with CD", "Snow White (to enhance reading skill)"] },
-            { subject: "MATHEMATICS", titles: ["Mathematics Made Easy 1", "Math Magic - 1"] },
-            { subject: "EVS", titles: ["Earth & Universe For You - 1"] },
-            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 1"] },
-            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 1"] },
-            { subject: "COMPUTER", titles: ["IT Beans BK - 1"] },
-            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 1"] },
-            { subject: "BENGALI", titles: ["Bangla Porichoy - 1", "Bangla Porichoy WB - 1", "Likhte Likhte Sekho BK 1"] },
-            { subject: "HINDI", titles: ["Rimjhim - 1", "Indradhanush BK - 1", "Vyakaran Mala - 1"] },
+            {
+              subject: "ENGLISH",
+              titles: [
+                "New Pathways 1 (OUP)",
+                "New Learner's Grammar and Composition 1 (OUP)",
+                "Reading Routes My Reading journal 1 (Madhuban)",
+              ],
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: ["Oxford Integral Mathematics Class 1"],
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: [
+                "Bichitra Path Pathmala (Book 1) – Oxford University Press (OUP)",
+                " Vyakoron Angon (Book 1)",
+              ],
+            },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Sarangi 1 (NCERT)"] },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Saral Nepali Shikshamala Bhag-1 (Ekta Book House Siliguri)",
+              ],
+            },
+            { subject: "EVS", titles: ["Hello Earth Class 1 (OUP)"] },
+            { subject: "COMPUTER", titles: ["Megabyte Class 1 (OUP)"] },
+            {
+              subject: "GENERAL KNOWLEDGE",
+              titles: ["Nutshell Paperback Class 1"],
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: ["Rohan's Art Festival 1 (Rohan Book Company Pvt Ltd)"],
+            },
           ],
         },
         {
           class: "Class II",
           books: [
-            { subject: "ENGLISH", titles: ["Literature Reader For You - 2", "a) Grammar For You - 2", "b) Tune In Develop Your Listening and Speaking Skills BK-2 with CD", "Fairy Tales Vol. 1 (to enhance reading skill)"] },
-            { subject: "MATHEMATICS", titles: ["Mathematics Made Easy 2", "Math Magic - 2"] },
-            { subject: "EVS", titles: ["Earth & Universe For You - 2"] },
-            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 2"] },
-            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 2"] },
-            { subject: "COMPUTER", titles: ["IT Beans BK - 2"] },
-            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 2"] },
-            { subject: "BENGALI", titles: ["Bangla Porichoy - 2", "Bangla Porichoy WB - 2", "Likhte Likhte Sekho BK 2"] },
-            { subject: "HINDI", titles: ["Rimjhim - 2", "Indradhanush BK - 2", "Vyakaran Mala - 2"] },
+            {
+              subject: "ENGLISH",
+              titles: [
+                "New Pathways 2 (OUP)",
+                " New Learner's Grammar and Composition 2  (OUP)",
+                " Reading Routes My Reading journal 2 (Madhuban)",
+              ],
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: ["Oxford Integral Mathematics Class 2"],
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: [
+                "Bichitra Path Pathmala (Book 2) – Oxford University Press (OUP)",
+                "Vyakoron Angon (Book 2)",
+              ],
+            },
+            { subject: "HINDI 2ND LANGUAGE", titles: ["Sarangi 2 (NCERT)"] },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Saral Nepali Shikshamala Bhag-2 (Ekta Book House Siliguri)",
+              ],
+            },
+            { subject: "EVS", titles: ["Hello Earth Class 2 (OUP)"] },
+            { subject: "COMPUTER", titles: ["Megabyte Class 2 (OUP)"] },
+            {
+              subject: "GENERAL KNOWLEDGE",
+              titles: ["Nutshell Paperback Class 2"],
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: ["Rohan's Art Festival 2 (Rohan Book Company Pvt Ltd)"],
+            },
           ],
         },
         {
           class: "Class III",
           books: [
-            { subject: "ENGLISH", titles: ["Literature Reader For You - 3", "Grammar For You - 3", "Hibiscus Course Book - 3", "The Jungle Book (FOR READING SKILL)"] },
-            { subject: "MATHEMATICS", titles: ["Maths Step BK 3", "Math Magic - 3", "Mental Calculations For You - 3"] },
-            { subject: "SCIENCE", titles: ["Your Scientific Journey - 3"] },
-            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 3"] },
-            { subject: "G.K", titles: ["Techno’s Know & Grow with Derek BK. 3"] },
-            { subject: "COMPUTER", titles: ["IT Beans BK - 3"] },
-            { subject: "SOCIAL STUDIES", titles: ["Our Heritage - 3"] },
-            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 3"] },
-            { subject: "BENGALI", titles: ["Bangla Porichoy - 3", "Bangla Porichoy WB - 3", "Little Likhte Sekho BK 3", "sishu bharati vyakaran and rachana part- 1"] },
-            { subject: "HINDI", titles: ["Rimjhim - 3", "Indradhanush BK - 3", "Vyakaran Mala - 3"] },
+            {
+              subject: "ENGLISH",
+              titles: [
+                "New Pathways 3 (OUP)",
+                "New Learner's Grammar and Composition 3  (OUP)",
+                "Reading Routes My Reading journal 3 (Madhuban)",
+              ],
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: ["Oxford Integral Mathematics Class 3"],
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: [
+                "Bichitro Path Pathmala 3 (OUP)",
+                "Bangla Bhalobashi 4 (El Elma)",
+              ],
+            },
+            {
+              subject: "HINDI 2ND LANGUAGE",
+              titles: [
+                "Veena for class 3  (NCERT)",
+                "Main Aur Mera Vyakaron 3 (Swarasswati Book House)",
+              ],
+            },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Saral Nepali Shikshamala Bhag-3 (Ekta Book House Siliguri), Nepali Grammar Bhag 3 (Shatabdi Prakashan Kalimpong",
+              ],
+            },
+            { subject: "EVS", titles: ["Hello Earth Class 3 (OUP)"] },
+            { subject: "COMPUTER", titles: ["Megabyte Class 3 (OUP)"] },
+            {
+              subject: "GENERAL KNOWLEDGE",
+              titles: ["Nutshell Paperback Class 3"],
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: ["Rohan's Art Festival 3 (Rohan Book Company Pvt Ltd)"],
+            },
           ],
         },
         {
           class: "CLASS: IV",
           books: [
-            { subject: "ENGLISH", titles: ["Literature Reader For You - 4", "Grammar For You - 4", "HIBISCUS COURSE BOOK-4", "Jataka Stories (to enhance Reading Skills)"] },
-            { subject: "MATHEMATICS", titles: ["Maths Step BK 4", "Math Magic - 4", "Mental Calculations For You - 4"] },
-            { subject: "SCIENCE", titles: ["Your Scientific Journey - 4"] },
-            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 4"] },
-            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 4"] },
-            { subject: "COMPUTER", titles: ["IT Beans BK - 4"] },
-            { subject: "SOCIAL STUDIES", titles: ["OUR HERITAGE -4"] },
-            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 4"] },
-            { subject: "BENGALI", titles: ["Bangla Porichoy - 4", "Bangla Porichoy WB - 4", "Little Likhte Sekho BK 4", "sishu bharati vyakaran and rachana part- 1"] },
-            { subject: "HINDI", titles: ["Rimjhim - 4", "Indradhanush BK - 4", "Vyakaran Mala - 4"] },
+            {
+              subject: "ENGLISH",
+              titles: [
+                "New Pathways 4 (OUP)",
+                "New Learner's Grammar and Composition 4  (OUP)",
+                "Reading Routes My Reading journal 4 (Madhuban)",
+              ],
+            },
+            {
+              subject: "MATHEMATICS",
+              titles: ["Oxford Integral Mathematics Class 4"],
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: [
+                "Bichitro Path Pathmala 4 (OUP)",
+                "Bangla Bhalobashi 5 (El Elma)",
+              ],
+            },
+            {
+              subject: "HINDI 2ND LANGUAGE",
+              titles: [
+                "Veena for class 3  (NCERT)",
+                "Main Aur Mera Vyakaron 4 (Swarasswati Book House)",
+              ],
+            },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Saral Nepali Shikshamala Bhag-4 (Ekta Book House Siliguri), Nepali Grammar Bhag 4 (Shatabdi Prakashan Kalimpong",
+              ],
+            },
+            {
+              subject: "EVS",
+              titles: ["Hello Earth Class 4 (OUP)"],
+            },
+            {
+              subject: "COMPUTER",
+              titles: ["Megabyte Class 4 (OUP)"],
+            },
+            {
+              subject: "GENERAL KNOWLEDGE",
+              titles: ["Nutshell Paperback Class 4"],
+            },
+            {
+              subject: "ART & CRAFT",
+              titles: ["Rohan's Art Festival 4 (Rohan Book Company Pvt Ltd)"],
+            },
           ],
         },
         {
@@ -480,59 +633,52 @@ export const campusConfig = {
             {
               subject: "ENGLISH",
               titles: [
-                "Literature Reader For You - 5",
-                "Grammar For You - 5",
-                "HIBISCUS COURSE BOOK-5",
-                "The Wit & Wisdom of Tenali Raman & Birbal (Easy Reader) ( FOR READING SKILL)"
-              ]
+                "New Pathways 5 (OUP)",
+                "New Learner's Grammar and Composition 5  (OUP)",
+                "Reading Routes My Reading journal 5 (Madhuban)",
+              ],
             },
             {
               subject: "MATHEMATICS",
-              titles: [
-                "Maths Step BK 5",
-                "Math Magic - 5",
-                "Mental Calculations For You - 5"
-              ]
+              titles: ["Oxford Integral Mathematics Class 5"],
             },
-            { subject: "SCIENCE", titles: ["Your Scientific Journey - 5"] },
-            { subject: "VALUE EDUCATION", titles: ["Values, Ethics & Life Skills For You - 5"] },
-            { subject: "G.K", titles: ["Techno's Know & Grow with Derek BK. 5"] },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
+              titles: [
+                "Bichitro Path Pathmala 5 (OUP)",
+                "Bangla Bhasha Parichay (Pancham Shreni) by P C Das (Katha O Kahini Prakashoni)",
+              ],
+            },
+            {
+              subject: "HINDI 2ND LANGUAGE",
+              titles: [
+                "Veena for Class 5 (NCERT)",
+                "Main Aur Mera Vyakaron 5 (Swarasswati Book House)",
+              ],
+            },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Saral Nepali Shikshamala Bhag-5 (Ekta Book House Siliguri), Nepali Grammar Bhag 5 (Shatabdi Prakashan Kalimpong",
+              ],
+            },
+            {
+              subject: "EVS",
+              titles: ["Hello Earth Class 5 (OUP)"],
+            },
             {
               subject: "COMPUTER",
-              titles: ["Cyber Apps BK - 5"]
-            },
-            { subject: "SOCIAL STUDIES", titles: ["OUR HERITAGE -5"] },
-            { subject: "ART & CRAFT", titles: ["Art & Craft For You - 5"] },
-            {
-              subject: "BENGALI 2nd Language",
-              titles: [
-                "Bangla Porichoy - 5",
-                "Bangla Porichoy WB - 5",
-                "Bangla Vyakaran - 5",
-                "Golpo Pather Asar"
-              ]
+              titles: ["Megabyte Class 5 (OUP)"],
             },
             {
-              subject: "HINDI 2nd Language",
-              titles: [
-                "Rimjhim - 5",
-                "Indradhanush Bk - 5",
-                "Vyakaran Mala - 5",
-                
-              ]
+              subject: "GENERAL KNOWLEDGE",
+              titles: ["Nutshell Paperback Class 5"],
             },
             {
-              subject: "3rd Language HINDI",
-              titles: [
-                "Rimjhim Text - 1",
-                "Rimjhim Workbook 1"
-              ]
+              subject: "ART & CRAFT",
+              titles: ["Rohan's Art Festival 5 (Rohan Book Company Pvt Ltd)"],
             },
-            {
-              subject: "3rd Language BENGALI",
-              titles: ["Sahaj Path BK - 1"]
-            }
-          ]
+          ],
         },
         {
           class: "CLASS: VI",
@@ -540,338 +686,292 @@ export const campusConfig = {
             {
               subject: "ENGLISH",
               titles: [
-                "Literature Reader For You - 6",
-                "Grammar For You - 6",
-                "HIBISCUS COURSE BOOK-6",
-                "Best of O Henry ( FOR READING SKILL)"
-              ]
+                "New Pathways 6 (OUP)",
+                "New Learner's Grammar and Composition 6  (OUP)",
+                "Reading Routes My Reading journal 6 (Madhuban)",
+              ],
             },
             {
               subject: "MATHEMATICS",
+              titles: ["NCERT Mathematics class 6"],
+            },
+            {
+              subject: "BENGALI 2ND LANGUAGE",
               titles: [
-                "Maths - 6",
-                "Mathamatics - 6 (R S Agarwal )",
-                "Lab Manual (Together with Mathematics) For Std. VI"
-              ]
+                "Bichitro Path Pathmala 6 (OUP)",
+                "Bangla Bhasha Parichay (Shostho Shreni) by P C Das (Katha O Kahini Prakashoni)",
+              ],
+            },
+            {
+              subject: "HINDI 2ND LANGUAGE",
+              titles: [
+                "Malhar for Class 6 (NCERT)",
+                "Main Aur Mera Vyakaron 6 (Swarasswati Book House)",
+              ],
+            },
+            {
+              subject: "NEPALI 2ND LANGUAGE",
+              titles: [
+                "Saral Nepali Shikshamala Bhag-6 (Ekta Book House Siliguri), Nepali Grammar Bhag 6 (Shatabdi Prakashan Kalimpong",
+              ],
+            },
+            {
+              subject: "SST",
+              titles: ["Excellence in Social Science 6 (Prachi Publications)"],
             },
             {
               subject: "SCIENCE",
-              titles: [
-                "Science Around Us - 6",
-                "Science - 6",
-                "Science Lab Exploration Book - 6"
-              ]
-            },
-            {
-              subject: "G.K",
-              titles: [
-                "Techno's Know & Grow with Derek BK. 6"
-              ]
+              titles: ["Let's Explore Science Class 6 (Arya Book Depot)"],
             },
             {
               subject: "COMPUTER",
-              titles: [
-                "Cyber Apps BK - 6"
-              ]
+              titles: ["AI and You 6, Innovate 6 (Avartan Publishers)"],
             },
             {
-              subject: "SOCIAL STUDIES",
+              subject: "3RD LANGUAGE BENGALI",
               titles: [
-                "OUR HERITAGE -6",
-                "Our Past - History",
-                "Earth - Our habitat - Geography",
-                "Social and Political Life - Civics",
-                "Map Practice Geography & History BK-6"
-              ]
+                "Bichitra Path Pathmala (Book 1) – Oxford University Press (OUP)",
+              ],
+            },
+            {
+              subject: "3RD LANGUAGE HINDI",
+              titles: ["Sarangi 1 (NCERT)"],
+            },
+            {
+              subject: "3RD LANGUAGE NEPALI",
+              titles: [
+                "Saral Nepali Shikshamala Bhag-1 (Ekta Book House Siliguri)",
+              ],
+            },
+            {
+              subject: "SKILL EDUCATION",
+              titles: ["Kaushal Bodh Activity Book for Grade 6 (NCERT)"],
+            },
+            {
+              subject: "GENERAL KNOWLEDGE",
+              titles: ["Nutshell Paperback Class 6"],
             },
             {
               subject: "ART & CRAFT",
-              titles: [
-                "Art & Craft For You - 6"
-              ]
+              titles: ["Rohan's Art Festival 6 (Rohan Book Company Pvt Ltd)"],
             },
-            {
-              subject: "LIFE SKILL",
-              titles: [
-                "Values, Ethics & Life Skills For You - 6"
-              ]
-            },
-            {
-              subject: "EVS",
-              titles: [
-                "Our Environment - 6"
-              ]
-            },
-            {
-              subject: "2nd Language BENGALI",
-              titles: [
-                "Bangla Porichoy - 6",
-                "Bangla Porichoy WB - 6",
-                "Bangla Vyakaran - 6",
-                "Ramer Sumati"
-              ]
-            },
-            {
-              subject: "3rd Language BENGALI",
-              titles: [
-                "Sahaj Path Bk. 2"
-              ]
-            },
-            {
-              subject: "2nd Language HINDI",
-              titles: [
-                "Rimjhim Text - 2",
-                "Rimjhim Workbook - 2"
-              ]
-            },
-            {
-              subject: "3rd Language HINDI",
-              titles: [
-                "Manak Hindi Vyakaran Evam Rachna - 6",
-                "Basant - 1",
-                "Bal Ram Katha"
-              ]
-            }
-          ]
+          ],
         },
         {
           class: "CLASS: VII",
           books: [
             {
-              subject: "ENGLISH",
-              titles: [
-                "HIBISCUS Literature Reader Book - 7",
-                "HIBISCUS work Book - 7",
-                "HIBISCUS Course Book - 7",
-                "Grammar For You - 7",
-                "David Copperfield ( FOR READING SKILL)"
-              ]
-            },
-            {
-              subject: "MATHEMATICS",
-              titles: [
-                "Mathamatics - 7",
-                "Mathamatics - 7",
-                "Lab Manual (Together with Mathematics) For Std. VII"
-              ]
-            },
-            {
-              subject: "SCIENCE",
-              titles: [
-                "Science Around Us - 7",
-                "Science - 7",
-                "Science Lab Exploration Book - 7"
-              ]
-            },
-            {
-              subject: "G.K",
-              titles: [
-                "Techno's Know & Grow with Derek BK. 7"
-              ]
-            },
-            {
-              subject: "COMPUTER",
-              titles: [
-                "Cyber Apps BK - 7"
-              ]
-            },
-            {
-              subject: "SOCIAL STUDIES",
-              titles: [
-                "OUR HERITAGE -7",
-                "Our Past 7 - History",
-                "Our Environment - Geography",
-                "Social and Political Life 7 - Civics",
-                "Map Practice Geography & History BK-7"
-              ]
-            },
-            {
-              subject: "ART & CRAFT",
-              titles: [
-                "Art & Craft For You - 7"
-              ]
-            },
-            {
-              subject: "LIFE SKILL",
-              titles: [
-                "Values, Ethics & Life Skills For You - 7"
-              ]
-            },
-            {
-              subject: "EVS",
-              titles: [
-                "Our Environment - 7"
-              ]
-            },
-            {
-              subject: "2nd Language BENGALI",
-              titles: [
-                "Bangla Porichoy - 7",
-                "Bangla Porichoy WB - 7",
-                "Bangla Vyakaran - 7",
-                "Avagir Swarga and Mahesh"
-              ]
-            },
-            {
-              subject: "2nd Language HINDI",
-              titles: [
-                "Manak Hindi Vyakaran Evam Rachna - 7",
-                "Basant - 3",
-                "Bal Mahabharat Katha"
-              ]
-            },
-            {
-              subject: "3rd Language BENGALI",
-              titles: [
-                "Sahitya Katha Bk. III"
-              ]
-            },
-            {
-              subject: "3rd Language HINDI",
-              titles: [
-                "Rim Jhim Text - 3",
-                "Rimjhim Workbook 3"
-              
-              ]
-            }
-          ]
+        "subject": "ENGLISH",
+        "titles": [
+          "New Pathways  7 (OUP)",
+          "New Learner's Grammar and Composition 7 (OUP)",
+          "Reading Routes My Reading journal 7 (Madhuban)"
+        ]
+      },
+      {
+        "subject": "MATHEMATICS",
+        "titles": [
+          "NCERT Mathematics class 7"
+        ]
+      },
+      {
+        "subject": "BENGALI 2ND LANGUAGE",
+        "titles": [
+          "Bichitro Path Pathmala 7 (OUP)",
+          "Bangla Bhasha Anwesha (Saptam Shreni) by P C Das (Katha O Kahini Prakashoni)"
+        ]
+      },
+      {
+        "subject": "HINDI 2ND LANGUAGE",
+        "titles": [
+          "Malhar for Class 7 (NCERT)",
+          "Main Aur Mera Vyakaron 7 (Swarasswati Book House)"
+        ]
+      },
+      {
+        "subject": "NEPALI 2ND LANGUAGE",
+        "titles": [
+          "Saral Nepali Shikshamala Bhag-7 (Ekta Book House Siliguri), Nepali Grammar Bhag 7 (Shatabdi Prakashan Kalimpong"
+        ]
+      },
+      {
+        "subject": "SST",
+        "titles": [
+          "Excellence in Social Science 7 (Prachi Publications)"
+        ]
+      },
+      {
+        "subject": "SCIENCE",
+        "titles": [
+          "Let's Explore Science Class 7 (Arya Book Depot)"
+        ]
+      },
+      {
+        "subject": "COMPUTER",
+        "titles": [
+          "AI and You 7, Innovate 7 (Avartan Publishers)"
+        ]
+      },
+      {
+        "subject": "3RD LANGUAGE BENGALI",
+        "titles": [
+          "Bichitra Path Pathmala (Book 2) – Oxford University Press (OUP)"
+        ]
+      },
+      {
+        "subject": "3RD LANGUAGE HINDI",
+        "titles": [
+          "Sarangi 2 (NCERT)"
+        ]
+      },
+      {
+        "subject": "3RD LANGUAGE NEPALI",
+        "titles": [
+          "Saral Nepali Shikshamala Bhag-2 (Ekta Book House Siliguri)"
+        ]
+      },
+      {
+        "subject": "SKILL EDUCATION",
+        "titles": [
+          "Kaushal Bodh Activity Book for Grade 7 (NCERT)"
+        ]
+      },
+      {
+        "subject": "GENERAL KNOWLEDGE",
+        "titles": [
+          "Nutshell Paperback Class 7"
+        ]
+      },
+      {
+        "subject": "ART & CRAFT",
+        "titles": [
+          "Rohan's Art Festival 7 (Rohan Book Company Pvt Ltd)"
+        ]
+      }
+          ],
         },
         {
           class: "CLASS: VIII",
           books: [
             {
-              subject: "ENGLISH",
-              titles: [
-                "HIBISCUS Literature Reader Book - 8",
-                "HIBISCUS work Book - 8",
-                "HIBISCUS Course Book - 8",
-                "Grammar For You - 8",
-                "THE HOUND OF BASKERVILLES ( FOR READING SKILL)"
-              ]
-            },
-            {
-              subject: "MATHEMATICS",
-              titles: [
-                "Mathamatics - 8",
-                "Mathamatic - 8",
-                "Lab Manual (Together with Mathematics) For Std. VIII"
-              ]
-            },
-            {
-              subject: "SCIENCE",
-              titles: [
-                "Science Around Us - 8",
-                "Science - 8",
-                "Science Lab Exploration Book - 8"
-              ]
-            },
-            {
-              subject: "G.K",
-              titles: [
-                "Techno's Know & Grow with Derek BK. 8"
-              ]
-            },
-            {
-              subject: "COMPUTER",
-              titles: [
-                "Cyber Apps BK - 8"
-              ]
-            },
-            {
-              subject: "SOCIAL STUDIES",
-              titles: [
-                "OUR HERITAGE -8",
-                "Our Past - Part I and Part II - History",
-                "Resource and Development - Geography",
-                "Social and Political Life - Civics",
-                "Map Practice Geography & History BK-8"
-              ]
-            },
-            {
-              subject: "ART & CRAFT",
-              titles: [
-                "Art & Craft For You - 8"
-              ]
-            },
-            {
-              subject: "LIFE SKILL",
-              titles: [
-                "Values, Ethics & Life Skills For You - 8"
-              ]
-            },
-            {
-              subject: "EVS",
-              titles: [
-                "Our Environment - 8"
-              ]
-            },
-            {
-              subject: "2nd Language BENGALI",
-              titles: [
-                "Bangla Porichoy - 8",
-                "Bangla Porichoy WB - 8",
-                "Bangla Vyakaran - 8",
-                "Chelebela"
-              ]
-            },
-            {
-              subject: "3rd Language HINDI",
-              titles: [
-                "Rim Jhim Text - 4",
-                "Rimjhim Workbook 4"
-              ]
-            },
-            {
-              subject: "2nd Language HINDI",
-              titles: [
-                "Manak Hindi Vyakaran Evam Rachna - 8",
-                "Basant - 3",
-                "Bharat Ek Khoj"
-              ]
-            },
-            {
-              subject: "3rd Language BENGALI",
-              titles: [
-                "Sahitya Katha Part IV"
-                
-              
-              ]
-            }
-          ]
+        "subject": "ENGLISH",
+        "titles": [
+          "New Pathways 8 (OUP)",
+          "New Learner's Grammar and Composition 8  (OUP)",
+          "Reading Routes My Reading journal 8 (Madhuban)"
+        ]
+      },
+      {
+        "subject": "MATHEMATICS",
+        "titles": [
+          "NCERT Mathematics class 8"
+        ]
+      },
+      {
+        "subject": "BENGALI 2ND LANGUAGE",
+        "titles": [
+          "Bichitro Path Pathmala 8 (OUP)",
+          "Bangla Bhasha Anwesha (Ashtam Shreni) by P C Das (Katha O Kahini Prakashoni)"
+        ]
+      },
+      {
+        "subject": "HINDI 2ND LANGUAGE",
+        "titles": [
+          "Malhar for Class 8 (NCERT)",
+          "Main Aur Mera Vyakaron 8(Swarasswati Book House)"
+        ]
+      },
+      {
+        "subject": "NEPALI 2ND LANGUAGE",
+        "titles": [
+          "Saral Nepali Shikshamala Bhag-8 (Ekta Book House Siliguri), Nepali Grammar Bhag 8 (Shatabdi Prakashan Kalimpong"
+        ]
+      },
+      {
+        "subject": "SST",
+        "titles": [
+          "Excellence in Social Science 8 (Prachi Publications)"
+        ]
+      },
+      {
+        "subject": "SCIENCE",
+        "titles": [
+          "Let's Explore Science Class 8 (Arya Book Depot)"
+        ]
+      },
+      {
+        "subject": "COMPUTER",
+        "titles": [
+          "AI and You 8, Innovate 8 (Avartan Publishers)"
+        ]
+      },
+      {
+        "subject": "3RD LANGUAGE BENGALI",
+        "titles": [
+          "Bichitro Path Pathmala 3 (OUP)"
+        ]
+      },
+      {
+        "subject": "3RD LANGUAGE HINDI",
+        "titles": [
+          "Veena for class 3  (NCERT)"
+        ]
+      },
+      {
+        "subject": "3RD LANGUAGE NEPALI",
+        "titles": [
+          "Saral Nepali Shikshamala Bhag-3 (Ekta Book House Siliguri)"
+        ]
+      },
+      {
+        "subject": "SKILL EDUCATION",
+        "titles": [
+          "Kaushal Bodh Activity Book for Grade 8 (NCERT)"
+        ]
+      },
+      {
+        "subject": "GENERAL KNOWLEDGE",
+        "titles": [
+          "Nutshell Paperback Class 8"
+        ]
+      },
+      {
+        "subject": "ART & CRAFT",
+        "titles": [
+          "Rohan's Art Festival 8 (Rohan Book Company Pvt Ltd)"
+        ]
+      },
+          ],
         },
         {
           class: "CLASS: IX",
           books: [
             {
               subject: "ENGLISH",
-              titles: [
-                "Textbook-Beehive (NCERT)",
-                "Reader - Moments (NCERT)"
-              ]
+              titles: ["Textbook-Beehive (NCERT)", "Reader - Moments (NCERT)"],
             },
             {
               subject: "MATHEMATICS",
               titles: [
                 "Mathematics Text Book for Class IX (NCERT)",
-                "Mathematics ,R.S.Aggarwal IX (Bharti Bhavan)"
-                
-              ]
+                "Mathematics ,R.S.Aggarwal IX (Bharti Bhavan)",
+              ],
             },
             {
               subject: "BENGALI 2ND LANGUAGE",
               titles: [
                 "Sahitya Sanchayan ",
                 "Aam Aatir Bhepu- CBSE prescribed",
-                "Bangla Byakaran O Rachana"
-              ]
+                "Bangla Byakaran O Rachana",
+              ],
             },
             {
               subject: "HINDI 2ND LANGUAGE",
               titles: [
                 "Sanchayan - Bhag 1",
                 "Sparsh - Bhag 1",
-                " Bhasha Adhigam Avam Vyakaran ( Both IX - X)"
-              ]
+                " Bhasha Adhigam Avam Vyakaran ( Both IX - X)",
+              ],
             },
             {
               subject: "NEPALI 2ND LANGUAGE",
@@ -879,29 +979,22 @@ export const campusConfig = {
                 "Nepali Sahitya Sudha- P.M. Khanal",
                 "Katha Bimba- P.M. Khana",
                 "Madhyamik Nepali Byakaran Ra Rachna- Shivraj Sharma",
-                "Pratibha Parichay- Punyaprasad Sharma"
-              ]
+                "Pratibha Parichay- Punyaprasad Sharma",
+              ],
             },
             {
               subject: "SSC",
-              titles: [
-                "Understanding Society: India and Beyond – NCERT"
-                
-              ]
+              titles: ["Understanding Society: India and Beyond – NCERT"],
             },
             {
               subject: "SCIENCE",
-              titles: [
-                "Textbook for Class IX- NCERT"
-              ]
+              titles: ["Textbook for Class IX- NCERT"],
             },
             {
               subject: "COMPUTER",
-              titles: [
-                "Artificial Intellligence Class 9 (Avartan Publishers)"
-              ]
-            }
-          ]
+              titles: ["Artificial Intellligence Class 9 (Avartan Publishers)"],
+            },
+          ],
         },
         {
           class: "CLASS: X",
@@ -910,31 +1003,31 @@ export const campusConfig = {
               subject: "ENGLISH",
               titles: [
                 "Textbook-First Flight (NCERT)",
-                "Reader - Footprints Without feet (NCERT)"
-              ]
+                "Reader - Footprints Without feet (NCERT)",
+              ],
             },
             {
               subject: "MATHEMATICS",
               titles: [
                 "Mathematics Text Book for Class X (NCERT)",
-                "Mathematics ,R.S.Aggarwal X (Bharti Bhavan)"
-              ]
+                "Mathematics ,R.S.Aggarwal X (Bharti Bhavan)",
+              ],
             },
             {
               subject: "BENGALI 2ND LANGUAGE",
               titles: [
                 "Sahitya Sanchayan",
                 "Golpo Guccho- CBSE prescribed",
-                "Bangla Byakaran O Rachana"
-              ]
+                "Bangla Byakaran O Rachana",
+              ],
             },
             {
               subject: "HINDI 2ND LANGUAGE",
               titles: [
                 "Sanchayan - Bhag 2",
                 "Sparsh - Bhag 2",
-                "Bhasha Adhigam Avam Vyakaran ( Both IX - X)"
-              ]
+                "Bhasha Adhigam Avam Vyakaran ( Both IX - X)",
+              ],
             },
             {
               subject: "NEPALI 2ND LANGUAGE",
@@ -942,8 +1035,8 @@ export const campusConfig = {
                 "Nepali Sahitya Sudha- P.M. Khanal",
                 "Katha Bimba- P.M. Khanal",
                 "Madhyamik Nepali Byakaran Ra Rachna- Shivraj Sharma",
-                "Pratibha Parichay- Punyaprasad Sharma"
-              ]
+                "Pratibha Parichay- Punyaprasad Sharma",
+              ],
             },
             {
               subject: "SSC",
@@ -951,25 +1044,22 @@ export const campusConfig = {
                 "Economics- Textbook for class X- NCERT",
                 "History- India and the Contemporary World II- NCERT",
                 "Civics- Democratic Politics-II",
-                "Geography- Contemporary India II- NCERT"
-              ]
+                "Geography- Contemporary India II- NCERT",
+              ],
             },
             {
               subject: "SCIENCE",
-              titles: [
-                "Textbook for Class X- NCERT"
-              ]
+              titles: ["Textbook for Class X- NCERT"],
             },
             {
               subject: "COMPUTER",
               titles: [
-                "Artificial Intellligence Class 10 (Avartan Publishers)"
-              ]
-            }
-            
-          ]
-        }
-      ]
+                "Artificial Intellligence Class 10 (Avartan Publishers)",
+              ],
+            },
+          ],
+        },
+      ],
     },
 
     StudentCapacity : {
