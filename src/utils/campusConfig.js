@@ -27,7 +27,7 @@ export const campusConfig = {
     },
     
     about: {
-      description: "Eastern India's premier all-girls residential school offering world-class education with CBSE & Australian in the heart of North Bengal.",
+      description: "Eastern India’s premier all-girls residential school, offering world-class education through the CBSE curriculum in the heart of North Bengal.",
       highlights: [
         "Premier all-girls residential school",
         "CBSE  curriculum", 
@@ -49,7 +49,7 @@ export const campusConfig = {
         },
         {
           title: "Global Outlook",
-          description: "Aligned with the National Education Policy (NEP) and the internationally recognized Australian, TIG World School bridges global standards with Indian values."
+          description: "Rooted in Indian values and guided by the National Education Policy (NEP), TIG World School delivers a globally benchmarked education that prepares students to excel in an interconnected world."
         }
       ],
       missionVissionImage: "/img/about/siliguri/mission_vision.jpg"
@@ -79,7 +79,7 @@ export const campusConfig = {
       {
         image: "/img/academics/siliguri/point2.jpg",
         title: "Global Curriculum Advantage",
-        description: "Experience a powerful dual-curriculum system — CBSE and the Australian Programme, that builds academic rigor, critical thinking, and international readiness for careers in medicine, engineering, business, design, and beyond."
+        description: "Experience an enriching CBSE education rooted in academic excellence, critical thinking, innovation, and global perspectives, empowering students to pursue their aspirations in medicine, engineering, business, design, and beyond."
       },
       {
         image: "/img/academics/siliguri/point3.jpg",
@@ -274,7 +274,7 @@ export const campusConfig = {
           link: "/pdf/siliguri-mpd/Fee_Structure2026.pdf",
         },
         { id: 2, info: "ANNUAL ACADEMIC CALENDAR", link: "/pdf/siliguri-mpd/Annual_Calendar.pdf" },
-        { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "/pdf/siliguri-mpd/School_Management_Committee.pdf" },
+        { id: 3, info: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)", link: "/pdf/siliguri-mpd/school_management_committee.pdf" },
         {
           id: 4,
           info: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS",
@@ -293,23 +293,23 @@ export const campusConfig = {
         {
           id: 7,
           info: "SAMPLE OF TRANSFER CERTIFICATE",
-          link: "/pdf/siliguri-mpd/Transfer_Certificate_Sample.pdf",
+          link: "/pdf/siliguri-mpd/transfer_certificate_sample.pdf",
         },
         {
           id: 8,
           info: "DETAILS OF TEACHERS TRAINING",
           link: "/pdf/siliguri-mpd/Teachers'_Training.pdf",
         },
+        // {
+        //   id: 9,
+        //   info: "STAFF STATEMENT 2024-25",
+        //   link: "/pdf/siliguri-mpd/Self_Affidavit.pdf",
+        // },
         {
           id: 9,
-          info: "STAFF STATEMENT 2024-25",
-          link: "/pdf/siliguri-mpd/Self_Affidavit.pdf",
+          info: "SELF AFFIDAVIT",
+          link: "/pdf/siliguri-mpd/self_affidavit.pdf",
         },
-        // {
-        //   id: 10,
-        //   info: "SELF AFFIDAVIT",
-        //   link: "/pdf/siliguri-mpd/SELF-AFFIDAVIT.pdf",
-        // },
       ],
       staffInfo: [
         { id: 1, info: "PRINCIPAL", details: "01" },
