@@ -266,6 +266,11 @@ export const campusConfig = {
           info: "COPIES OF VALID WATER, HEALTH AND SANITATION CERTIFICATES",
           link: "/pdf/siliguri-mpd/Water_Health_and_Sanitation.pdf",
         },
+        {
+          id: 9,
+          info: "COPIES OF MANDATORY DISCLOSURE",
+          link: "/pdf/siliguri-mpd/mandatory_disclosure_ SARAS7.0.pdf",
+        },
       ],
       academics: [
         {
