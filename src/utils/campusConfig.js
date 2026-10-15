@@ -27,10 +27,10 @@ export const campusConfig = {
     },
     
     about: {
-      description: "Eastern India’s premier all-girls residential school, offering world-class education through the CBSE curriculum in the heart of North Bengal.",
+      description: "Eastern India’s premier all-girls residential school, offering world-class education through the CBSE & Cambridge affiliation curriculum in the heart of North Bengal.",
       highlights: [
         "Premier all-girls residential school",
-        "CBSE  curriculum", 
+        "CBSE & Cambridge affiliation curriculum", 
         "World-class infrastructure",
         "Holistic development approach"
       ],
