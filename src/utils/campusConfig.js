@@ -397,24 +397,64 @@ export const campusConfig = {
 
     testimonials: [
       {
-        text: "The blend of WACE and CBSE was the perfect launchpad for my MIT admission.",
-        name: "Aarav Shah",
-        designation: "2023",
+        subject: "Watchful eye, a supportive heart",
+        text: "The AI Lab of our school is one of my favourite places. I can learn so many things, search for information and enhance my knowledge. Our AI teacher always keeps an eye on us to see that we are not misusing our computers. She is very helpful towards us whenever we face problems regarding our computer lessons.",
+        name: "Arundhuti Roy Chowdhury",
+        designation: "Class- X",
       },
       {
-        text: "TIGWS gave me the confidence to pursue biomedical research in Australia.",
-        name: "Riya Sen",
-        designation: "Class of 2022",
+        subject: "A Campus that inspires from Day One",
+        text: "When I first stepped into the campus grounds of TIGWS, I was instantly excited to explore everything the school had to offer. I loved the AI lab, bio - chemistry labs, the playground, air-conditioned classrooms, the library and the basketball and badminton courts. I was initially nervous about adjusting to the new environment, but within a couple of days, I began to feel at home.",
+        name: "Aarushi Mandal",
+        designation: "Class- VII",
       },
       {
-        text: "The teachers here are very supportive and always encourage creative learning.",
-        name: "Ishita Verma",
-        designation: "Batch of 2021",
+        subject: "Building confidence beyond the classroom",
+        text: "My public speaking skills improved through the many opportunities and events that TIGWS gave me. I learned to overcome my stage fear and nervousness and now I speak with confidence. These experiences have helped me grow as a person and develop my intelligence and now I am a completely different Manya.",
+        name: "Manya Chaudhary",
+        designation: "Class- VIII",
       },
       {
-        text: "I loved how TIGWS balanced academics and extracurriculars, preparing me for college life abroad.",
-        name: "Karan Patel",
-        designation: "Class of 2020",
+        subject: "A Teacher who is always there",
+        text: "My teacher, Anamika Maám, always understands and supports me when I feel low or nervous before a big event. She is a great listener, is encouraging, helps me overcome challenges and gives me positive guidance. I’m thankful to the school for hiring such caring and understanding teachers in TIGWS.",
+        name: "Suhina Saha",
+        designation: "Class- VII",
+      },
+      {
+        subject: "The Moments we look forward to",
+        text: "Teacher’s Day is the event I look forward to the most every year. We Prefects get to take on responsibilities like maintaining discipline and helping juniors with their performances and I really enjoy that. We spend weeks in decorating the venue for the special day. It becomes a day filled with laughter, memories and unforgettable moments. ",
+        name: "Riddhi Jaiswal",
+        designation: "Class- X",
+      },
+      {
+        subject: "Where Every Book Opens a New World",
+        text: "Being a student at TIGWS, I love the learning environment, especially our library. With an abundant collection of books, it has helped me discover new words, ideas, improve my knowledge and build confidence. The school provides excellent facilities and a comfortable environment that makes learning enjoyable.",
+        name: "Sairendhree Saha",
+        designation: "Class- VIII",
+      },
+      {
+        subject: "Teachers Who Make Learning Easier",
+        text: "Our teachers support us in every subject, helping us overcome doubts and problems. The school also conducts two-hour remedial classes after school, from 2-4 p.m., where teachers make sure we understand every concept clearly. Their guidance helps us feel confident in our studies.",
+        name: "Likisha Kalowar",
+        designation: "Class- VIII",
+      },
+      {
+        subject: "So much to miss, so much to remember",
+        text: "When I leave school, I’ll miss my friends, teachers, and the special moments we shared together at TIGWS. I’ll especially miss my lessons, which are filled with fun and learning, in the AI Lab and the Chemistry lab.",
+        name: "Kaniz Fatema",
+        designation: "Class- VII",
+      },
+      {
+        subject: "Finding my voice",
+        text: "Conducting assemblies is something I can do confidently today that I could not when I first joined TIGWS. I used to feel nervous speaking on stage, but with the encouragement of my teachers and their motivation, I have overcome my nervousness and become much more confident.",
+        name: "Sanaya Agarwal",
+        designation: "Class- V",
+      },
+      {
+        subject: "The Magic of Our Annual Function",
+        text: "Annual Function was the most enjoyable event of the year at TIGWS. It was filled with interesting performances by the students, lots of food, dancing and singing. The highlight of the day was when our special guest, Rafa Yeasmin, a singer from Sa Re Ga Ma Pa Li’l Champs, graced the stage. We sang along with her and the experience was unforgettable. ",
+        name: "Riddhima Mandal",
+        designation: "Class- VII",
       }
     ],
 

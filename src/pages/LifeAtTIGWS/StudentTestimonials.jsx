@@ -7,6 +7,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "./StudentTestimonials.css";
 import { useLocation } from "react-router-dom";
 import { getCampusConfig} from '../../utils/campusConfig.js';
+import { color } from "framer-motion";
 
 const StudentTestimonials = () => {
   const { pathname } = useLocation();
@@ -109,6 +110,7 @@ const StudentTestimonials = () => {
                 >
                   {testimonials.map((t, index) => (
                     <SwiperSlide key={index} className="testimonial-card">
+                      <h5 style={{ color: "#00194d" }}>{t.subject}</h5>
                       <p className="text">{t.text}</p>
                       <div className="author d-flex justify-content-between align-items-end">
                         <div>

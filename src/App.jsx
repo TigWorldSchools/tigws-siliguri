@@ -112,11 +112,11 @@ function App() {
             <Gallery />
           </Layout>
         } />
-        {/* <Route path="/siliguri/student-testimonials" element={
+        <Route path="/siliguri/student-testimonials" element={
           <Layout>
             <StudentTestimonials />
           </Layout>
-        } /> */}
+        } />
         <Route path="/siliguri/mandatory-disclosure" element={
           <Layout>
             <MandatoryDisclosure />

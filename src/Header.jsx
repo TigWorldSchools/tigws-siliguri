@@ -49,8 +49,8 @@ const Header = ({ onOpenModal }) => {
       {label: 'Life At TIGWS', url:`/${campus}/life-at-tigws`},
       {label:'Student Pathway', url:`/${campus}/student-pathway`},
       {label:'Extra Curricular', url:`/${campus}/extra-curricular`},
-      {label:'Gallery', url:`/${campus}/gallery`}
-      // {label:'Student Testimonials', url:`/${campus}/student-testimonials`}
+      {label:'Gallery', url:`/${campus}/gallery`},
+      {label:'Student Testimonials', url:`/${campus}/student-testimonials`}
     ]
     },
 
